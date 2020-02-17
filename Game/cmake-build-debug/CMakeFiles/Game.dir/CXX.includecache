@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yan/CLionProjects/Game/Characters/PlayerCharacters/IUnit.h
+
+/home/yan/CLionProjects/Game/Characters/PlayerCharacters/Unit.cpp
+Unit.h
+/home/yan/CLionProjects/Game/Characters/PlayerCharacters/Unit.h
+
+/home/yan/CLionProjects/Game/Characters/PlayerCharacters/Unit.h
+IUnit.h
+/home/yan/CLionProjects/Game/Characters/PlayerCharacters/IUnit.h
+
