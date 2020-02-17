@@ -20,6 +20,20 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="ProjectId" id="1Xo9Q4aPEYG8R7lGO3kjgs3B5q9" />
   <component name="ProjectViewState">
@@ -30,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -49,7 +63,7 @@
     </configuration>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,7 +77,7 @@
       <workItem from="1581766562853" duration="867000" />
       <workItem from="1581767931291" duration="715000" />
       <workItem from="1581769251578" duration="1644000" />
-      <workItem from="1581857201064" duration="2940000" />
+      <workItem from="1581857201064" duration="4247000" />
     </task>
     <servers />
   </component>
@@ -71,10 +85,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="187" y="19" width="992" height="742" key="SettingsEditor" timestamp="1581766696701">
+    <state x="187" y="19" width="992" height="742" key="SettingsEditor" timestamp="1581940699068">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="187" y="19" width="992" height="742" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1581766696701" />
+    <state x="187" y="19" width="992" height="742" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1581940699068" />
     <state x="376" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1581701732908">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
