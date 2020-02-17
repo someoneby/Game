@@ -100,10 +100,13 @@
 		<Unit filename="/home/yan/CLionProjects/Game/Characters/Unit/Unit.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/yan/CLionProjects/Game/Utility/FightLog.cpp">
+		<Unit filename="/home/yan/CLionProjects/Game/Utility/CombatLog/CombatLog.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/yan/CLionProjects/Game/Utility/FightLog.h">
+		<Unit filename="/home/yan/CLionProjects/Game/Utility/CombatLog/CombatLog.h">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Utility/Constans/CombatLogStages.h">
 			<Option target="Game"/>
 		</Unit>
 		<Unit filename="/home/yan/CLionProjects/Game/Utility/RandDouble/RandDouble.cpp">

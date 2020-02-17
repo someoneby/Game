@@ -10,12 +10,15 @@ protected:
     int m_hp;
     int m_damage;
     float m_avoidChance;
+    string m_name;
 public:
     Unit(float, int, int, float);
 
     bool isMissing() override;
     bool isCritical() override;
     int getHP() override;
+    void takeDamage(int) override;
+    string getName() override;
     void hit(IUnit *) override;
 };
 

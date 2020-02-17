@@ -9,4 +9,4 @@ add_executable(Game main.cpp
         Characters/Player/Player.cpp
         Utility/RandDouble/RandDouble.cpp
 
-        Utility/FightLog.cpp Utility/FightLog.h)
+        Utility/CombatLog/CombatLog.cpp Utility/CombatLog/CombatLog.h Utility/Constans/CombatLogStages.h)

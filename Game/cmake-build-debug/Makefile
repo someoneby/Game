@@ -204,32 +204,32 @@ Characters/Unit/Unit.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Characters/Unit/Unit.cpp.s
 .PHONY : Characters/Unit/Unit.cpp.s
 
-Utility/FightLog.o: Utility/FightLog.cpp.o
+Utility/CombatLog/CombatLog.o: Utility/CombatLog/CombatLog.cpp.o
 
-.PHONY : Utility/FightLog.o
+.PHONY : Utility/CombatLog/CombatLog.o
 
 # target to build an object file
-Utility/FightLog.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Utility/FightLog.cpp.o
-.PHONY : Utility/FightLog.cpp.o
+Utility/CombatLog/CombatLog.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Utility/CombatLog/CombatLog.cpp.o
+.PHONY : Utility/CombatLog/CombatLog.cpp.o
 
-Utility/FightLog.i: Utility/FightLog.cpp.i
+Utility/CombatLog/CombatLog.i: Utility/CombatLog/CombatLog.cpp.i
 
-.PHONY : Utility/FightLog.i
+.PHONY : Utility/CombatLog/CombatLog.i
 
 # target to preprocess a source file
-Utility/FightLog.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Utility/FightLog.cpp.i
-.PHONY : Utility/FightLog.cpp.i
+Utility/CombatLog/CombatLog.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Utility/CombatLog/CombatLog.cpp.i
+.PHONY : Utility/CombatLog/CombatLog.cpp.i
 
-Utility/FightLog.s: Utility/FightLog.cpp.s
+Utility/CombatLog/CombatLog.s: Utility/CombatLog/CombatLog.cpp.s
 
-.PHONY : Utility/FightLog.s
+.PHONY : Utility/CombatLog/CombatLog.s
 
 # target to generate assembly for a file
-Utility/FightLog.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Utility/FightLog.cpp.s
-.PHONY : Utility/FightLog.cpp.s
+Utility/CombatLog/CombatLog.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Utility/CombatLog/CombatLog.cpp.s
+.PHONY : Utility/CombatLog/CombatLog.cpp.s
 
 Utility/RandDouble/RandDouble.o: Utility/RandDouble/RandDouble.cpp.o
 
@@ -303,9 +303,9 @@ help:
 	@echo "... Characters/Unit/Unit.o"
 	@echo "... Characters/Unit/Unit.i"
 	@echo "... Characters/Unit/Unit.s"
-	@echo "... Utility/FightLog.o"
-	@echo "... Utility/FightLog.i"
-	@echo "... Utility/FightLog.s"
+	@echo "... Utility/CombatLog/CombatLog.o"
+	@echo "... Utility/CombatLog/CombatLog.i"
+	@echo "... Utility/CombatLog/CombatLog.s"
 	@echo "... Utility/RandDouble/RandDouble.o"
 	@echo "... Utility/RandDouble/RandDouble.i"
 	@echo "... Utility/RandDouble/RandDouble.s"
