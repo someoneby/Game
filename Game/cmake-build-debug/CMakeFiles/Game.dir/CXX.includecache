@@ -6,13 +6,53 @@
 
 #IncludeRegexTransform: 
 
-/home/yan/CLionProjects/Game/Characters/PlayerCharacters/IUnit.h
+/home/yan/CLionProjects/Game/Characters/IUnit/IUnit.h
+iostream
+-
 
-/home/yan/CLionProjects/Game/Characters/PlayerCharacters/Unit.cpp
-Unit.h
-/home/yan/CLionProjects/Game/Characters/PlayerCharacters/Unit.h
+/home/yan/CLionProjects/Game/Characters/Mob/Mob.cpp
+Mob.h
+/home/yan/CLionProjects/Game/Characters/Mob/Mob.h
+../../Utility/Constans/Parameters.h
+/home/yan/CLionProjects/Game/Utility/Constans/Parameters.h
 
-/home/yan/CLionProjects/Game/Characters/PlayerCharacters/Unit.h
-IUnit.h
-/home/yan/CLionProjects/Game/Characters/PlayerCharacters/IUnit.h
+/home/yan/CLionProjects/Game/Characters/Mob/Mob.h
+../Unit/Unit.h
+/home/yan/CLionProjects/Game/Characters/Unit/Unit.h
+
+/home/yan/CLionProjects/Game/Characters/Player/Player.cpp
+Player.h
+/home/yan/CLionProjects/Game/Characters/Player/Player.h
+../../Utility/Constans/Parameters.h
+/home/yan/CLionProjects/Game/Utility/Constans/Parameters.h
+../../Utility/CombatLog/CombatLog.h
+/home/yan/CLionProjects/Game/Utility/CombatLog/CombatLog.h
+
+/home/yan/CLionProjects/Game/Characters/Player/Player.h
+../Unit/Unit.h
+/home/yan/CLionProjects/Game/Characters/Unit/Unit.h
+../IUnit/IUnit.h
+/home/yan/CLionProjects/Game/Characters/IUnit/IUnit.h
+
+/home/yan/CLionProjects/Game/Characters/Unit/Unit.h
+../IUnit/IUnit.h
+/home/yan/CLionProjects/Game/Characters/IUnit/IUnit.h
+
+/home/yan/CLionProjects/Game/Utility/CombatLog/CombatLog.h
+../Constans/CombatLogStages.h
+/home/yan/CLionProjects/Game/Utility/Constans/CombatLogStages.h
+../../Characters/IUnit/IUnit.h
+/home/yan/CLionProjects/Game/Characters/IUnit/IUnit.h
+
+/home/yan/CLionProjects/Game/Utility/Constans/CombatLogStages.h
+
+/home/yan/CLionProjects/Game/Utility/Constans/Parameters.h
+
+/home/yan/CLionProjects/Game/main.cpp
+iostream
+-
+Characters/Player/Player.h
+/home/yan/CLionProjects/Game/Characters/Player/Player.h
+Characters/Mob/Mob.h
+/home/yan/CLionProjects/Game/Characters/Mob/Mob.h
 

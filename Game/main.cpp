@@ -1,6 +1,14 @@
 #include <iostream>
+#include "Characters/Player/Player.h"
+#include "Characters/Mob/Mob.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+
+    Player * player = new Player();
+    player->setName("PIDOR");
+    Mob * mob = new Mob();
+
+    player->fight(mob);
+
+
 }

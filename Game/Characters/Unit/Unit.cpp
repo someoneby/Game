@@ -1,6 +1,11 @@
 #include "Unit.h"
 #include "../../Utility/Constans/Constans.h"
 #include "../../Utility/CombatLog/CombatLog.h"
+#include "../../Utility/RandDouble/RandDouble.h"
+
+
+Unit::Unit(float s_armor, int s_hp, int s_damage, float s_avoidChance, float s_criticalChance) : m_armor{s_armor}, m_hp{s_hp},
+           m_damage{s_damage}, m_avoidChance{s_avoidChance}, m_criticalChance{s_criticalChance} {}
 
 void Unit::hit(IUnit * target) {
     if(target->isMissing()){
@@ -19,23 +24,28 @@ void Unit::hit(IUnit * target) {
     target->takeDamage(damage);
 }
 
-Unit::Unit(float s_armor, int s_hp, int s_damage, float s_avoidChance) : m_armor{s_armor}, m_hp{s_hp},
-    m_damage{s_damage}, m_avoidChance{s_avoidChance} {}
-
 int Unit::getHP() {
     return m_hp;
 }
 
 bool Unit::isMissing() {
-    return false;
+    return randDouble() <= m_avoidChance;
 }
 
 bool Unit::isCritical() {
-    return false;
+    return randDouble() <= m_criticalChance;
 }
 
 string Unit::getName() {
     return m_name;
+}
+
+float Unit::getArmor() {
+    return m_armor;
+}
+
+int Unit::damageCalculating(float targetArmor){
+    return m_damage * (100 - targetArmor)/100;
 }
 
 void Unit::takeDamage(int damage) {

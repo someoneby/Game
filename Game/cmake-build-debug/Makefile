@@ -150,6 +150,33 @@ Characters/IUnit/IUnit.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Characters/IUnit/IUnit.cpp.s
 .PHONY : Characters/IUnit/IUnit.cpp.s
 
+Characters/Mob/Mob.o: Characters/Mob/Mob.cpp.o
+
+.PHONY : Characters/Mob/Mob.o
+
+# target to build an object file
+Characters/Mob/Mob.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Characters/Mob/Mob.cpp.o
+.PHONY : Characters/Mob/Mob.cpp.o
+
+Characters/Mob/Mob.i: Characters/Mob/Mob.cpp.i
+
+.PHONY : Characters/Mob/Mob.i
+
+# target to preprocess a source file
+Characters/Mob/Mob.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Characters/Mob/Mob.cpp.i
+.PHONY : Characters/Mob/Mob.cpp.i
+
+Characters/Mob/Mob.s: Characters/Mob/Mob.cpp.s
+
+.PHONY : Characters/Mob/Mob.s
+
+# target to generate assembly for a file
+Characters/Mob/Mob.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Characters/Mob/Mob.cpp.s
+.PHONY : Characters/Mob/Mob.cpp.s
+
 Characters/Player/Player.o: Characters/Player/Player.cpp.o
 
 .PHONY : Characters/Player/Player.o
@@ -203,6 +230,60 @@ Characters/Unit/Unit.s: Characters/Unit/Unit.cpp.s
 Characters/Unit/Unit.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Characters/Unit/Unit.cpp.s
 .PHONY : Characters/Unit/Unit.cpp.s
+
+Equipment/Equipment/Equipment.o: Equipment/Equipment/Equipment.cpp.o
+
+.PHONY : Equipment/Equipment/Equipment.o
+
+# target to build an object file
+Equipment/Equipment/Equipment.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.o
+.PHONY : Equipment/Equipment/Equipment.cpp.o
+
+Equipment/Equipment/Equipment.i: Equipment/Equipment/Equipment.cpp.i
+
+.PHONY : Equipment/Equipment/Equipment.i
+
+# target to preprocess a source file
+Equipment/Equipment/Equipment.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.i
+.PHONY : Equipment/Equipment/Equipment.cpp.i
+
+Equipment/Equipment/Equipment.s: Equipment/Equipment/Equipment.cpp.s
+
+.PHONY : Equipment/Equipment/Equipment.s
+
+# target to generate assembly for a file
+Equipment/Equipment/Equipment.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.s
+.PHONY : Equipment/Equipment/Equipment.cpp.s
+
+Equipment/IEquipment/IEquipment.o: Equipment/IEquipment/IEquipment.cpp.o
+
+.PHONY : Equipment/IEquipment/IEquipment.o
+
+# target to build an object file
+Equipment/IEquipment/IEquipment.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/IEquipment/IEquipment.cpp.o
+.PHONY : Equipment/IEquipment/IEquipment.cpp.o
+
+Equipment/IEquipment/IEquipment.i: Equipment/IEquipment/IEquipment.cpp.i
+
+.PHONY : Equipment/IEquipment/IEquipment.i
+
+# target to preprocess a source file
+Equipment/IEquipment/IEquipment.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/IEquipment/IEquipment.cpp.i
+.PHONY : Equipment/IEquipment/IEquipment.cpp.i
+
+Equipment/IEquipment/IEquipment.s: Equipment/IEquipment/IEquipment.cpp.s
+
+.PHONY : Equipment/IEquipment/IEquipment.s
+
+# target to generate assembly for a file
+Equipment/IEquipment/IEquipment.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/IEquipment/IEquipment.cpp.s
+.PHONY : Equipment/IEquipment/IEquipment.cpp.s
 
 Utility/CombatLog/CombatLog.o: Utility/CombatLog/CombatLog.cpp.o
 
@@ -297,12 +378,21 @@ help:
 	@echo "... Characters/IUnit/IUnit.o"
 	@echo "... Characters/IUnit/IUnit.i"
 	@echo "... Characters/IUnit/IUnit.s"
+	@echo "... Characters/Mob/Mob.o"
+	@echo "... Characters/Mob/Mob.i"
+	@echo "... Characters/Mob/Mob.s"
 	@echo "... Characters/Player/Player.o"
 	@echo "... Characters/Player/Player.i"
 	@echo "... Characters/Player/Player.s"
 	@echo "... Characters/Unit/Unit.o"
 	@echo "... Characters/Unit/Unit.i"
 	@echo "... Characters/Unit/Unit.s"
+	@echo "... Equipment/Equipment/Equipment.o"
+	@echo "... Equipment/Equipment/Equipment.i"
+	@echo "... Equipment/Equipment/Equipment.s"
+	@echo "... Equipment/IEquipment/IEquipment.o"
+	@echo "... Equipment/IEquipment/IEquipment.i"
+	@echo "... Equipment/IEquipment/IEquipment.s"
 	@echo "... Utility/CombatLog/CombatLog.o"
 	@echo "... Utility/CombatLog/CombatLog.i"
 	@echo "... Utility/CombatLog/CombatLog.s"

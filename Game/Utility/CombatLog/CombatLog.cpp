@@ -8,27 +8,26 @@ void combatLog (CombatLogStages action, IUnit * unit, IUnit * target, int damage
 
     switch (action) {
         case CombatLogStages::start : {
-            cout << "Начинается бой между " << unit->getName() << " и " << target->getName() << endl;
+            cout << "Начинается бой между " << unit->getName() << " и " << target->getName();
             break;
         }
         case CombatLogStages::nextRound : {
-            cout << " " << unit->getName() << " HP: " << unit->getHP()
+            cout << endl << " " << unit->getName() << " HP: " << unit->getHP()
                 << endl << " " << target->getName() << " HP: " << target->getHP() << endl;
             break;
         }
         case CombatLogStages::missing : {
-            cout << " " << unit->getName() << " собирает все силы в кулак и делает ацкий удар, жалко, правда, что мимо. "
-            << endl;
+            cout << " " << unit->getName() << " собирает все силы в кулак и делает ацкий удар, жалко, правда, что мимо. ";
             break;
         }
         case CombatLogStages::critical : {
             cout << " Бодрительный борщ от мамы придаёт сил и " << unit->getName()
-                << " наносит критический удар равный " << damage << "." << endl;
+                << " наносит критический удар равный " << damage << ".";
             break;
         }
         case CombatLogStages::hit : {
             cout << " " << unit->getName() << " как самый обычный студент приносит самый обычный диплом,"
-                 " которым даёт по лицу " << target->getName() << " нанеся " << damage << " ед.ур." << endl;
+                 " которым даёт по лицу " << target->getName() << " нанеся " << damage << " ед.ур.";
             break;
         }
         case CombatLogStages::lose : {
@@ -37,7 +36,7 @@ void combatLog (CombatLogStages action, IUnit * unit, IUnit * target, int damage
             break;
         }
         case CombatLogStages::win : {
-            cout << " You win! Пора раскатать рукава, натянуть штаны и собрать лут." << endl;
+            cout << endl << " You win! Пора раскатать рукава, натянуть штаны и собрать лут." << endl;
             break;
         }
     }

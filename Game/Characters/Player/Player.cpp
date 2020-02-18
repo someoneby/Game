@@ -4,7 +4,11 @@
 
 
 Player::Player() : Unit(Parameters::playerArmor, Parameters::playerHP, Parameters::playerDamage,
-        Parameters::playerAvoidChance){ }
+        Parameters::playerAvoidChance, Parameters::playerCriticalChance){ }
+
+void Player::setName(string s_name) {
+    m_name = s_name;
+}
 
 void Player::fight(IUnit * mob) {
 

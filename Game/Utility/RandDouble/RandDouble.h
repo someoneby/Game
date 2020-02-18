@@ -2,7 +2,7 @@
 #define GAME_RANDDOUBLE_H
 
 
-double RandDouble ();
+double randDouble ();
 
 
 #endif //GAME_RANDDOUBLE_H

@@ -3,10 +3,18 @@ project(Game)
 
 set(CMAKE_CXX_STANDARD 14)
 
+FIND_PACKAGE( Boost 1.40 COMPONENTS program_options REQUIRED )
+INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
+TARGET_LINK_LIBRARIES( ${Boost_LIBRARIES} )
+
+
 add_executable(Game main.cpp
         Characters/IUnit/IUnit.cpp
         Characters/Unit/Unit.cpp
         Characters/Player/Player.cpp
         Utility/RandDouble/RandDouble.cpp
-
-        Utility/CombatLog/CombatLog.cpp Utility/CombatLog/CombatLog.h Utility/Constans/CombatLogStages.h)
+        Utility/CombatLog/CombatLog.cpp
+        Characters/Mob/Mob.cpp
+        Equipment/IEquipment/IEquipment.cpp
+        Equipment/Equipment/Equipment.cpp
+        )

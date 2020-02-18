@@ -6,7 +6,6 @@ using std::string;
 
 class IUnit {
 public:
-    virtual ~IUnit();
     IUnit() = default;
 
     IUnit(const string &getName);

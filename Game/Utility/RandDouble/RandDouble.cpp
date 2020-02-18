@@ -1,5 +1,17 @@
 #include "RandDouble.h"
+#include <boost/random/mersenne_twister.hpp>
+#include <boost/random/uniform_real.hpp>
+#include <boost/random/variate_generator.hpp>
 
-double RandDouble () {
-    return 0.53;
+typedef boost::mt19937 BaseGenerator;
+typedef boost::uniform_real<double> Distribution;
+typedef boost::variate_generator<BaseGenerator, Distribution> Generator;
+
+
+double randDouble () {
+    static BaseGenerator base;
+    static Distribution dist;
+    static Generator rng(base, dist);
+
+    return rng();
 };

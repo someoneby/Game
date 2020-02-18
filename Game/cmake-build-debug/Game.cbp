@@ -5,7 +5,7 @@
 		<Option title="Game"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\usr\lib64\cmake\Boost-1.72.0\;CMake Files\..\..\..\..\usr\lib64\cmake\boost_headers-1.72.0\;CMake Files\..\..\..\..\usr\lib64\cmake\boost_program_options-1.72.0\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/yan/CLionProjects/Game/cmake-build-debug"/>
@@ -88,6 +88,12 @@
 		<Unit filename="/home/yan/CLionProjects/Game/Characters/IUnit/IUnit.h">
 			<Option target="Game"/>
 		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Characters/Mob/Mob.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Characters/Mob/Mob.h">
+			<Option target="Game"/>
+		</Unit>
 		<Unit filename="/home/yan/CLionProjects/Game/Characters/Player/Player.cpp">
 			<Option target="Game"/>
 		</Unit>
@@ -100,13 +106,22 @@
 		<Unit filename="/home/yan/CLionProjects/Game/Characters/Unit/Unit.h">
 			<Option target="Game"/>
 		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Equipment/Equipment/Equipment.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Equipment/Equipment/Equipment.h">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Equipment/IEquipment/IEquipment.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Equipment/IEquipment/IEquipment.h">
+			<Option target="Game"/>
+		</Unit>
 		<Unit filename="/home/yan/CLionProjects/Game/Utility/CombatLog/CombatLog.cpp">
 			<Option target="Game"/>
 		</Unit>
 		<Unit filename="/home/yan/CLionProjects/Game/Utility/CombatLog/CombatLog.h">
-			<Option target="Game"/>
-		</Unit>
-		<Unit filename="/home/yan/CLionProjects/Game/Utility/Constans/CombatLogStages.h">
 			<Option target="Game"/>
 		</Unit>
 		<Unit filename="/home/yan/CLionProjects/Game/Utility/RandDouble/RandDouble.cpp">
@@ -120,6 +135,33 @@
 		</Unit>
 		<Unit filename="/home/yan/CLionProjects/Game/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/../../../../usr/lib64/cmake/BoostDetectToolset-1.72.0.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/../../../../usr/lib64/cmake/Boost-1.72.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Boost-1.72.0\"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/../../../../usr/lib64/cmake/Boost-1.72.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Boost-1.72.0\"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/../../../../usr/lib64/cmake/boost_headers-1.72.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\boost_headers-1.72.0\"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/../../../../usr/lib64/cmake/boost_headers-1.72.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\boost_headers-1.72.0\"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/../../../../usr/lib64/cmake/boost_program_options-1.72.0/boost_program_options-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\boost_program_options-1.72.0\"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/../../../../usr/lib64/cmake/boost_program_options-1.72.0/boost_program_options-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\boost_program_options-1.72.0\"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/../../../../usr/lib64/cmake/boost_program_options-1.72.0/libboost_program_options-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\boost_program_options-1.72.0\"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/../../../../usr/lib64/cmake/boost_program_options-1.72.0/libboost_program_options-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\boost_program_options-1.72.0\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

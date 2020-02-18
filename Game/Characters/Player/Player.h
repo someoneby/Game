@@ -7,6 +7,7 @@
 class Player : public Unit {
 public:
     Player();
+    void setName(string name);
 
     void fight(IUnit *);
 
