@@ -161,18 +161,57 @@ CMakeFiles/Game.dir/Equipment/IEquipment/IEquipment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Equipment/IEquipment/IEquipment.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/CLionProjects/Game/Equipment/IEquipment/IEquipment.cpp -o CMakeFiles/Game.dir/Equipment/IEquipment/IEquipment.cpp.s
 
-CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.o: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.o: ../Equipment/Equipment/Equipment.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/CLionProjects/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.o -c /home/yan/CLionProjects/Game/Equipment/Equipment/Equipment.cpp
+CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.o: ../Equipment/Armor/Armor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/CLionProjects/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.o -c /home/yan/CLionProjects/Game/Equipment/Armor/Armor.cpp
 
-CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/CLionProjects/Game/Equipment/Equipment/Equipment.cpp > CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.i
+CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/CLionProjects/Game/Equipment/Armor/Armor.cpp > CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.i
 
-CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/CLionProjects/Game/Equipment/Equipment/Equipment.cpp -o CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.s
+CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/CLionProjects/Game/Equipment/Armor/Armor.cpp -o CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.s
+
+CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.o: ../Equipment/Weapon/Weapons.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/CLionProjects/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.o -c /home/yan/CLionProjects/Game/Equipment/Weapon/Weapons.cpp
+
+CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/CLionProjects/Game/Equipment/Weapon/Weapons.cpp > CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.i
+
+CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/CLionProjects/Game/Equipment/Weapon/Weapons.cpp -o CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.s
+
+CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.o: ../Equipment/Helm/Helm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/CLionProjects/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.o -c /home/yan/CLionProjects/Game/Equipment/Helm/Helm.cpp
+
+CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/CLionProjects/Game/Equipment/Helm/Helm.cpp > CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.i
+
+CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/CLionProjects/Game/Equipment/Helm/Helm.cpp -o CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.s
+
+CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.o: ../Equipment/Chest/Chest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/CLionProjects/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.o -c /home/yan/CLionProjects/Game/Equipment/Chest/Chest.cpp
+
+CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/CLionProjects/Game/Equipment/Chest/Chest.cpp > CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.i
+
+CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/CLionProjects/Game/Equipment/Chest/Chest.cpp -o CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.s
 
 # Object files for target Game
 Game_OBJECTS = \
@@ -184,7 +223,10 @@ Game_OBJECTS = \
 "CMakeFiles/Game.dir/Utility/CombatLog/CombatLog.cpp.o" \
 "CMakeFiles/Game.dir/Characters/Mob/Mob.cpp.o" \
 "CMakeFiles/Game.dir/Equipment/IEquipment/IEquipment.cpp.o" \
-"CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.o"
+"CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.o" \
+"CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.o" \
+"CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.o" \
+"CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.o"
 
 # External object files for target Game
 Game_EXTERNAL_OBJECTS =
@@ -197,10 +239,13 @@ Game: CMakeFiles/Game.dir/Utility/RandDouble/RandDouble.cpp.o
 Game: CMakeFiles/Game.dir/Utility/CombatLog/CombatLog.cpp.o
 Game: CMakeFiles/Game.dir/Characters/Mob/Mob.cpp.o
 Game: CMakeFiles/Game.dir/Equipment/IEquipment/IEquipment.cpp.o
-Game: CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.o
+Game: CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.o
+Game: CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.o
+Game: CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.o
+Game: CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.o
 Game: CMakeFiles/Game.dir/build.make
 Game: CMakeFiles/Game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yan/CLionProjects/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yan/CLionProjects/Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

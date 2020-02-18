@@ -16,5 +16,7 @@ add_executable(Game main.cpp
         Utility/CombatLog/CombatLog.cpp
         Characters/Mob/Mob.cpp
         Equipment/IEquipment/IEquipment.cpp
-        Equipment/Equipment/Equipment.cpp
-        )
+        Equipment/Armor/Armor.cpp
+        Equipment/Weapon/Weapons.cpp
+
+        Equipment/Helm/Helm.cpp Equipment/Helm/Helm.h Equipment/Chest/Chest.cpp Equipment/Chest/Chest.h Utility/Equipment/Helms.h Utility/Equipment/Weapons.h Utility/Equipment/Chests.h)

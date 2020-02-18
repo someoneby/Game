@@ -231,32 +231,86 @@ Characters/Unit/Unit.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Characters/Unit/Unit.cpp.s
 .PHONY : Characters/Unit/Unit.cpp.s
 
-Equipment/Equipment/Equipment.o: Equipment/Equipment/Equipment.cpp.o
+Equipment/Armor/Armor.o: Equipment/Armor/Armor.cpp.o
 
-.PHONY : Equipment/Equipment/Equipment.o
+.PHONY : Equipment/Armor/Armor.o
 
 # target to build an object file
-Equipment/Equipment/Equipment.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.o
-.PHONY : Equipment/Equipment/Equipment.cpp.o
+Equipment/Armor/Armor.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.o
+.PHONY : Equipment/Armor/Armor.cpp.o
 
-Equipment/Equipment/Equipment.i: Equipment/Equipment/Equipment.cpp.i
+Equipment/Armor/Armor.i: Equipment/Armor/Armor.cpp.i
 
-.PHONY : Equipment/Equipment/Equipment.i
+.PHONY : Equipment/Armor/Armor.i
 
 # target to preprocess a source file
-Equipment/Equipment/Equipment.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.i
-.PHONY : Equipment/Equipment/Equipment.cpp.i
+Equipment/Armor/Armor.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.i
+.PHONY : Equipment/Armor/Armor.cpp.i
 
-Equipment/Equipment/Equipment.s: Equipment/Equipment/Equipment.cpp.s
+Equipment/Armor/Armor.s: Equipment/Armor/Armor.cpp.s
 
-.PHONY : Equipment/Equipment/Equipment.s
+.PHONY : Equipment/Armor/Armor.s
 
 # target to generate assembly for a file
-Equipment/Equipment/Equipment.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Equipment/Equipment.cpp.s
-.PHONY : Equipment/Equipment/Equipment.cpp.s
+Equipment/Armor/Armor.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Armor/Armor.cpp.s
+.PHONY : Equipment/Armor/Armor.cpp.s
+
+Equipment/Chest/Chest.o: Equipment/Chest/Chest.cpp.o
+
+.PHONY : Equipment/Chest/Chest.o
+
+# target to build an object file
+Equipment/Chest/Chest.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.o
+.PHONY : Equipment/Chest/Chest.cpp.o
+
+Equipment/Chest/Chest.i: Equipment/Chest/Chest.cpp.i
+
+.PHONY : Equipment/Chest/Chest.i
+
+# target to preprocess a source file
+Equipment/Chest/Chest.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.i
+.PHONY : Equipment/Chest/Chest.cpp.i
+
+Equipment/Chest/Chest.s: Equipment/Chest/Chest.cpp.s
+
+.PHONY : Equipment/Chest/Chest.s
+
+# target to generate assembly for a file
+Equipment/Chest/Chest.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.s
+.PHONY : Equipment/Chest/Chest.cpp.s
+
+Equipment/Helm/Helm.o: Equipment/Helm/Helm.cpp.o
+
+.PHONY : Equipment/Helm/Helm.o
+
+# target to build an object file
+Equipment/Helm/Helm.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.o
+.PHONY : Equipment/Helm/Helm.cpp.o
+
+Equipment/Helm/Helm.i: Equipment/Helm/Helm.cpp.i
+
+.PHONY : Equipment/Helm/Helm.i
+
+# target to preprocess a source file
+Equipment/Helm/Helm.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.i
+.PHONY : Equipment/Helm/Helm.cpp.i
+
+Equipment/Helm/Helm.s: Equipment/Helm/Helm.cpp.s
+
+.PHONY : Equipment/Helm/Helm.s
+
+# target to generate assembly for a file
+Equipment/Helm/Helm.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.s
+.PHONY : Equipment/Helm/Helm.cpp.s
 
 Equipment/IEquipment/IEquipment.o: Equipment/IEquipment/IEquipment.cpp.o
 
@@ -284,6 +338,33 @@ Equipment/IEquipment/IEquipment.s: Equipment/IEquipment/IEquipment.cpp.s
 Equipment/IEquipment/IEquipment.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/IEquipment/IEquipment.cpp.s
 .PHONY : Equipment/IEquipment/IEquipment.cpp.s
+
+Equipment/Weapon/Weapons.o: Equipment/Weapon/Weapons.cpp.o
+
+.PHONY : Equipment/Weapon/Weapons.o
+
+# target to build an object file
+Equipment/Weapon/Weapons.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.o
+.PHONY : Equipment/Weapon/Weapons.cpp.o
+
+Equipment/Weapon/Weapons.i: Equipment/Weapon/Weapons.cpp.i
+
+.PHONY : Equipment/Weapon/Weapons.i
+
+# target to preprocess a source file
+Equipment/Weapon/Weapons.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.i
+.PHONY : Equipment/Weapon/Weapons.cpp.i
+
+Equipment/Weapon/Weapons.s: Equipment/Weapon/Weapons.cpp.s
+
+.PHONY : Equipment/Weapon/Weapons.s
+
+# target to generate assembly for a file
+Equipment/Weapon/Weapons.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Equipment/Weapon/Weapons.cpp.s
+.PHONY : Equipment/Weapon/Weapons.cpp.s
 
 Utility/CombatLog/CombatLog.o: Utility/CombatLog/CombatLog.cpp.o
 
@@ -387,12 +468,21 @@ help:
 	@echo "... Characters/Unit/Unit.o"
 	@echo "... Characters/Unit/Unit.i"
 	@echo "... Characters/Unit/Unit.s"
-	@echo "... Equipment/Equipment/Equipment.o"
-	@echo "... Equipment/Equipment/Equipment.i"
-	@echo "... Equipment/Equipment/Equipment.s"
+	@echo "... Equipment/Armor/Armor.o"
+	@echo "... Equipment/Armor/Armor.i"
+	@echo "... Equipment/Armor/Armor.s"
+	@echo "... Equipment/Chest/Chest.o"
+	@echo "... Equipment/Chest/Chest.i"
+	@echo "... Equipment/Chest/Chest.s"
+	@echo "... Equipment/Helm/Helm.o"
+	@echo "... Equipment/Helm/Helm.i"
+	@echo "... Equipment/Helm/Helm.s"
 	@echo "... Equipment/IEquipment/IEquipment.o"
 	@echo "... Equipment/IEquipment/IEquipment.i"
 	@echo "... Equipment/IEquipment/IEquipment.s"
+	@echo "... Equipment/Weapon/Weapons.o"
+	@echo "... Equipment/Weapon/Weapons.i"
+	@echo "... Equipment/Weapon/Weapons.s"
 	@echo "... Utility/CombatLog/CombatLog.o"
 	@echo "... Utility/CombatLog/CombatLog.i"
 	@echo "... Utility/CombatLog/CombatLog.s"

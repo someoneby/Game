@@ -106,10 +106,22 @@
 		<Unit filename="/home/yan/CLionProjects/Game/Characters/Unit/Unit.h">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/yan/CLionProjects/Game/Equipment/Equipment/Equipment.cpp">
+		<Unit filename="/home/yan/CLionProjects/Game/Equipment/Armor/Armor.cpp">
 			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/yan/CLionProjects/Game/Equipment/Equipment/Equipment.h">
+		<Unit filename="/home/yan/CLionProjects/Game/Equipment/Armor/Armor.h">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Equipment/Chest/Chest.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Equipment/Chest/Chest.h">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Equipment/Helm/Helm.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Equipment/Helm/Helm.h">
 			<Option target="Game"/>
 		</Unit>
 		<Unit filename="/home/yan/CLionProjects/Game/Equipment/IEquipment/IEquipment.cpp">
@@ -118,10 +130,22 @@
 		<Unit filename="/home/yan/CLionProjects/Game/Equipment/IEquipment/IEquipment.h">
 			<Option target="Game"/>
 		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Equipment/Weapon/Weapons.cpp">
+			<Option target="Game"/>
+		</Unit>
 		<Unit filename="/home/yan/CLionProjects/Game/Utility/CombatLog/CombatLog.cpp">
 			<Option target="Game"/>
 		</Unit>
 		<Unit filename="/home/yan/CLionProjects/Game/Utility/CombatLog/CombatLog.h">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Utility/Equipment/Chests.h">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Utility/Equipment/Helms.h">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="/home/yan/CLionProjects/Game/Utility/Equipment/Weapons.h">
 			<Option target="Game"/>
 		</Unit>
 		<Unit filename="/home/yan/CLionProjects/Game/Utility/RandDouble/RandDouble.cpp">
