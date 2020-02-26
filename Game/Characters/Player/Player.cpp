@@ -2,9 +2,22 @@
 #include "../../Utility/Constans/Parameters.h"
 #include "../../Utility/CombatLog/CombatLog.h"
 
+Player * Player::m_instance = nullptr;
+
 
 Player::Player() : Unit(Parameters::playerArmor, Parameters::playerHP, Parameters::playerDamage,
         Parameters::playerAvoidChance, Parameters::playerCriticalChance){ }
+
+Player* Player::getInstance() {
+    if(m_instance != nullptr){
+        return m_instance;
+    } else {
+        m_instance = new Player();
+        return m_instance;
+    }
+}
+
+
 
 void Player::setName(string s_name) {
     m_name = s_name;

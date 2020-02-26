@@ -4,11 +4,10 @@
 
 int main() {
 
-    Player * player = new Player();
-    player->setName("PIDOR");
-    Mob * mob = new Mob();
-
-    player->fight(mob);
-
+    // Player * player = Player::getInstance();
+    // player->setName("PIFOR");
+    
+    Helm * helm = new Helm();
+    helm->equip();
 
 }

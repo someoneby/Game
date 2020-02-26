@@ -3,14 +3,21 @@
 
 #include "../Unit/Unit.h"
 #include "../IUnit/IUnit.h"
+#include "../../Equipment/EquipedItems/EquipedItems.h"
+#include "../../GameInterface/Bag/Bag.h"
 
 class Player : public Unit {
-public:
-    Player();
-    void setName(string name);
+    private:
+        static Player * m_instance;
+        Player();
+        Player(const Player&);
+        Player& operator = (Player&);
 
-    void fight(IUnit *);
+    public:
+        static Player * getInstance();
+        void setName(string name);
 
+        void fight(IUnit *);
 
 };
 

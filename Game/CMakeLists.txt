@@ -18,5 +18,7 @@ add_executable(Game main.cpp
         Equipment/IEquipment/IEquipment.cpp
         Equipment/Armor/Armor.cpp
         Equipment/Weapon/Weapons.cpp
-
-        Equipment/Helm/Helm.cpp Equipment/Helm/Helm.h Equipment/Chest/Chest.cpp Equipment/Chest/Chest.h Utility/Equipment/Helms.h Utility/Equipment/Weapons.h Utility/Equipment/Chests.h)
+        Equipment/EquipedItems/EquipedItems.cpp
+        Equipment/Helm/Helm.cpp
+        Equipment/Chest/Chest.cpp 
+        )

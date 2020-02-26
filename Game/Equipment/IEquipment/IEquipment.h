@@ -4,10 +4,10 @@
 
 class IEquipment {
 public:
-    virtual void deleteIt() = 0;
+    // virtual void deleteIt() = 0;
 //    virtual void sellIt() = 0;
-    virtual void equipIt() = 0;
-    virtual void unEquipIt() = 0;
+    virtual void equip();
+    virtual void unEquip();
 };
 
 
