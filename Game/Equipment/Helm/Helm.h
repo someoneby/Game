@@ -5,7 +5,9 @@
 #include "../Armor/Armor.h"
 
 class Helm : public Armor {
-
+    public:
+        Helm(int, float, int);
+        int getHP();
 };
 
 

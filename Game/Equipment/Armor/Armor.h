@@ -4,10 +4,12 @@
 #include "../IEquipment/IEquipment.h"
 
 class Armor : public IEquipment{
-protected:
-    float armor;
-    float avoidChance;
-    float hp;
+    protected:
+        int m_armor;
+        float m_avoidChance;
+        int m_hp;
+    public:
+        Armor(int, float, int);
 };
 
 

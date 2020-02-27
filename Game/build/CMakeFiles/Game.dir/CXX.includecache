@@ -6,83 +6,45 @@
 
 #IncludeRegexTransform: 
 
-/home/yan/C++/Game/Game/Game/Characters/IUnit/IUnit.h
+/home/yan/CLionProjects/Game/Game/Characters/IUnit/IUnit.h
 iostream
 -
 
-/home/yan/C++/Game/Game/Game/Characters/Mob/Mob.h
+/home/yan/CLionProjects/Game/Game/Characters/Player/Player.h
 ../Unit/Unit.h
-/home/yan/C++/Game/Game/Game/Characters/Unit/Unit.h
-
-/home/yan/C++/Game/Game/Game/Characters/Player/Player.cpp
-Player.h
-/home/yan/C++/Game/Game/Game/Characters/Player/Player.h
-../../Utility/Constans/Parameters.h
-/home/yan/C++/Game/Game/Game/Utility/Constans/Parameters.h
-../../Utility/CombatLog/CombatLog.h
-/home/yan/C++/Game/Game/Game/Utility/CombatLog/CombatLog.h
-
-/home/yan/C++/Game/Game/Game/Characters/Player/Player.h
-../Unit/Unit.h
-/home/yan/C++/Game/Game/Game/Characters/Unit/Unit.h
+/home/yan/CLionProjects/Game/Game/Characters/Unit/Unit.h
 ../IUnit/IUnit.h
-/home/yan/C++/Game/Game/Game/Characters/IUnit/IUnit.h
+/home/yan/CLionProjects/Game/Game/Characters/IUnit/IUnit.h
 ../../Equipment/EquipedItems/EquipedItems.h
-/home/yan/C++/Game/Game/Game/Equipment/EquipedItems/EquipedItems.h
+/home/yan/CLionProjects/Game/Game/Equipment/EquipedItems/EquipedItems.h
 ../../GameInterface/Bag/Bag.h
-/home/yan/C++/Game/Game/Game/GameInterface/Bag/Bag.h
+/home/yan/CLionProjects/Game/Game/GameInterface/Bag/Bag.h
 
-/home/yan/C++/Game/Game/Game/Characters/Unit/Unit.h
+/home/yan/CLionProjects/Game/Game/Characters/Unit/Unit.h
 ../IUnit/IUnit.h
-/home/yan/C++/Game/Game/Game/Characters/IUnit/IUnit.h
+/home/yan/CLionProjects/Game/Game/Characters/IUnit/IUnit.h
 
-/home/yan/C++/Game/Game/Game/Equipment/Armor/Armor.h
+/home/yan/CLionProjects/Game/Game/Equipment/Armor/Armor.h
 ../IEquipment/IEquipment.h
-/home/yan/C++/Game/Game/Game/Equipment/IEquipment/IEquipment.h
+/home/yan/CLionProjects/Game/Game/Equipment/IEquipment/IEquipment.h
 
-/home/yan/C++/Game/Game/Game/Equipment/EquipedItems/EquipedItems.cpp
-EquipedItems.h
-/home/yan/C++/Game/Game/Game/Equipment/EquipedItems/EquipedItems.h
+/home/yan/CLionProjects/Game/Game/Equipment/EquipedItems/EquipedItems.h
+../Helm/Helm.h
+/home/yan/CLionProjects/Game/Game/Equipment/Helm/Helm.h
 
-/home/yan/C++/Game/Game/Game/Equipment/EquipedItems/EquipedItems.h
-Helm.h
-/home/yan/C++/Game/Game/Game/Equipment/EquipedItems/Helm.h
-Chest.h
-/home/yan/C++/Game/Game/Game/Equipment/EquipedItems/Chest.h
-Weapon.h
-/home/yan/C++/Game/Game/Game/Equipment/EquipedItems/Weapon.h
-
-/home/yan/C++/Game/Game/Game/Equipment/Helm/Helm.h
+/home/yan/CLionProjects/Game/Game/Equipment/Helm/Helm.h
 ../Armor/Armor.h
-/home/yan/C++/Game/Game/Game/Equipment/Armor/Armor.h
+/home/yan/CLionProjects/Game/Game/Equipment/Armor/Armor.h
 
-/home/yan/C++/Game/Game/Game/Equipment/IEquipment/IEquipment.cpp
+/home/yan/CLionProjects/Game/Game/Equipment/IEquipment/IEquipment.cpp
 IEquipment.h
-/home/yan/C++/Game/Game/Game/Equipment/IEquipment/IEquipment.h
+/home/yan/CLionProjects/Game/Game/Equipment/IEquipment/IEquipment.h
 ../../Characters/Player/Player.h
-/home/yan/C++/Game/Game/Game/Characters/Player/Player.h
+/home/yan/CLionProjects/Game/Game/Characters/Player/Player.h
 ../../Equipment/Helm/Helm.h
-/home/yan/C++/Game/Game/Game/Equipment/Helm/Helm.h
+/home/yan/CLionProjects/Game/Game/Equipment/Helm/Helm.h
 
-/home/yan/C++/Game/Game/Game/Equipment/IEquipment/IEquipment.h
+/home/yan/CLionProjects/Game/Game/Equipment/IEquipment/IEquipment.h
 
-/home/yan/C++/Game/Game/Game/GameInterface/Bag/Bag.h
-
-/home/yan/C++/Game/Game/Game/Utility/CombatLog/CombatLog.h
-../Constans/CombatLogStages.h
-/home/yan/C++/Game/Game/Game/Utility/Constans/CombatLogStages.h
-../../Characters/IUnit/IUnit.h
-/home/yan/C++/Game/Game/Game/Characters/IUnit/IUnit.h
-
-/home/yan/C++/Game/Game/Game/Utility/Constans/CombatLogStages.h
-
-/home/yan/C++/Game/Game/Game/Utility/Constans/Parameters.h
-
-/home/yan/C++/Game/Game/Game/main.cpp
-iostream
--
-Characters/Player/Player.h
-/home/yan/C++/Game/Game/Game/Characters/Player/Player.h
-Characters/Mob/Mob.h
-/home/yan/C++/Game/Game/Game/Characters/Mob/Mob.h
+/home/yan/CLionProjects/Game/Game/GameInterface/Bag/Bag.h
 

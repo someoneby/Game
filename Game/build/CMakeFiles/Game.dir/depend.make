@@ -14,7 +14,10 @@ CMakeFiles/Game.dir/Characters/Player/Player.cpp.o: ../Characters/IUnit/IUnit.h
 CMakeFiles/Game.dir/Characters/Player/Player.cpp.o: ../Characters/Player/Player.cpp
 CMakeFiles/Game.dir/Characters/Player/Player.cpp.o: ../Characters/Player/Player.h
 CMakeFiles/Game.dir/Characters/Player/Player.cpp.o: ../Characters/Unit/Unit.h
+CMakeFiles/Game.dir/Characters/Player/Player.cpp.o: ../Equipment/Armor/Armor.h
 CMakeFiles/Game.dir/Characters/Player/Player.cpp.o: ../Equipment/EquipedItems/EquipedItems.h
+CMakeFiles/Game.dir/Characters/Player/Player.cpp.o: ../Equipment/Helm/Helm.h
+CMakeFiles/Game.dir/Characters/Player/Player.cpp.o: ../Equipment/IEquipment/IEquipment.h
 CMakeFiles/Game.dir/Characters/Player/Player.cpp.o: ../GameInterface/Bag/Bag.h
 CMakeFiles/Game.dir/Characters/Player/Player.cpp.o: ../Utility/CombatLog/CombatLog.h
 CMakeFiles/Game.dir/Characters/Player/Player.cpp.o: ../Utility/Constans/CombatLogStages.h
@@ -37,8 +40,11 @@ CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.o: ../Equipment/Chest/Chest.cpp
 CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.o: ../Equipment/Chest/Chest.h
 CMakeFiles/Game.dir/Equipment/Chest/Chest.cpp.o: ../Equipment/IEquipment/IEquipment.h
 
+CMakeFiles/Game.dir/Equipment/EquipedItems/EquipedItems.cpp.o: ../Equipment/Armor/Armor.h
 CMakeFiles/Game.dir/Equipment/EquipedItems/EquipedItems.cpp.o: ../Equipment/EquipedItems/EquipedItems.cpp
 CMakeFiles/Game.dir/Equipment/EquipedItems/EquipedItems.cpp.o: ../Equipment/EquipedItems/EquipedItems.h
+CMakeFiles/Game.dir/Equipment/EquipedItems/EquipedItems.cpp.o: ../Equipment/Helm/Helm.h
+CMakeFiles/Game.dir/Equipment/EquipedItems/EquipedItems.cpp.o: ../Equipment/IEquipment/IEquipment.h
 
 CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.o: ../Equipment/Armor/Armor.h
 CMakeFiles/Game.dir/Equipment/Helm/Helm.cpp.o: ../Equipment/Helm/Helm.cpp
@@ -71,7 +77,10 @@ CMakeFiles/Game.dir/main.cpp.o: ../Characters/IUnit/IUnit.h
 CMakeFiles/Game.dir/main.cpp.o: ../Characters/Mob/Mob.h
 CMakeFiles/Game.dir/main.cpp.o: ../Characters/Player/Player.h
 CMakeFiles/Game.dir/main.cpp.o: ../Characters/Unit/Unit.h
+CMakeFiles/Game.dir/main.cpp.o: ../Equipment/Armor/Armor.h
 CMakeFiles/Game.dir/main.cpp.o: ../Equipment/EquipedItems/EquipedItems.h
+CMakeFiles/Game.dir/main.cpp.o: ../Equipment/Helm/Helm.h
+CMakeFiles/Game.dir/main.cpp.o: ../Equipment/IEquipment/IEquipment.h
 CMakeFiles/Game.dir/main.cpp.o: ../GameInterface/Bag/Bag.h
 CMakeFiles/Game.dir/main.cpp.o: ../main.cpp
 

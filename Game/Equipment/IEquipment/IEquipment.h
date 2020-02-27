@@ -6,8 +6,8 @@ class IEquipment {
 public:
     // virtual void deleteIt() = 0;
 //    virtual void sellIt() = 0;
-    virtual void equip();
-    virtual void unEquip();
+    virtual void putToBag();
+    virtual void takeFromBag();
 };
 
 
