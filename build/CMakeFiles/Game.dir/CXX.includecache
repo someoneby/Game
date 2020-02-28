@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yan/C++/GitGame/Game/Game/Equipment/Armor/Armor.h
+../Equipment/Equipment.h
+/home/yan/C++/GitGame/Game/Game/Equipment/Equipment/Equipment.h
+
+/home/yan/C++/GitGame/Game/Game/Equipment/Equipment/Equipment.h
+../Item/Item.h
+/home/yan/C++/GitGame/Game/Game/Equipment/Item/Item.h
+
+/home/yan/C++/GitGame/Game/Game/Equipment/Helm/Helm.h
+../Armor/Armor.h
+/home/yan/C++/GitGame/Game/Game/Equipment/Armor/Armor.h
+
+/home/yan/C++/GitGame/Game/Game/Equipment/IItem/IItem.h
+
+/home/yan/C++/GitGame/Game/Game/Equipment/Item/Item.h
+../IItem/IItem.h
+/home/yan/C++/GitGame/Game/Game/Equipment/IItem/IItem.h
+
+/home/yan/C++/GitGame/Game/Game/GameInterface/EquipedItems/EquipedItems.cpp
+EquipedItems.h
+/home/yan/C++/GitGame/Game/Game/GameInterface/EquipedItems/EquipedItems.h
+
+/home/yan/C++/GitGame/Game/Game/GameInterface/EquipedItems/EquipedItems.h
+../../Equipment/Helm/Helm.h
+/home/yan/C++/GitGame/Game/Game/Equipment/Helm/Helm.h
+

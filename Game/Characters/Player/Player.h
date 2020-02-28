@@ -3,7 +3,7 @@
 
 #include "../Unit/Unit.h"
 #include "../IUnit/IUnit.h"
-#include "../../Equipment/EquipedItems/EquipedItems.h"
+#include "../../GameInterface/EquipedItems/EquipedItems.h"
 #include "../../GameInterface/Bag/Bag.h"
 
 class Player : public Unit {
