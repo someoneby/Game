@@ -10,10 +10,11 @@ class Bag {
         std::vector<IItem> m_bag;
     public:
         void show();
-        void putToBag(IItem *, int);
-        void takeFromBag(IItem *, int);
+        void putToBag(IItem *, int = 1);
+        void takeFromBag(IItem *, int = 1);
         void takeGold(int);
         void spendGold(int);
+        int getHowMuchGold();
 };
 
 
