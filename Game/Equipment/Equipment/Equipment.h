@@ -7,6 +7,7 @@ class Equipment : public Item {
     private:
         float m_ilvl;
     public:
+        Equipment(int, std::string);
         float getIlvl();
 };
 

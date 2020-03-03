@@ -1,17 +1,18 @@
 #ifndef GAME_BAH_H
 #define GAME_BAH_H
 
-#include "../../Equipment/IItem/IItem.h"
+#include "../../Equipment/Item/Item.h"
 #include <vector>
 
 class Bag {
     private:
         int m_gold;
-        std::vector<IItem> m_bag;
+        std::vector<Item *> m_bag;
     public:
+        Bag();
         void show();
-        void putToBag(IItem *, int = 1);
-        void takeFromBag(IItem *, int = 1);
+        void putToBag(int, int = 1);
+        void takeFromBag(int, int = 1);
         void takeGold(int);
         void spendGold(int);
         int getHowMuchGold();
