@@ -1,7 +1,7 @@
 #ifndef GAME_EQUIPEDITEMS_H
 #define GAME_EQUIPEDITEMS_H
 
-#include "../../Equipment/Helm/Helm.h"
+#include "../../Items/Helm/Helm.h"
 // #include "Chest.h"
 // #include "Weapon.h"
 

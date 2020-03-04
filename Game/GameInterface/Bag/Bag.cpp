@@ -1,27 +1,45 @@
 #include "Bag.h"
-#include "../../Utility/AllItems/AllItems.h"
+#include "../../Utility/AllItemsDB/AllItemsDB.h"
 
-Bag::Bag() {
-    m_bag = getAllItems();
-    m_gold = 0;
-}
+int Bag::m_gold = 0;
+std::vector<ItemInTheBag *> Bag::m_bag;
 
 void Bag::show() {
-    for(int i = 0; i < m_bag.size(); ++i){
-        //Skip if count = 0
-        if(m_bag.at(i)->getCount == 0)
-            continue;
+    std::cout << " Gold: " << m_gold << "\n";
 
-        m_bag.at(i)->showFromBag();
+    for(int i = 0; i < m_bag.size(); ++i) {
+        std::cout << " " << i+1 << ". " << AllItemsDB::getItemByID(m_bag.at(i)->m_id)->getName();
+        if( m_bag.at(i)->m_count > 1 )
+            std::cout << ": " << m_bag.at(i)->m_count;
+        std::cout << "\n";
     }
 }
 
 void Bag::putToBag(int  s_id, int s_number) {
-    m_bag.at(s_id)->increaseCount(s_number);
+    for(int i = 0; i < m_bag.size(); ++i) {
+        //IF ITEM EXISTS
+        if(m_bag.at(i)->m_id == s_id) {
+            m_bag.at(i)->m_count += s_number;
+            return;
+        }
+    }
+    // IF ITEM DOESN`T EXISTS
+    m_bag.push_back(new ItemInTheBag(s_id, s_number));
 }
 
 void Bag::takeFromBag(int s_id, int s_number) {
-    m_bag.at(s_id)->reduceCount(s_number);
+    //Search item
+    for(int i{0}; i < m_bag.size(); ++i) {
+        if(m_bag.at(i)->m_id == s_id) {
+            //Change count of items
+            m_bag.at(i)->m_count -= s_number;
+            //If items is over
+            if(m_bag.at(i)->m_count == 0) {
+                delete m_bag.at(i);
+                m_bag.erase(m_bag.begin() + i, m_bag.begin() + i + 1);
+            }
+        }
+    }
 }
 
 void Bag::takeGold(int s_gold) {

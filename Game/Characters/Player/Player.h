@@ -3,8 +3,8 @@
 
 #include "../Unit/Unit.h"
 #include "../IUnit/IUnit.h"
-#include "../../GameInterface/EquipedItems/EquipedItems.h"
-#include "../../GameInterface/Bag/Bag.h"
+// #include "../../GameInterface/EquipedItems/EquipedItems.h"
+// #include "../../GameInterface/Bag/Bag.h"
 
 class Player : public Unit {
     private:

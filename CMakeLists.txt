@@ -12,16 +12,19 @@ add_executable(Game main.cpp
         Game/Characters/IUnit/IUnit.cpp
         Game/Characters/Unit/Unit.cpp
         Game/Characters/Player/Player.cpp
-        Game/Utility/RandDouble/RandDouble.cpp
-        Game/Utility/CombatLog/CombatLog.cpp
         Game/Characters/Mob/Mob.cpp
-        Game/Equipment/Equipment/Equipment.cpp
-        Game/Equipment/Armor/Armor.cpp
-        Game/Equipment/Weapon/Weapon.cpp
-        Game/Equipment/Helm/Helm.cpp
-        Game/Equipment/Chest/Chest.cpp 
-        Game/Equipment/IItem/IItem.cpp
-        Game/Equipment/Item/Item.cpp
         Game/GameInterface/Bag/Bag.cpp
         Game/GameInterface/EquipedItems/EquipedItems.cpp
+        Game/Items/Armor/Armor.cpp
+        Game/Items/Chest/Chest.cpp 
+        Game/Items/Equipment/Equipment.cpp
+        Game/Items/Helm/Helm.cpp
+        Game/Items/IItem/IItem.cpp
+        Game/Items/Item/Item.cpp
+        Game/Items/ItemInTheBag/ItemInTheBag.cpp
+        Game/Items/Reagent/Reagent.cpp
+        Game/Items/Weapon/Weapon.cpp
+        Game/Utility/AllItemsDB/AllItemsDB.cpp
+        Game/Utility/RandDouble/RandDouble.cpp
+        Game/Utility/CombatLog/CombatLog.cpp
         )

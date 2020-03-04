@@ -6,29 +6,55 @@
 
 #IncludeRegexTransform: 
 
-/home/yan/C++/GitGame/Game/Game/Equipment/Armor/Armor.h
+/home/yan/C++/GitGame/Game/Game/GameInterface/Bag/Bag.cpp
+Bag.h
+/home/yan/C++/GitGame/Game/Game/GameInterface/Bag/Bag.h
+../../Utility/AllItemsDB/AllItemsDB.h
+/home/yan/C++/GitGame/Game/Game/Utility/AllItemsDB/AllItemsDB.h
+
+/home/yan/C++/GitGame/Game/Game/GameInterface/Bag/Bag.h
+../../Items/Item/Item.h
+/home/yan/C++/GitGame/Game/Game/Items/Item/Item.h
+../../Items/ItemInTheBag/ItemInTheBag.h
+/home/yan/C++/GitGame/Game/Game/Items/ItemInTheBag/ItemInTheBag.h
+vector
+-
+
+/home/yan/C++/GitGame/Game/Game/Items/Armor/Armor.h
 ../Equipment/Equipment.h
-/home/yan/C++/GitGame/Game/Game/Equipment/Equipment/Equipment.h
+/home/yan/C++/GitGame/Game/Game/Items/Equipment/Equipment.h
 
-/home/yan/C++/GitGame/Game/Game/Equipment/Equipment/Equipment.h
+/home/yan/C++/GitGame/Game/Game/Items/Equipment/Equipment.h
 ../Item/Item.h
-/home/yan/C++/GitGame/Game/Game/Equipment/Item/Item.h
+/home/yan/C++/GitGame/Game/Game/Items/Item/Item.h
 
-/home/yan/C++/GitGame/Game/Game/Equipment/Helm/Helm.h
+/home/yan/C++/GitGame/Game/Game/Items/Helm/Helm.h
 ../Armor/Armor.h
-/home/yan/C++/GitGame/Game/Game/Equipment/Armor/Armor.h
+/home/yan/C++/GitGame/Game/Game/Items/Armor/Armor.h
 
-/home/yan/C++/GitGame/Game/Game/Equipment/IItem/IItem.h
+/home/yan/C++/GitGame/Game/Game/Items/IItem/IItem.h
+iostream
+-
 
-/home/yan/C++/GitGame/Game/Game/Equipment/Item/Item.h
+/home/yan/C++/GitGame/Game/Game/Items/Item/Item.h
 ../IItem/IItem.h
-/home/yan/C++/GitGame/Game/Game/Equipment/IItem/IItem.h
+/home/yan/C++/GitGame/Game/Game/Items/IItem/IItem.h
+iostream
+-
 
-/home/yan/C++/GitGame/Game/Game/GameInterface/EquipedItems/EquipedItems.cpp
-EquipedItems.h
-/home/yan/C++/GitGame/Game/Game/GameInterface/EquipedItems/EquipedItems.h
+/home/yan/C++/GitGame/Game/Game/Items/ItemInTheBag/ItemInTheBag.h
 
-/home/yan/C++/GitGame/Game/Game/GameInterface/EquipedItems/EquipedItems.h
-../../Equipment/Helm/Helm.h
-/home/yan/C++/GitGame/Game/Game/Equipment/Helm/Helm.h
+/home/yan/C++/GitGame/Game/Game/Utility/AllItemsDB/AllItemsDB.cpp
+AllItemsDB.h
+/home/yan/C++/GitGame/Game/Game/Utility/AllItemsDB/AllItemsDB.h
+vector
+/home/yan/C++/GitGame/Game/Game/Utility/AllItemsDB/vector
+../../Items/Helm/Helm.h
+/home/yan/C++/GitGame/Game/Game/Items/Helm/Helm.h
+
+/home/yan/C++/GitGame/Game/Game/Utility/AllItemsDB/AllItemsDB.h
+../../Items/Item/Item.h
+/home/yan/C++/GitGame/Game/Game/Items/Item/Item.h
+vector
+/home/yan/C++/GitGame/Game/Game/Utility/AllItemsDB/vector
 

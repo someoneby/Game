@@ -14,13 +14,6 @@ CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/Characters/IUni
 CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/Characters/Player/Player.cpp
 CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/Characters/Player/Player.h
 CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/Characters/Unit/Unit.h
-CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/Equipment/Armor/Armor.h
-CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/Equipment/Equipment/Equipment.h
-CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/Equipment/Helm/Helm.h
-CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/Equipment/IItem/IItem.h
-CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/Equipment/Item/Item.h
-CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/GameInterface/Bag/Bag.h
-CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/GameInterface/EquipedItems/EquipedItems.h
 CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/Utility/CombatLog/CombatLog.h
 CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/Utility/Constans/CombatLogStages.h
 CMakeFiles/Game.dir/Game/Characters/Player/Player.cpp.o: ../Game/Utility/Constans/Parameters.h
@@ -33,53 +26,71 @@ CMakeFiles/Game.dir/Game/Characters/Unit/Unit.cpp.o: ../Game/Utility/Constans/Co
 CMakeFiles/Game.dir/Game/Characters/Unit/Unit.cpp.o: ../Game/Utility/Constans/Constans.h
 CMakeFiles/Game.dir/Game/Characters/Unit/Unit.cpp.o: ../Game/Utility/RandDouble/RandDouble.h
 
-CMakeFiles/Game.dir/Game/Equipment/Armor/Armor.cpp.o: ../Game/Equipment/Armor/Armor.cpp
-CMakeFiles/Game.dir/Game/Equipment/Armor/Armor.cpp.o: ../Game/Equipment/Armor/Armor.h
-CMakeFiles/Game.dir/Game/Equipment/Armor/Armor.cpp.o: ../Game/Equipment/Equipment/Equipment.h
-CMakeFiles/Game.dir/Game/Equipment/Armor/Armor.cpp.o: ../Game/Equipment/IItem/IItem.h
-CMakeFiles/Game.dir/Game/Equipment/Armor/Armor.cpp.o: ../Game/Equipment/Item/Item.h
-
-CMakeFiles/Game.dir/Game/Equipment/Chest/Chest.cpp.o: ../Game/Equipment/Armor/Armor.h
-CMakeFiles/Game.dir/Game/Equipment/Chest/Chest.cpp.o: ../Game/Equipment/Chest/Chest.cpp
-CMakeFiles/Game.dir/Game/Equipment/Chest/Chest.cpp.o: ../Game/Equipment/Chest/Chest.h
-CMakeFiles/Game.dir/Game/Equipment/Chest/Chest.cpp.o: ../Game/Equipment/Equipment/Equipment.h
-CMakeFiles/Game.dir/Game/Equipment/Chest/Chest.cpp.o: ../Game/Equipment/IItem/IItem.h
-CMakeFiles/Game.dir/Game/Equipment/Chest/Chest.cpp.o: ../Game/Equipment/Item/Item.h
-
-CMakeFiles/Game.dir/Game/Equipment/Equipment/Equipment.cpp.o: ../Game/Equipment/Equipment/Equipment.cpp
-CMakeFiles/Game.dir/Game/Equipment/Equipment/Equipment.cpp.o: ../Game/Equipment/Equipment/Equipment.h
-CMakeFiles/Game.dir/Game/Equipment/Equipment/Equipment.cpp.o: ../Game/Equipment/IItem/IItem.h
-CMakeFiles/Game.dir/Game/Equipment/Equipment/Equipment.cpp.o: ../Game/Equipment/Item/Item.h
-
-CMakeFiles/Game.dir/Game/Equipment/Helm/Helm.cpp.o: ../Game/Equipment/Armor/Armor.h
-CMakeFiles/Game.dir/Game/Equipment/Helm/Helm.cpp.o: ../Game/Equipment/Equipment/Equipment.h
-CMakeFiles/Game.dir/Game/Equipment/Helm/Helm.cpp.o: ../Game/Equipment/Helm/Helm.cpp
-CMakeFiles/Game.dir/Game/Equipment/Helm/Helm.cpp.o: ../Game/Equipment/Helm/Helm.h
-CMakeFiles/Game.dir/Game/Equipment/Helm/Helm.cpp.o: ../Game/Equipment/IItem/IItem.h
-CMakeFiles/Game.dir/Game/Equipment/Helm/Helm.cpp.o: ../Game/Equipment/Item/Item.h
-
-CMakeFiles/Game.dir/Game/Equipment/IItem/IItem.cpp.o: ../Game/Equipment/IItem/IItem.cpp
-CMakeFiles/Game.dir/Game/Equipment/IItem/IItem.cpp.o: ../Game/Equipment/IItem/IItem.h
-
-CMakeFiles/Game.dir/Game/Equipment/Item/Item.cpp.o: ../Game/Equipment/IItem/IItem.h
-CMakeFiles/Game.dir/Game/Equipment/Item/Item.cpp.o: ../Game/Equipment/Item/Item.cpp
-CMakeFiles/Game.dir/Game/Equipment/Item/Item.cpp.o: ../Game/Equipment/Item/Item.h
-
-CMakeFiles/Game.dir/Game/Equipment/Weapon/Weapon.cpp.o: ../Game/Equipment/Equipment/Equipment.h
-CMakeFiles/Game.dir/Game/Equipment/Weapon/Weapon.cpp.o: ../Game/Equipment/IItem/IItem.h
-CMakeFiles/Game.dir/Game/Equipment/Weapon/Weapon.cpp.o: ../Game/Equipment/Item/Item.h
-CMakeFiles/Game.dir/Game/Equipment/Weapon/Weapon.cpp.o: ../Game/Equipment/Weapon/Weapon.cpp
-CMakeFiles/Game.dir/Game/Equipment/Weapon/Weapon.cpp.o: ../Game/Equipment/Weapon/Weapon.h
-
 CMakeFiles/Game.dir/Game/GameInterface/Bag/Bag.cpp.o: ../Game/GameInterface/Bag/Bag.cpp
+CMakeFiles/Game.dir/Game/GameInterface/Bag/Bag.cpp.o: ../Game/GameInterface/Bag/Bag.h
+CMakeFiles/Game.dir/Game/GameInterface/Bag/Bag.cpp.o: ../Game/Items/IItem/IItem.h
+CMakeFiles/Game.dir/Game/GameInterface/Bag/Bag.cpp.o: ../Game/Items/Item/Item.h
+CMakeFiles/Game.dir/Game/GameInterface/Bag/Bag.cpp.o: ../Game/Items/ItemInTheBag/ItemInTheBag.h
+CMakeFiles/Game.dir/Game/GameInterface/Bag/Bag.cpp.o: ../Game/Utility/AllItemsDB/AllItemsDB.h
 
-CMakeFiles/Game.dir/Game/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Game/Equipment/Armor/Armor.h
-CMakeFiles/Game.dir/Game/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Game/Equipment/Equipment/Equipment.h
-CMakeFiles/Game.dir/Game/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Game/Equipment/Helm/Helm.h
-CMakeFiles/Game.dir/Game/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Game/Equipment/IItem/IItem.h
-CMakeFiles/Game.dir/Game/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Game/Equipment/Item/Item.h
 CMakeFiles/Game.dir/Game/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Game/GameInterface/EquipedItems/EquipedItems.cpp
 CMakeFiles/Game.dir/Game/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Game/GameInterface/EquipedItems/EquipedItems.h
+CMakeFiles/Game.dir/Game/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Game/Items/Armor/Armor.h
+CMakeFiles/Game.dir/Game/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Game/Items/Equipment/Equipment.h
+CMakeFiles/Game.dir/Game/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Game/Items/Helm/Helm.h
+CMakeFiles/Game.dir/Game/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Game/Items/IItem/IItem.h
+CMakeFiles/Game.dir/Game/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Game/Items/Item/Item.h
+
+CMakeFiles/Game.dir/Game/Items/Armor/Armor.cpp.o: ../Game/Items/Armor/Armor.cpp
+CMakeFiles/Game.dir/Game/Items/Armor/Armor.cpp.o: ../Game/Items/Armor/Armor.h
+CMakeFiles/Game.dir/Game/Items/Armor/Armor.cpp.o: ../Game/Items/Equipment/Equipment.h
+CMakeFiles/Game.dir/Game/Items/Armor/Armor.cpp.o: ../Game/Items/IItem/IItem.h
+CMakeFiles/Game.dir/Game/Items/Armor/Armor.cpp.o: ../Game/Items/Item/Item.h
+
+CMakeFiles/Game.dir/Game/Items/Chest/Chest.cpp.o: ../Game/Items/Armor/Armor.h
+CMakeFiles/Game.dir/Game/Items/Chest/Chest.cpp.o: ../Game/Items/Chest/Chest.cpp
+CMakeFiles/Game.dir/Game/Items/Chest/Chest.cpp.o: ../Game/Items/Chest/Chest.h
+CMakeFiles/Game.dir/Game/Items/Chest/Chest.cpp.o: ../Game/Items/Equipment/Equipment.h
+CMakeFiles/Game.dir/Game/Items/Chest/Chest.cpp.o: ../Game/Items/IItem/IItem.h
+CMakeFiles/Game.dir/Game/Items/Chest/Chest.cpp.o: ../Game/Items/Item/Item.h
+
+CMakeFiles/Game.dir/Game/Items/Equipment/Equipment.cpp.o: ../Game/Items/Equipment/Equipment.cpp
+CMakeFiles/Game.dir/Game/Items/Equipment/Equipment.cpp.o: ../Game/Items/Equipment/Equipment.h
+CMakeFiles/Game.dir/Game/Items/Equipment/Equipment.cpp.o: ../Game/Items/IItem/IItem.h
+CMakeFiles/Game.dir/Game/Items/Equipment/Equipment.cpp.o: ../Game/Items/Item/Item.h
+
+CMakeFiles/Game.dir/Game/Items/Helm/Helm.cpp.o: ../Game/Items/Armor/Armor.h
+CMakeFiles/Game.dir/Game/Items/Helm/Helm.cpp.o: ../Game/Items/Equipment/Equipment.h
+CMakeFiles/Game.dir/Game/Items/Helm/Helm.cpp.o: ../Game/Items/Helm/Helm.cpp
+CMakeFiles/Game.dir/Game/Items/Helm/Helm.cpp.o: ../Game/Items/Helm/Helm.h
+CMakeFiles/Game.dir/Game/Items/Helm/Helm.cpp.o: ../Game/Items/IItem/IItem.h
+CMakeFiles/Game.dir/Game/Items/Helm/Helm.cpp.o: ../Game/Items/Item/Item.h
+
+CMakeFiles/Game.dir/Game/Items/IItem/IItem.cpp.o: ../Game/Items/IItem/IItem.cpp
+CMakeFiles/Game.dir/Game/Items/IItem/IItem.cpp.o: ../Game/Items/IItem/IItem.h
+
+CMakeFiles/Game.dir/Game/Items/Item/Item.cpp.o: ../Game/Items/IItem/IItem.h
+CMakeFiles/Game.dir/Game/Items/Item/Item.cpp.o: ../Game/Items/Item/Item.cpp
+CMakeFiles/Game.dir/Game/Items/Item/Item.cpp.o: ../Game/Items/Item/Item.h
+
+CMakeFiles/Game.dir/Game/Items/ItemInTheBag/ItemInTheBag.cpp.o: ../Game/Items/ItemInTheBag/ItemInTheBag.cpp
+CMakeFiles/Game.dir/Game/Items/ItemInTheBag/ItemInTheBag.cpp.o: ../Game/Items/ItemInTheBag/ItemInTheBag.h
+
+CMakeFiles/Game.dir/Game/Items/Reagent/Reagent.cpp.o: ../Game/Items/Reagent/Reagent.cpp
+
+CMakeFiles/Game.dir/Game/Items/Weapon/Weapon.cpp.o: ../Game/Items/Equipment/Equipment.h
+CMakeFiles/Game.dir/Game/Items/Weapon/Weapon.cpp.o: ../Game/Items/IItem/IItem.h
+CMakeFiles/Game.dir/Game/Items/Weapon/Weapon.cpp.o: ../Game/Items/Item/Item.h
+CMakeFiles/Game.dir/Game/Items/Weapon/Weapon.cpp.o: ../Game/Items/Weapon/Weapon.cpp
+CMakeFiles/Game.dir/Game/Items/Weapon/Weapon.cpp.o: ../Game/Items/Weapon/Weapon.h
+
+CMakeFiles/Game.dir/Game/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Game/Items/Armor/Armor.h
+CMakeFiles/Game.dir/Game/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Game/Items/Equipment/Equipment.h
+CMakeFiles/Game.dir/Game/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Game/Items/Helm/Helm.h
+CMakeFiles/Game.dir/Game/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Game/Items/IItem/IItem.h
+CMakeFiles/Game.dir/Game/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Game/Items/Item/Item.h
+CMakeFiles/Game.dir/Game/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Game/Utility/AllItemsDB/AllItemsDB.cpp
+CMakeFiles/Game.dir/Game/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Game/Utility/AllItemsDB/AllItemsDB.h
 
 CMakeFiles/Game.dir/Game/Utility/CombatLog/CombatLog.cpp.o: ../Game/Characters/IUnit/IUnit.h
 CMakeFiles/Game.dir/Game/Utility/CombatLog/CombatLog.cpp.o: ../Game/Utility/CombatLog/CombatLog.cpp
@@ -93,12 +104,9 @@ CMakeFiles/Game.dir/main.cpp.o: ../Game/Characters/IUnit/IUnit.h
 CMakeFiles/Game.dir/main.cpp.o: ../Game/Characters/Mob/Mob.h
 CMakeFiles/Game.dir/main.cpp.o: ../Game/Characters/Player/Player.h
 CMakeFiles/Game.dir/main.cpp.o: ../Game/Characters/Unit/Unit.h
-CMakeFiles/Game.dir/main.cpp.o: ../Game/Equipment/Armor/Armor.h
-CMakeFiles/Game.dir/main.cpp.o: ../Game/Equipment/Equipment/Equipment.h
-CMakeFiles/Game.dir/main.cpp.o: ../Game/Equipment/Helm/Helm.h
-CMakeFiles/Game.dir/main.cpp.o: ../Game/Equipment/IItem/IItem.h
-CMakeFiles/Game.dir/main.cpp.o: ../Game/Equipment/Item/Item.h
 CMakeFiles/Game.dir/main.cpp.o: ../Game/GameInterface/Bag/Bag.h
-CMakeFiles/Game.dir/main.cpp.o: ../Game/GameInterface/EquipedItems/EquipedItems.h
+CMakeFiles/Game.dir/main.cpp.o: ../Game/Items/IItem/IItem.h
+CMakeFiles/Game.dir/main.cpp.o: ../Game/Items/Item/Item.h
+CMakeFiles/Game.dir/main.cpp.o: ../Game/Items/ItemInTheBag/ItemInTheBag.h
 CMakeFiles/Game.dir/main.cpp.o: ../main.cpp
 
