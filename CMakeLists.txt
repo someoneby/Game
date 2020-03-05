@@ -9,22 +9,22 @@ TARGET_LINK_LIBRARIES( ${Boost_LIBRARIES} )
 
 
 add_executable(Game main.cpp
-        Game/Characters/IUnit/IUnit.cpp
-        Game/Characters/Unit/Unit.cpp
-        Game/Characters/Player/Player.cpp
-        Game/Characters/Mob/Mob.cpp
-        Game/GameInterface/Bag/Bag.cpp
-        Game/GameInterface/EquipedItems/EquipedItems.cpp
-        Game/Items/Armor/Armor.cpp
-        Game/Items/Chest/Chest.cpp 
-        Game/Items/Equipment/Equipment.cpp
-        Game/Items/Helm/Helm.cpp
-        Game/Items/IItem/IItem.cpp
-        Game/Items/Item/Item.cpp
-        Game/Items/ItemInTheBag/ItemInTheBag.cpp
-        Game/Items/Reagent/Reagent.cpp
-        Game/Items/Weapon/Weapon.cpp
-        Game/Utility/AllItemsDB/AllItemsDB.cpp
-        Game/Utility/RandDouble/RandDouble.cpp
-        Game/Utility/CombatLog/CombatLog.cpp
+        Data/Characters/IUnit/IUnit.cpp
+        Data/Characters/Unit/Unit.cpp
+        Data/Characters/Player/Player.cpp
+        Data/Characters/Mob/Mob.cpp
+        Data/GameInterface/Bag/Bag.cpp
+        Data/GameInterface/EquipedItems/EquipedItems.cpp
+        Data/Items/Armor/Armor.cpp
+        Data/Items/Chest/Chest.cpp 
+        Data/Items/Equipment/Equipment.cpp
+        Data/Items/Helm/Helm.cpp
+        Data/Items/IItem/IItem.cpp
+        Data/Items/Item/Item.cpp
+        Data/Items/ItemInTheBag/ItemInTheBag.cpp
+        Data/Items/Reagent/Reagent.cpp
+        Data/Items/Weapon/Weapon.cpp
+        Data/Utility/AllItemsDB/AllItemsDB.cpp
+        Data/Utility/RandDouble/RandDouble.cpp
+        Data/Utility/CombatLog/CombatLog.cpp
         )

@@ -1,18 +1,23 @@
 #include <iostream>
-#include "Game/Characters/Player/Player.h"
-#include "Game/Characters/Mob/Mob.h"
-#include "Game/GameInterface/Bag/Bag.h"
+#include "Data/Characters/Player/Player.h"
+#include "Data/Characters/Mob/Mob.h"
+#include "Data/GameInterface/Bag/Bag.h"
+#include "Data/Items/Helm/Helm.h"
+#include "Data/Utility/AllItemsDB/AllItemsDB.h"
+#include "Data/GameInterface/EquipedItems/EquipedItems.h"
+
+using namespace std;
 
 int main() {
 
-    // Player * player = Player::getInstance();
-    // player->setName("PIFOR");
-    Bag::putToBag(0);
-    Bag::show();
-    Bag::putToBag(0);
-    Bag::putToBag(0);
-    Bag::putToBag(2);
+    Bag::putToBag (1);
+    Bag::putToBag (1);
+    Bag::putToBag (1);
+    // Bag::putToBag (2);
+    Bag::putToBag (3);
     Bag::show();
 
+
+    
 
 }
