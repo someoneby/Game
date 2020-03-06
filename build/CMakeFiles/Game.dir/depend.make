@@ -41,7 +41,6 @@ CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/GameInterface/EquipedItems/EquipedItems.h
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Items/Armor/Armor.h
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Items/Equipment/Equipment.h
-CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Items/Helm/Helm.h
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Items/IItem/IItem.h
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Items/Item/Item.h
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Items/ItemInTheBag/ItemInTheBag.h

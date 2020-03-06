@@ -10,12 +10,9 @@ using namespace std;
 
 int main() {
 
-    Bag::putToBag (1);
-    Bag::putToBag (1);
-    Bag::putToBag (1);
-    // Bag::putToBag (2);
-    Bag::putToBag (3);
-    Bag::show();
+
+
+
 
 
     

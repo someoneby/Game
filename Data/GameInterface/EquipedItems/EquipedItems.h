@@ -2,9 +2,6 @@
 #define GAME_EQUIPEDITEMS_H
 
 #include "../../Utility/Constans/TypesOfEquip.h"
-#include "../../Items/Helm/Helm.h"
-// #include "Chest.h"
-// #include "Weapon.h"
 
 class EquipedItems {
     private:
@@ -13,6 +10,7 @@ class EquipedItems {
         static int m_weaponId;
     public:
         static void equip (int, TypesOfEquip);
+        static void unEquip (TypesOfEquip);
 };
 
 #endif
