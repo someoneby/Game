@@ -9,12 +9,12 @@ class Armor : public Equipment{
         float m_avoidChance;
         int m_hp;
     public:
-        Armor(int, std::string, int, float, int);
+        Armor(int, std::string, std::string, int, float, int, int);
 
         int getArmor();
         float getAvoidChance();
         int getHp();
-        // void show() override;
+        void showDescription() override;
 };
 
 

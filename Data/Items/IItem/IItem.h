@@ -5,9 +5,10 @@
 
 class IItem {
     public:
-        // virtual void show() = 0;
+        virtual void showDescription() = 0;
         virtual int getId() = 0;
         virtual std::string getName() = 0;
+        virtual int getPrise() = 0;
 };
 
 #endif

@@ -285,6 +285,60 @@ Data/GameInterface/EquipedItems/EquipedItems.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.s
 .PHONY : Data/GameInterface/EquipedItems/EquipedItems.cpp.s
 
+Data/GameInterface/LocationsMenu/LocationsMenu.o: Data/GameInterface/LocationsMenu/LocationsMenu.cpp.o
+
+.PHONY : Data/GameInterface/LocationsMenu/LocationsMenu.o
+
+# target to build an object file
+Data/GameInterface/LocationsMenu/LocationsMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/GameInterface/LocationsMenu/LocationsMenu.cpp.o
+.PHONY : Data/GameInterface/LocationsMenu/LocationsMenu.cpp.o
+
+Data/GameInterface/LocationsMenu/LocationsMenu.i: Data/GameInterface/LocationsMenu/LocationsMenu.cpp.i
+
+.PHONY : Data/GameInterface/LocationsMenu/LocationsMenu.i
+
+# target to preprocess a source file
+Data/GameInterface/LocationsMenu/LocationsMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/GameInterface/LocationsMenu/LocationsMenu.cpp.i
+.PHONY : Data/GameInterface/LocationsMenu/LocationsMenu.cpp.i
+
+Data/GameInterface/LocationsMenu/LocationsMenu.s: Data/GameInterface/LocationsMenu/LocationsMenu.cpp.s
+
+.PHONY : Data/GameInterface/LocationsMenu/LocationsMenu.s
+
+# target to generate assembly for a file
+Data/GameInterface/LocationsMenu/LocationsMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/GameInterface/LocationsMenu/LocationsMenu.cpp.s
+.PHONY : Data/GameInterface/LocationsMenu/LocationsMenu.cpp.s
+
+Data/GameInterface/MainMenu/MainMenu.o: Data/GameInterface/MainMenu/MainMenu.cpp.o
+
+.PHONY : Data/GameInterface/MainMenu/MainMenu.o
+
+# target to build an object file
+Data/GameInterface/MainMenu/MainMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/GameInterface/MainMenu/MainMenu.cpp.o
+.PHONY : Data/GameInterface/MainMenu/MainMenu.cpp.o
+
+Data/GameInterface/MainMenu/MainMenu.i: Data/GameInterface/MainMenu/MainMenu.cpp.i
+
+.PHONY : Data/GameInterface/MainMenu/MainMenu.i
+
+# target to preprocess a source file
+Data/GameInterface/MainMenu/MainMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/GameInterface/MainMenu/MainMenu.cpp.i
+.PHONY : Data/GameInterface/MainMenu/MainMenu.cpp.i
+
+Data/GameInterface/MainMenu/MainMenu.s: Data/GameInterface/MainMenu/MainMenu.cpp.s
+
+.PHONY : Data/GameInterface/MainMenu/MainMenu.s
+
+# target to generate assembly for a file
+Data/GameInterface/MainMenu/MainMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/GameInterface/MainMenu/MainMenu.cpp.s
+.PHONY : Data/GameInterface/MainMenu/MainMenu.cpp.s
+
 Data/Items/Armor/Armor.o: Data/Items/Armor/Armor.cpp.o
 
 .PHONY : Data/Items/Armor/Armor.o
@@ -528,6 +582,33 @@ Data/Items/Weapon/Weapon.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Items/Weapon/Weapon.cpp.s
 .PHONY : Data/Items/Weapon/Weapon.cpp.s
 
+Data/Locations/Vendor/Vendor.o: Data/Locations/Vendor/Vendor.cpp.o
+
+.PHONY : Data/Locations/Vendor/Vendor.o
+
+# target to build an object file
+Data/Locations/Vendor/Vendor.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o
+.PHONY : Data/Locations/Vendor/Vendor.cpp.o
+
+Data/Locations/Vendor/Vendor.i: Data/Locations/Vendor/Vendor.cpp.i
+
+.PHONY : Data/Locations/Vendor/Vendor.i
+
+# target to preprocess a source file
+Data/Locations/Vendor/Vendor.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.i
+.PHONY : Data/Locations/Vendor/Vendor.cpp.i
+
+Data/Locations/Vendor/Vendor.s: Data/Locations/Vendor/Vendor.cpp.s
+
+.PHONY : Data/Locations/Vendor/Vendor.s
+
+# target to generate assembly for a file
+Data/Locations/Vendor/Vendor.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.s
+.PHONY : Data/Locations/Vendor/Vendor.cpp.s
+
 Data/Utility/AllItemsDB/AllItemsDB.o: Data/Utility/AllItemsDB/AllItemsDB.cpp.o
 
 .PHONY : Data/Utility/AllItemsDB/AllItemsDB.o
@@ -581,6 +662,33 @@ Data/Utility/CombatLog/CombatLog.s: Data/Utility/CombatLog/CombatLog.cpp.s
 Data/Utility/CombatLog/CombatLog.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.s
 .PHONY : Data/Utility/CombatLog/CombatLog.cpp.s
+
+Data/Utility/GetChoise/GetChoise.o: Data/Utility/GetChoise/GetChoise.cpp.o
+
+.PHONY : Data/Utility/GetChoise/GetChoise.o
+
+# target to build an object file
+Data/Utility/GetChoise/GetChoise.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.o
+.PHONY : Data/Utility/GetChoise/GetChoise.cpp.o
+
+Data/Utility/GetChoise/GetChoise.i: Data/Utility/GetChoise/GetChoise.cpp.i
+
+.PHONY : Data/Utility/GetChoise/GetChoise.i
+
+# target to preprocess a source file
+Data/Utility/GetChoise/GetChoise.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.i
+.PHONY : Data/Utility/GetChoise/GetChoise.cpp.i
+
+Data/Utility/GetChoise/GetChoise.s: Data/Utility/GetChoise/GetChoise.cpp.s
+
+.PHONY : Data/Utility/GetChoise/GetChoise.s
+
+# target to generate assembly for a file
+Data/Utility/GetChoise/GetChoise.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.s
+.PHONY : Data/Utility/GetChoise/GetChoise.cpp.s
 
 Data/Utility/RandDouble/RandDouble.o: Data/Utility/RandDouble/RandDouble.cpp.o
 
@@ -663,6 +771,12 @@ help:
 	@echo "... Data/GameInterface/EquipedItems/EquipedItems.o"
 	@echo "... Data/GameInterface/EquipedItems/EquipedItems.i"
 	@echo "... Data/GameInterface/EquipedItems/EquipedItems.s"
+	@echo "... Data/GameInterface/LocationsMenu/LocationsMenu.o"
+	@echo "... Data/GameInterface/LocationsMenu/LocationsMenu.i"
+	@echo "... Data/GameInterface/LocationsMenu/LocationsMenu.s"
+	@echo "... Data/GameInterface/MainMenu/MainMenu.o"
+	@echo "... Data/GameInterface/MainMenu/MainMenu.i"
+	@echo "... Data/GameInterface/MainMenu/MainMenu.s"
 	@echo "... Data/Items/Armor/Armor.o"
 	@echo "... Data/Items/Armor/Armor.i"
 	@echo "... Data/Items/Armor/Armor.s"
@@ -690,12 +804,18 @@ help:
 	@echo "... Data/Items/Weapon/Weapon.o"
 	@echo "... Data/Items/Weapon/Weapon.i"
 	@echo "... Data/Items/Weapon/Weapon.s"
+	@echo "... Data/Locations/Vendor/Vendor.o"
+	@echo "... Data/Locations/Vendor/Vendor.i"
+	@echo "... Data/Locations/Vendor/Vendor.s"
 	@echo "... Data/Utility/AllItemsDB/AllItemsDB.o"
 	@echo "... Data/Utility/AllItemsDB/AllItemsDB.i"
 	@echo "... Data/Utility/AllItemsDB/AllItemsDB.s"
 	@echo "... Data/Utility/CombatLog/CombatLog.o"
 	@echo "... Data/Utility/CombatLog/CombatLog.i"
 	@echo "... Data/Utility/CombatLog/CombatLog.s"
+	@echo "... Data/Utility/GetChoise/GetChoise.o"
+	@echo "... Data/Utility/GetChoise/GetChoise.i"
+	@echo "... Data/Utility/GetChoise/GetChoise.s"
 	@echo "... Data/Utility/RandDouble/RandDouble.o"
 	@echo "... Data/Utility/RandDouble/RandDouble.i"
 	@echo "... Data/Utility/RandDouble/RandDouble.s"

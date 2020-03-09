@@ -1,13 +1,16 @@
 #include "Armor.h"
+#include "../../GameInterface/Bag/Bag.h"
 #include <iostream>
 
-Armor::Armor(int s_id, std::string s_name,int armor, float avoidChance, int hp) : 
-        Equipment(s_id, s_name), m_armor{armor}, m_avoidChance{avoidChance}, m_hp{hp} {};
+Armor::Armor(int s_id, std::string s_name, std::string s_description, int s_armor, float s_avoidChance, int s_hp, int s_prise) : 
+        Equipment(s_id, s_name, s_description, s_prise), m_armor{s_armor}, m_avoidChance{s_avoidChance}, m_hp{s_hp} {};
 
-// void Armor::show() {
-//         std::cout << "\t" << getName() <</* "\n\t ilvl: " << getIlvl() << */"\n\n\t armor: " << m_armor
-//         << "\n\n\t avoid chanse: " << m_avoidChance << "\n\n\t hp: " << m_hp << "\n\n";
-// }
+void Armor::showDescription() {
+        system("clear");
+
+        std::cout <<m_name << "\n\n" << m_description << "\n\n Броня: " << m_armor << "\n Шанс промаха: "
+         << m_avoidChance << "\n Хп: " << m_hp << "\n\nСтоимость: " << m_prise << "\nМожно купить: " << Bag::getHowMuchGold()/m_prise << "\n";
+}
 
 
 int Armor::getArmor() {

@@ -15,6 +15,8 @@ add_executable(Game main.cpp
         Data/Characters/Mob/Mob.cpp
         Data/GameInterface/Bag/Bag.cpp
         Data/GameInterface/EquipedItems/EquipedItems.cpp
+        Data/GameInterface/MainMenu/MainMenu.cpp
+        Data/GameInterface/LocationsMenu/LocationsMenu.cpp
         Data/Items/Armor/Armor.cpp
         Data/Items/Chest/Chest.cpp 
         Data/Items/Equipment/Equipment.cpp
@@ -27,4 +29,6 @@ add_executable(Game main.cpp
         Data/Utility/AllItemsDB/AllItemsDB.cpp
         Data/Utility/RandDouble/RandDouble.cpp
         Data/Utility/CombatLog/CombatLog.cpp
+        Data/Utility/GetChoise/GetChoise.cpp
+        Data/Locations/Vendor/Vendor.cpp
         )

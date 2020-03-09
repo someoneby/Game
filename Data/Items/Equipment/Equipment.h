@@ -5,7 +5,7 @@
 
 class Equipment : public Item {
     public:
-        Equipment (int, std::string);
+        Equipment (int, std::string, std::string, int);
         // virtual void equip(int);
         // virtual void unequip() = 0;
 };
