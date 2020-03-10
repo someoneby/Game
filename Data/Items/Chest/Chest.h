@@ -6,6 +6,8 @@
 
 class Chest : public Armor {
 
+public:
+    Chest(int, std::string, int, float, int, int, std::string);
 };
 
 
