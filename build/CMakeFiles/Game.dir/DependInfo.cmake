@@ -23,9 +23,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/yan/C++/GitGame/Game/Data/Items/Weapon/Weapon.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Items/Weapon/Weapon.cpp.o"
   "/home/yan/C++/GitGame/Game/Data/Locations/Vendor/Vendor.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o"
   "/home/yan/C++/GitGame/Game/Data/Utility/AllItemsDB/AllItemsDB.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o"
-  "/home/yan/C++/GitGame/Game/Data/Utility/CombatLog/CombatLog.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.o"
-  "/home/yan/C++/GitGame/Game/Data/Utility/GetChoise/GetChoise.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.o"
-  "/home/yan/C++/GitGame/Game/Data/Utility/RandDouble/RandDouble.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.o"
+  "/home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o"
+  "/home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o"
+  "/home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o"
+  "/home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o"
+  "/home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.o"
   "/home/yan/C++/GitGame/Game/main.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

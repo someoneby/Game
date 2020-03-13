@@ -6,39 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/yan/C++/GitGame/Game/Data/Items/Armor/Armor.h
-../Equipment/Equipment.h
-/home/yan/C++/GitGame/Game/Data/Items/Equipment/Equipment.h
+/home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp
+CheckInputWithMessage.h
+/home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h
 
-/home/yan/C++/GitGame/Game/Data/Items/Equipment/Equipment.h
-../Item/Item.h
-/home/yan/C++/GitGame/Game/Data/Items/Item/Item.h
-
-/home/yan/C++/GitGame/Game/Data/Items/Helm/Helm.h
-../Armor/Armor.h
-/home/yan/C++/GitGame/Game/Data/Items/Armor/Armor.h
-
-/home/yan/C++/GitGame/Game/Data/Items/IItem/IItem.h
+/home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h
 iostream
 -
-
-/home/yan/C++/GitGame/Game/Data/Items/Item/Item.h
-../IItem/IItem.h
-/home/yan/C++/GitGame/Game/Data/Items/IItem/IItem.h
-iostream
--
-
-/home/yan/C++/GitGame/Game/Data/Utility/AllItemsDB/AllItemsDB.cpp
-AllItemsDB.h
-/home/yan/C++/GitGame/Game/Data/Utility/AllItemsDB/AllItemsDB.h
-vector
-/home/yan/C++/GitGame/Game/Data/Utility/AllItemsDB/vector
-../../Items/Helm/Helm.h
-/home/yan/C++/GitGame/Game/Data/Items/Helm/Helm.h
-
-/home/yan/C++/GitGame/Game/Data/Utility/AllItemsDB/AllItemsDB.h
-../../Items/Item/Item.h
-/home/yan/C++/GitGame/Game/Data/Items/Item/Item.h
-vector
-/home/yan/C++/GitGame/Game/Data/Utility/AllItemsDB/vector
 

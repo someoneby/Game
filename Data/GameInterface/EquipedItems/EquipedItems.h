@@ -1,7 +1,7 @@
 #ifndef GAME_EQUIPEDITEMS_H
 #define GAME_EQUIPEDITEMS_H
 
-#include "../../Utility/Constans/TypesOfEquip.h"
+#include "../../Utility/Constants/TypesOfEquip.h"
 
 class EquipedItems {
     private:

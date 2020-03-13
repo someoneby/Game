@@ -8,23 +8,23 @@ CMakeFiles/Game.dir/Data/Characters/Mob/Mob.cpp.o: ../Data/Characters/IUnit/IUni
 CMakeFiles/Game.dir/Data/Characters/Mob/Mob.cpp.o: ../Data/Characters/Mob/Mob.cpp
 CMakeFiles/Game.dir/Data/Characters/Mob/Mob.cpp.o: ../Data/Characters/Mob/Mob.h
 CMakeFiles/Game.dir/Data/Characters/Mob/Mob.cpp.o: ../Data/Characters/Unit/Unit.h
-CMakeFiles/Game.dir/Data/Characters/Mob/Mob.cpp.o: ../Data/Utility/Constans/Parameters.h
+CMakeFiles/Game.dir/Data/Characters/Mob/Mob.cpp.o: ../Data/Utility/Constants/Parameters.h
 
 CMakeFiles/Game.dir/Data/Characters/Player/Player.cpp.o: ../Data/Characters/IUnit/IUnit.h
 CMakeFiles/Game.dir/Data/Characters/Player/Player.cpp.o: ../Data/Characters/Player/Player.cpp
 CMakeFiles/Game.dir/Data/Characters/Player/Player.cpp.o: ../Data/Characters/Player/Player.h
 CMakeFiles/Game.dir/Data/Characters/Player/Player.cpp.o: ../Data/Characters/Unit/Unit.h
-CMakeFiles/Game.dir/Data/Characters/Player/Player.cpp.o: ../Data/Utility/CombatLog/CombatLog.h
-CMakeFiles/Game.dir/Data/Characters/Player/Player.cpp.o: ../Data/Utility/Constans/CombatLogStages.h
-CMakeFiles/Game.dir/Data/Characters/Player/Player.cpp.o: ../Data/Utility/Constans/Parameters.h
+CMakeFiles/Game.dir/Data/Characters/Player/Player.cpp.o: ../Data/Utility/Constants/CombatLogStages.h
+CMakeFiles/Game.dir/Data/Characters/Player/Player.cpp.o: ../Data/Utility/Constants/Parameters.h
+CMakeFiles/Game.dir/Data/Characters/Player/Player.cpp.o: ../Data/Utility/UtilityFunctions/CombatLog/CombatLog.h
 
 CMakeFiles/Game.dir/Data/Characters/Unit/Unit.cpp.o: ../Data/Characters/IUnit/IUnit.h
 CMakeFiles/Game.dir/Data/Characters/Unit/Unit.cpp.o: ../Data/Characters/Unit/Unit.cpp
 CMakeFiles/Game.dir/Data/Characters/Unit/Unit.cpp.o: ../Data/Characters/Unit/Unit.h
-CMakeFiles/Game.dir/Data/Characters/Unit/Unit.cpp.o: ../Data/Utility/CombatLog/CombatLog.h
-CMakeFiles/Game.dir/Data/Characters/Unit/Unit.cpp.o: ../Data/Utility/Constans/CombatLogStages.h
-CMakeFiles/Game.dir/Data/Characters/Unit/Unit.cpp.o: ../Data/Utility/Constans/Constans.h
-CMakeFiles/Game.dir/Data/Characters/Unit/Unit.cpp.o: ../Data/Utility/RandDouble/RandDouble.h
+CMakeFiles/Game.dir/Data/Characters/Unit/Unit.cpp.o: ../Data/Utility/Constants/CombatLogStages.h
+CMakeFiles/Game.dir/Data/Characters/Unit/Unit.cpp.o: ../Data/Utility/Constants/Constants.h
+CMakeFiles/Game.dir/Data/Characters/Unit/Unit.cpp.o: ../Data/Utility/UtilityFunctions/CombatLog/CombatLog.h
+CMakeFiles/Game.dir/Data/Characters/Unit/Unit.cpp.o: ../Data/Utility/UtilityFunctions/RandDouble/RandDouble.h
 
 CMakeFiles/Game.dir/Data/GameInterface/Bag/Bag.cpp.o: ../Data/GameInterface/Bag/Bag.cpp
 CMakeFiles/Game.dir/Data/GameInterface/Bag/Bag.cpp.o: ../Data/GameInterface/Bag/Bag.h
@@ -46,11 +46,14 @@ CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Items/ItemInTheBag/ItemInTheBag.h
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Items/Weapon/Weapon.h
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Utility/AllItemsDB/AllItemsDB.h
-CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Utility/Constans/TypesOfEquip.h
+CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Utility/Constants/TypesOfEquip.h
 
 CMakeFiles/Game.dir/Data/GameInterface/LocationsMenu/LocationsMenu.cpp.o: ../Data/GameInterface/LocationsMenu/LocationsMenu.cpp
 CMakeFiles/Game.dir/Data/GameInterface/LocationsMenu/LocationsMenu.cpp.o: ../Data/GameInterface/LocationsMenu/LocationsMenu.h
 CMakeFiles/Game.dir/Data/GameInterface/LocationsMenu/LocationsMenu.cpp.o: ../Data/Locations/Vendor/Vendor.h
+CMakeFiles/Game.dir/Data/GameInterface/LocationsMenu/LocationsMenu.cpp.o: ../Data/Utility/UtilityFunctions/BadInputState/BadInputState.h
+CMakeFiles/Game.dir/Data/GameInterface/LocationsMenu/LocationsMenu.cpp.o: ../Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h
+CMakeFiles/Game.dir/Data/GameInterface/LocationsMenu/LocationsMenu.cpp.o: ../Data/Utility/UtilityFunctions/GetChoise/GetChoise.h
 
 CMakeFiles/Game.dir/Data/GameInterface/MainMenu/MainMenu.cpp.o: ../Data/GameInterface/MainMenu/MainMenu.cpp
 CMakeFiles/Game.dir/Data/GameInterface/MainMenu/MainMenu.cpp.o: ../Data/GameInterface/MainMenu/MainMenu.h
@@ -62,6 +65,7 @@ CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o: ../Data/Items/Equipment/Equipm
 CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o: ../Data/Items/IItem/IItem.h
 CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o: ../Data/Items/Item/Item.h
 CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o: ../Data/Items/ItemInTheBag/ItemInTheBag.h
+CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o: ../Data/Utility/Constants/Constants.h
 
 CMakeFiles/Game.dir/Data/Items/Chest/Chest.cpp.o: ../Data/Items/Armor/Armor.h
 CMakeFiles/Game.dir/Data/Items/Chest/Chest.cpp.o: ../Data/Items/Chest/Chest.cpp
@@ -100,14 +104,20 @@ CMakeFiles/Game.dir/Data/Items/Weapon/Weapon.cpp.o: ../Data/Items/Item/Item.h
 CMakeFiles/Game.dir/Data/Items/Weapon/Weapon.cpp.o: ../Data/Items/Weapon/Weapon.cpp
 CMakeFiles/Game.dir/Data/Items/Weapon/Weapon.cpp.o: ../Data/Items/Weapon/Weapon.h
 
+CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/GameInterface/Bag/Bag.h
 CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Items/IItem/IItem.h
 CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Items/Item/Item.h
+CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Items/ItemInTheBag/ItemInTheBag.h
 CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Locations/Vendor/Vendor.cpp
 CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Locations/Vendor/Vendor.h
 CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Utility/AllItemsDB/AllItemsDB.h
-CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Utility/GetChoise/GetChoise.h
+CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Utility/Constants/Constants.h
+CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Utility/UtilityFunctions/BadInputState/BadInputState.h
+CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h
+CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Utility/UtilityFunctions/GetChoise/GetChoise.h
 
 CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Data/Items/Armor/Armor.h
+CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Data/Items/Chest/Chest.h
 CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Data/Items/Equipment/Equipment.h
 CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Data/Items/Helm/Helm.h
 CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Data/Items/IItem/IItem.h
@@ -115,16 +125,22 @@ CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Data/Items/Item
 CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Data/Utility/AllItemsDB/AllItemsDB.cpp
 CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Data/Utility/AllItemsDB/AllItemsDB.h
 
-CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.o: ../Data/Characters/IUnit/IUnit.h
-CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.o: ../Data/Utility/CombatLog/CombatLog.cpp
-CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.o: ../Data/Utility/CombatLog/CombatLog.h
-CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.o: ../Data/Utility/Constans/CombatLogStages.h
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o: ../Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o: ../Data/Utility/UtilityFunctions/BadInputState/BadInputState.h
 
-CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.o: ../Data/Utility/GetChoise/GetChoise.cpp
-CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.o: ../Data/Utility/GetChoise/GetChoise.h
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o: ../Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o: ../Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h
 
-CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.o: ../Data/Utility/RandDouble/RandDouble.cpp
-CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.o: ../Data/Utility/RandDouble/RandDouble.h
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o: ../Data/Characters/IUnit/IUnit.h
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o: ../Data/Utility/Constants/CombatLogStages.h
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o: ../Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o: ../Data/Utility/UtilityFunctions/CombatLog/CombatLog.h
+
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o: ../Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o: ../Data/Utility/UtilityFunctions/GetChoise/GetChoise.h
+
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.o: ../Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.o: ../Data/Utility/UtilityFunctions/RandDouble/RandDouble.h
 
 CMakeFiles/Game.dir/main.cpp.o: ../Data/Characters/IUnit/IUnit.h
 CMakeFiles/Game.dir/main.cpp.o: ../Data/Characters/Mob/Mob.h
@@ -141,6 +157,6 @@ CMakeFiles/Game.dir/main.cpp.o: ../Data/Items/IItem/IItem.h
 CMakeFiles/Game.dir/main.cpp.o: ../Data/Items/Item/Item.h
 CMakeFiles/Game.dir/main.cpp.o: ../Data/Items/ItemInTheBag/ItemInTheBag.h
 CMakeFiles/Game.dir/main.cpp.o: ../Data/Utility/AllItemsDB/AllItemsDB.h
-CMakeFiles/Game.dir/main.cpp.o: ../Data/Utility/Constans/TypesOfEquip.h
+CMakeFiles/Game.dir/main.cpp.o: ../Data/Utility/Constants/TypesOfEquip.h
 CMakeFiles/Game.dir/main.cpp.o: ../main.cpp
 

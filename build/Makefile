@@ -636,86 +636,140 @@ Data/Utility/AllItemsDB/AllItemsDB.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.s
 .PHONY : Data/Utility/AllItemsDB/AllItemsDB.cpp.s
 
-Data/Utility/CombatLog/CombatLog.o: Data/Utility/CombatLog/CombatLog.cpp.o
+Data/Utility/UtilityFunctions/BadInputState/BadInputState.o: Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o
 
-.PHONY : Data/Utility/CombatLog/CombatLog.o
-
-# target to build an object file
-Data/Utility/CombatLog/CombatLog.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.o
-.PHONY : Data/Utility/CombatLog/CombatLog.cpp.o
-
-Data/Utility/CombatLog/CombatLog.i: Data/Utility/CombatLog/CombatLog.cpp.i
-
-.PHONY : Data/Utility/CombatLog/CombatLog.i
-
-# target to preprocess a source file
-Data/Utility/CombatLog/CombatLog.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.i
-.PHONY : Data/Utility/CombatLog/CombatLog.cpp.i
-
-Data/Utility/CombatLog/CombatLog.s: Data/Utility/CombatLog/CombatLog.cpp.s
-
-.PHONY : Data/Utility/CombatLog/CombatLog.s
-
-# target to generate assembly for a file
-Data/Utility/CombatLog/CombatLog.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.s
-.PHONY : Data/Utility/CombatLog/CombatLog.cpp.s
-
-Data/Utility/GetChoise/GetChoise.o: Data/Utility/GetChoise/GetChoise.cpp.o
-
-.PHONY : Data/Utility/GetChoise/GetChoise.o
+.PHONY : Data/Utility/UtilityFunctions/BadInputState/BadInputState.o
 
 # target to build an object file
-Data/Utility/GetChoise/GetChoise.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.o
-.PHONY : Data/Utility/GetChoise/GetChoise.cpp.o
+Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o
+.PHONY : Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o
 
-Data/Utility/GetChoise/GetChoise.i: Data/Utility/GetChoise/GetChoise.cpp.i
+Data/Utility/UtilityFunctions/BadInputState/BadInputState.i: Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.i
 
-.PHONY : Data/Utility/GetChoise/GetChoise.i
+.PHONY : Data/Utility/UtilityFunctions/BadInputState/BadInputState.i
 
 # target to preprocess a source file
-Data/Utility/GetChoise/GetChoise.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.i
-.PHONY : Data/Utility/GetChoise/GetChoise.cpp.i
+Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.i
+.PHONY : Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.i
 
-Data/Utility/GetChoise/GetChoise.s: Data/Utility/GetChoise/GetChoise.cpp.s
+Data/Utility/UtilityFunctions/BadInputState/BadInputState.s: Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.s
 
-.PHONY : Data/Utility/GetChoise/GetChoise.s
+.PHONY : Data/Utility/UtilityFunctions/BadInputState/BadInputState.s
 
 # target to generate assembly for a file
-Data/Utility/GetChoise/GetChoise.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.s
-.PHONY : Data/Utility/GetChoise/GetChoise.cpp.s
+Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.s
+.PHONY : Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.s
 
-Data/Utility/RandDouble/RandDouble.o: Data/Utility/RandDouble/RandDouble.cpp.o
+Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.o: Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o
 
-.PHONY : Data/Utility/RandDouble/RandDouble.o
+.PHONY : Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.o
 
 # target to build an object file
-Data/Utility/RandDouble/RandDouble.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.o
-.PHONY : Data/Utility/RandDouble/RandDouble.cpp.o
+Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o
+.PHONY : Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o
 
-Data/Utility/RandDouble/RandDouble.i: Data/Utility/RandDouble/RandDouble.cpp.i
+Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.i: Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.i
 
-.PHONY : Data/Utility/RandDouble/RandDouble.i
+.PHONY : Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.i
 
 # target to preprocess a source file
-Data/Utility/RandDouble/RandDouble.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.i
-.PHONY : Data/Utility/RandDouble/RandDouble.cpp.i
+Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.i
+.PHONY : Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.i
 
-Data/Utility/RandDouble/RandDouble.s: Data/Utility/RandDouble/RandDouble.cpp.s
+Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.s: Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.s
 
-.PHONY : Data/Utility/RandDouble/RandDouble.s
+.PHONY : Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.s
 
 # target to generate assembly for a file
-Data/Utility/RandDouble/RandDouble.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.s
-.PHONY : Data/Utility/RandDouble/RandDouble.cpp.s
+Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.s
+.PHONY : Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.s
+
+Data/Utility/UtilityFunctions/CombatLog/CombatLog.o: Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o
+
+.PHONY : Data/Utility/UtilityFunctions/CombatLog/CombatLog.o
+
+# target to build an object file
+Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o
+.PHONY : Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o
+
+Data/Utility/UtilityFunctions/CombatLog/CombatLog.i: Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.i
+
+.PHONY : Data/Utility/UtilityFunctions/CombatLog/CombatLog.i
+
+# target to preprocess a source file
+Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.i
+.PHONY : Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.i
+
+Data/Utility/UtilityFunctions/CombatLog/CombatLog.s: Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.s
+
+.PHONY : Data/Utility/UtilityFunctions/CombatLog/CombatLog.s
+
+# target to generate assembly for a file
+Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.s
+.PHONY : Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.s
+
+Data/Utility/UtilityFunctions/GetChoise/GetChoise.o: Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o
+
+.PHONY : Data/Utility/UtilityFunctions/GetChoise/GetChoise.o
+
+# target to build an object file
+Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o
+.PHONY : Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o
+
+Data/Utility/UtilityFunctions/GetChoise/GetChoise.i: Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.i
+
+.PHONY : Data/Utility/UtilityFunctions/GetChoise/GetChoise.i
+
+# target to preprocess a source file
+Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.i
+.PHONY : Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.i
+
+Data/Utility/UtilityFunctions/GetChoise/GetChoise.s: Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.s
+
+.PHONY : Data/Utility/UtilityFunctions/GetChoise/GetChoise.s
+
+# target to generate assembly for a file
+Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.s
+.PHONY : Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.s
+
+Data/Utility/UtilityFunctions/RandDouble/RandDouble.o: Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.o
+
+.PHONY : Data/Utility/UtilityFunctions/RandDouble/RandDouble.o
+
+# target to build an object file
+Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.o
+.PHONY : Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.o
+
+Data/Utility/UtilityFunctions/RandDouble/RandDouble.i: Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.i
+
+.PHONY : Data/Utility/UtilityFunctions/RandDouble/RandDouble.i
+
+# target to preprocess a source file
+Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.i
+.PHONY : Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.i
+
+Data/Utility/UtilityFunctions/RandDouble/RandDouble.s: Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.s
+
+.PHONY : Data/Utility/UtilityFunctions/RandDouble/RandDouble.s
+
+# target to generate assembly for a file
+Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.s
+.PHONY : Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.s
 
 main.o: main.cpp.o
 
@@ -810,15 +864,21 @@ help:
 	@echo "... Data/Utility/AllItemsDB/AllItemsDB.o"
 	@echo "... Data/Utility/AllItemsDB/AllItemsDB.i"
 	@echo "... Data/Utility/AllItemsDB/AllItemsDB.s"
-	@echo "... Data/Utility/CombatLog/CombatLog.o"
-	@echo "... Data/Utility/CombatLog/CombatLog.i"
-	@echo "... Data/Utility/CombatLog/CombatLog.s"
-	@echo "... Data/Utility/GetChoise/GetChoise.o"
-	@echo "... Data/Utility/GetChoise/GetChoise.i"
-	@echo "... Data/Utility/GetChoise/GetChoise.s"
-	@echo "... Data/Utility/RandDouble/RandDouble.o"
-	@echo "... Data/Utility/RandDouble/RandDouble.i"
-	@echo "... Data/Utility/RandDouble/RandDouble.s"
+	@echo "... Data/Utility/UtilityFunctions/BadInputState/BadInputState.o"
+	@echo "... Data/Utility/UtilityFunctions/BadInputState/BadInputState.i"
+	@echo "... Data/Utility/UtilityFunctions/BadInputState/BadInputState.s"
+	@echo "... Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.o"
+	@echo "... Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.i"
+	@echo "... Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.s"
+	@echo "... Data/Utility/UtilityFunctions/CombatLog/CombatLog.o"
+	@echo "... Data/Utility/UtilityFunctions/CombatLog/CombatLog.i"
+	@echo "... Data/Utility/UtilityFunctions/CombatLog/CombatLog.s"
+	@echo "... Data/Utility/UtilityFunctions/GetChoise/GetChoise.o"
+	@echo "... Data/Utility/UtilityFunctions/GetChoise/GetChoise.i"
+	@echo "... Data/Utility/UtilityFunctions/GetChoise/GetChoise.s"
+	@echo "... Data/Utility/UtilityFunctions/RandDouble/RandDouble.o"
+	@echo "... Data/Utility/UtilityFunctions/RandDouble/RandDouble.i"
+	@echo "... Data/Utility/UtilityFunctions/RandDouble/RandDouble.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

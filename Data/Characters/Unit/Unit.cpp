@@ -1,7 +1,7 @@
 #include "Unit.h"
-#include "../../Utility/Constans/Constans.h"
-#include "../../Utility/CombatLog/CombatLog.h"
-#include "../../Utility/RandDouble/RandDouble.h"
+#include "../../Utility/Constants/Constants.h"
+#include "../../Utility/UtilityFunctions/CombatLog/CombatLog.h"
+#include "../../Utility/UtilityFunctions/RandDouble/RandDouble.h"
 
 
 Unit::Unit(float s_armor, int s_hp, int s_damage, float s_avoidChance, float s_criticalChance) : m_armor{s_armor}, m_hp{s_hp},
@@ -15,7 +15,7 @@ void Unit::hit(IUnit * target) {
 
     int damage = damageCalculating(target->getArmor());
     if(isCritical()){
-        damage *= Constans::criticalMultiple;
+        damage *= Constants::criticalMultiple;
         combatLog(CombatLogStages::critical, this, target, damage);
     } else {
         combatLog(CombatLogStages::hit, this, target, damage);

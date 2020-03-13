@@ -1,0 +1,6 @@
+#ifndef GAME_BADINPUTSTATE_H
+#define GAME_BADINPUTSTATE_H
+
+void badInputState();
+
+#endif //GAME_BADINPUTSTATE_H

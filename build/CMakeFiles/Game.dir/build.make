@@ -304,48 +304,74 @@ CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Utility/AllItemsDB/AllItemsDB.cpp -o CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.s
 
-CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.o: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.o: ../Data/Utility/RandDouble/RandDouble.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.o -c /home/yan/C++/GitGame/Game/Data/Utility/RandDouble/RandDouble.cpp
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.o: ../Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.o -c /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp
 
-CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/C++/GitGame/Game/Data/Utility/RandDouble/RandDouble.cpp > CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.i
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp > CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.i
 
-CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Utility/RandDouble/RandDouble.cpp -o CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.s
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp -o CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.s
 
-CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.o: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.o: ../Data/Utility/CombatLog/CombatLog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.o -c /home/yan/C++/GitGame/Game/Data/Utility/CombatLog/CombatLog.cpp
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o: ../Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o -c /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp
 
-CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/C++/GitGame/Game/Data/Utility/CombatLog/CombatLog.cpp > CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.i
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp > CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.i
 
-CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Utility/CombatLog/CombatLog.cpp -o CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.s
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp -o CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.s
 
-CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.o: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.o: ../Data/Utility/GetChoise/GetChoise.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.o -c /home/yan/C++/GitGame/Game/Data/Utility/GetChoise/GetChoise.cpp
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o: ../Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o -c /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp
 
-CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/C++/GitGame/Game/Data/Utility/GetChoise/GetChoise.cpp > CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.i
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp > CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.i
 
-CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Utility/GetChoise/GetChoise.cpp -o CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.s
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp -o CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.s
+
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o: ../Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o -c /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp
+
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp > CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.i
+
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp -o CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.s
+
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o: ../Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o -c /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp
+
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp > CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.i
+
+CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp -o CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.s
 
 CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Locations/Vendor/Vendor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o -c /home/yan/C++/GitGame/Game/Data/Locations/Vendor/Vendor.cpp
 
 CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.i: cmake_force
@@ -377,9 +403,11 @@ Game_OBJECTS = \
 "CMakeFiles/Game.dir/Data/Items/Reagent/Reagent.cpp.o" \
 "CMakeFiles/Game.dir/Data/Items/Weapon/Weapon.cpp.o" \
 "CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o" \
-"CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.o" \
-"CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.o" \
-"CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.o" \
+"CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.o" \
+"CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o" \
+"CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o" \
+"CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o" \
+"CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o" \
 "CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o"
 
 # External object files for target Game
@@ -404,13 +432,15 @@ Game: CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.o
 Game: CMakeFiles/Game.dir/Data/Items/Reagent/Reagent.cpp.o
 Game: CMakeFiles/Game.dir/Data/Items/Weapon/Weapon.cpp.o
 Game: CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o
-Game: CMakeFiles/Game.dir/Data/Utility/RandDouble/RandDouble.cpp.o
-Game: CMakeFiles/Game.dir/Data/Utility/CombatLog/CombatLog.cpp.o
-Game: CMakeFiles/Game.dir/Data/Utility/GetChoise/GetChoise.cpp.o
+Game: CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp.o
+Game: CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp.o
+Game: CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o
+Game: CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o
+Game: CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o
 Game: CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o
 Game: CMakeFiles/Game.dir/build.make
 Game: CMakeFiles/Game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable Game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable Game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

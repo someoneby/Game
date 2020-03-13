@@ -10,6 +10,8 @@ class Vendor {
         static void showMenuOfVendor();
         static void showMenuToBuy();
         static void showMenuToSell();
+
+        static void showDescriptionToBuy(int);
 };
 
 #endif //GAME_VENDOR_H

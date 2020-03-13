@@ -1,15 +1,15 @@
 #include "Armor.h"
 #include "../../GameInterface/Bag/Bag.h"
+#include "../../Utility/Constants/Constants.h"
 #include <iostream>
 
 Armor::Armor(int s_id, std::string s_name, std::string s_description, int s_armor, float s_avoidChance, int s_hp, int s_prise) : 
         Equipment(s_id, s_name, s_description, s_prise), m_armor{s_armor}, m_avoidChance{s_avoidChance}, m_hp{s_hp} {};
 
 void Armor::showDescription() {
-        system("clear");
-
         std::cout <<m_name << "\n\n" << m_description << "\n\n Броня: " << m_armor << "\n Шанс промаха: "
-         << m_avoidChance << "\n Хп: " << m_hp << "\n\nСтоимость: " << m_prise << "\nМожно купить: " << Bag::getHowMuchGold()/m_prise << "\n";
+         << m_avoidChance << "\n Хп: " << m_hp << "\n\nСтоимость: " << m_prise * Constants::modifierCostToBuy 
+         << "\nМожно купить: " << Bag::getHowMuchGold() / (m_prise * Constants::modifierCostToBuy) << "\n";
 }
 
 

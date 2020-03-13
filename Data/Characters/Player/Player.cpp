@@ -1,6 +1,6 @@
 #include "Player.h"
-#include "../../Utility/Constans/Parameters.h"
-#include "../../Utility/CombatLog/CombatLog.h"
+#include "../../Utility/Constants/Parameters.h"
+#include "../../Utility/UtilityFunctions/CombatLog/CombatLog.h"
 
 Player * Player::m_instance = nullptr;
 

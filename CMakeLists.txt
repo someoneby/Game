@@ -27,8 +27,10 @@ add_executable(Game main.cpp
         Data/Items/Reagent/Reagent.cpp
         Data/Items/Weapon/Weapon.cpp
         Data/Utility/AllItemsDB/AllItemsDB.cpp
-        Data/Utility/RandDouble/RandDouble.cpp
-        Data/Utility/CombatLog/CombatLog.cpp
-        Data/Utility/GetChoise/GetChoise.cpp
+        Data/Utility/UtilityFunctions/RandDouble/RandDouble.cpp
+        Data/Utility/UtilityFunctions/CombatLog/CombatLog.cpp
+        Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp
+        Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp
+        Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp
         Data/Locations/Vendor/Vendor.cpp
         )

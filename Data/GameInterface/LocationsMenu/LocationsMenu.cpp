@@ -1,15 +1,20 @@
 #include "LocationsMenu.h"
 #include "../../Locations/Vendor/Vendor.h"
-#include <iostream>
+#include "../../Utility/UtilityFunctions/GetChoise/GetChoise.h"
+#include "../../Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h"
+#include "../../Utility/UtilityFunctions/BadInputState/BadInputState.h"
+// #include <iostream>
+
 using std::cout;
 using std::cin;
 
 
 void LocationsMenu::showLocations() {
-    system("clear");
-    int choise;
+    int choise {1};
 
-    while(choise != 3) {
+    while(choise != 0) {
+        checkInputWithMessage();
+
         cout << "\nМеню локаций: \n"
             << "1. Мастерская.\n"
             << "2. Лавка торговца.\n"
@@ -17,10 +22,8 @@ void LocationsMenu::showLocations() {
             << "\n\n0. Выход в главное меню.\n"
             << "Ваш выбор: ";
 
-        cin >> choise;
-        cin.clear();
-        cin.ignore();
-
+        choise = getChoise();
+        
         switch (choise) {
             case 1 : {
                 cout << " Мастерская. \n";
@@ -28,7 +31,7 @@ void LocationsMenu::showLocations() {
             }
             case 2 : {
                 Vendor::showMenuOfVendor();
-                return;
+                break;
             }
             case 3 : {
                 cout << " Приключения.\n";
@@ -39,8 +42,7 @@ void LocationsMenu::showLocations() {
                 break;
             }
             default : {
-                system("clear");
-                cout << " Неправильный ввод\n";
+                badInputState();
                 break;
             }
         }

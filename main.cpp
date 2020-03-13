@@ -11,9 +11,14 @@
 using namespace std;
 
 int main() {
-
+    int pause;
+    Bag::takeGold(10000);
+    Bag::show();
+    cin >> pause;
     // MainMenu::showMainMenu();
     LocationsMenu::showLocations();
+
+    Bag::show();
 
 
 
