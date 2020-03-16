@@ -31,6 +31,7 @@ CMakeFiles/Game.dir/Data/GameInterface/Bag/Bag.cpp.o: ../Data/GameInterface/Bag/
 CMakeFiles/Game.dir/Data/GameInterface/Bag/Bag.cpp.o: ../Data/Items/IItem/IItem.h
 CMakeFiles/Game.dir/Data/GameInterface/Bag/Bag.cpp.o: ../Data/Items/Item/Item.h
 CMakeFiles/Game.dir/Data/GameInterface/Bag/Bag.cpp.o: ../Data/Items/ItemInTheBag/ItemInTheBag.h
+CMakeFiles/Game.dir/Data/GameInterface/Bag/Bag.cpp.o: ../Data/Locations/Vendor/Vendor.h
 CMakeFiles/Game.dir/Data/GameInterface/Bag/Bag.cpp.o: ../Data/Utility/AllItemsDB/AllItemsDB.h
 
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Characters/IUnit/IUnit.h
@@ -45,6 +46,7 @@ CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Items/Item/Item.h
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Items/ItemInTheBag/ItemInTheBag.h
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Items/Weapon/Weapon.h
+CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Locations/Vendor/Vendor.h
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Utility/AllItemsDB/AllItemsDB.h
 CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o: ../Data/Utility/Constants/TypesOfEquip.h
 
@@ -65,6 +67,7 @@ CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o: ../Data/Items/Equipment/Equipm
 CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o: ../Data/Items/IItem/IItem.h
 CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o: ../Data/Items/Item/Item.h
 CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o: ../Data/Items/ItemInTheBag/ItemInTheBag.h
+CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o: ../Data/Locations/Vendor/Vendor.h
 CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o: ../Data/Utility/Constants/Constants.h
 
 CMakeFiles/Game.dir/Data/Items/Chest/Chest.cpp.o: ../Data/Items/Armor/Armor.h
@@ -156,6 +159,7 @@ CMakeFiles/Game.dir/main.cpp.o: ../Data/Items/Helm/Helm.h
 CMakeFiles/Game.dir/main.cpp.o: ../Data/Items/IItem/IItem.h
 CMakeFiles/Game.dir/main.cpp.o: ../Data/Items/Item/Item.h
 CMakeFiles/Game.dir/main.cpp.o: ../Data/Items/ItemInTheBag/ItemInTheBag.h
+CMakeFiles/Game.dir/main.cpp.o: ../Data/Locations/Vendor/Vendor.h
 CMakeFiles/Game.dir/main.cpp.o: ../Data/Utility/AllItemsDB/AllItemsDB.h
 CMakeFiles/Game.dir/main.cpp.o: ../Data/Utility/Constants/TypesOfEquip.h
 CMakeFiles/Game.dir/main.cpp.o: ../main.cpp

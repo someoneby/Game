@@ -15,11 +15,11 @@ void LocationsMenu::showLocations() {
     while(choise != 0) {
         checkInputWithMessage();
 
-        cout << "\nМеню локаций: \n"
+        cout << "\nМеню локаций: \n\n"
             << "1. Мастерская.\n"
             << "2. Лавка торговца.\n"
             << "3. Приключения.\n"
-            << "\n\n0. Выход в главное меню.\n"
+            << "\n0. Выход в главное меню.\n"
             << "Ваш выбор: ";
 
         choise = getChoise();

@@ -3,10 +3,12 @@
 
 #include "../../Items/Item/Item.h"
 #include "../../Items/ItemInTheBag/ItemInTheBag.h"
+#include "../../Locations/Vendor/Vendor.h"
 #include <vector>
 
 class Bag {
     private:
+        friend class Vendor;
         static int m_gold;
         static std::vector<ItemInTheBag *> m_bag;
     public:

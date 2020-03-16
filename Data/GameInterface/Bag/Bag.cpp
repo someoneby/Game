@@ -1,13 +1,13 @@
 #include "Bag.h"
 #include "../../Utility/AllItemsDB/AllItemsDB.h"
 
-int Bag::m_gold = 0;
+int Bag::m_gold {0};
 std::vector<ItemInTheBag *> Bag::m_bag;
 
 void Bag::show() {
     std::cout << " Gold: " << m_gold << "\n";
 
-    for(int i = 0; i < m_bag.size(); ++i) {
+    for(int i {0}; i < m_bag.size(); ++i) {
         std::cout << " " << i+1 << ". " << AllItemsDB::getItemByID(m_bag.at(i)->m_id)->getName();
         if( m_bag.at(i)->m_count > 1 )
             std::cout << ": " << m_bag.at(i)->m_count;

@@ -8,8 +8,7 @@ Armor::Armor(int s_id, std::string s_name, std::string s_description, int s_armo
 
 void Armor::showDescription() {
         std::cout <<m_name << "\n\n" << m_description << "\n\n Броня: " << m_armor << "\n Шанс промаха: "
-         << m_avoidChance << "\n Хп: " << m_hp << "\n\nСтоимость: " << m_prise * Constants::modifierCostToBuy 
-         << "\nМожно купить: " << Bag::getHowMuchGold() / (m_prise * Constants::modifierCostToBuy) << "\n";
+         << m_avoidChance << "\n Хп: " << m_hp;
 }
 
 

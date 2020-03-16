@@ -7,7 +7,7 @@ int getChoise() {
     int choise;
     cin >> choise;
 
-    if(cin.fail() == 1) 
+    if(cin.fail()) 
         choise = -1;
 
     cin.clear();
