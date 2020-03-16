@@ -42,7 +42,6 @@ CMakeFiles/Game.dir/Data/GameInterface/EquipedItems/EquipedItems.cpp.o
  /home/yan/C++/GitGame/Game/Data/GameInterface/EquipedItems/EquipedItems.cpp
  /home/yan/C++/GitGame/Game/Data/GameInterface/EquipedItems/EquipedItems.h
  /home/yan/C++/GitGame/Game/Data/Items/Armor/Armor.h
- /home/yan/C++/GitGame/Game/Data/Items/Equipment/Equipment.h
  /home/yan/C++/GitGame/Game/Data/Items/IItem/IItem.h
  /home/yan/C++/GitGame/Game/Data/Items/Item/Item.h
  /home/yan/C++/GitGame/Game/Data/Items/ItemInTheBag/ItemInTheBag.h
@@ -64,7 +63,6 @@ CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o
  /home/yan/C++/GitGame/Game/Data/GameInterface/Bag/Bag.h
  /home/yan/C++/GitGame/Game/Data/Items/Armor/Armor.cpp
  /home/yan/C++/GitGame/Game/Data/Items/Armor/Armor.h
- /home/yan/C++/GitGame/Game/Data/Items/Equipment/Equipment.h
  /home/yan/C++/GitGame/Game/Data/Items/IItem/IItem.h
  /home/yan/C++/GitGame/Game/Data/Items/Item/Item.h
  /home/yan/C++/GitGame/Game/Data/Items/ItemInTheBag/ItemInTheBag.h
@@ -74,17 +72,10 @@ CMakeFiles/Game.dir/Data/Items/Chest/Chest.cpp.o
  /home/yan/C++/GitGame/Game/Data/Items/Armor/Armor.h
  /home/yan/C++/GitGame/Game/Data/Items/Chest/Chest.cpp
  /home/yan/C++/GitGame/Game/Data/Items/Chest/Chest.h
- /home/yan/C++/GitGame/Game/Data/Items/Equipment/Equipment.h
- /home/yan/C++/GitGame/Game/Data/Items/IItem/IItem.h
- /home/yan/C++/GitGame/Game/Data/Items/Item/Item.h
-CMakeFiles/Game.dir/Data/Items/Equipment/Equipment.cpp.o
- /home/yan/C++/GitGame/Game/Data/Items/Equipment/Equipment.cpp
- /home/yan/C++/GitGame/Game/Data/Items/Equipment/Equipment.h
  /home/yan/C++/GitGame/Game/Data/Items/IItem/IItem.h
  /home/yan/C++/GitGame/Game/Data/Items/Item/Item.h
 CMakeFiles/Game.dir/Data/Items/Helm/Helm.cpp.o
  /home/yan/C++/GitGame/Game/Data/Items/Armor/Armor.h
- /home/yan/C++/GitGame/Game/Data/Items/Equipment/Equipment.h
  /home/yan/C++/GitGame/Game/Data/Items/Helm/Helm.cpp
  /home/yan/C++/GitGame/Game/Data/Items/Helm/Helm.h
  /home/yan/C++/GitGame/Game/Data/Items/IItem/IItem.h
@@ -102,7 +93,6 @@ CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.o
 CMakeFiles/Game.dir/Data/Items/Reagent/Reagent.cpp.o
  /home/yan/C++/GitGame/Game/Data/Items/Reagent/Reagent.cpp
 CMakeFiles/Game.dir/Data/Items/Weapon/Weapon.cpp.o
- /home/yan/C++/GitGame/Game/Data/Items/Equipment/Equipment.h
  /home/yan/C++/GitGame/Game/Data/Items/IItem/IItem.h
  /home/yan/C++/GitGame/Game/Data/Items/Item/Item.h
  /home/yan/C++/GitGame/Game/Data/Items/Weapon/Weapon.cpp
@@ -122,10 +112,10 @@ CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o
 CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o
  /home/yan/C++/GitGame/Game/Data/Items/Armor/Armor.h
  /home/yan/C++/GitGame/Game/Data/Items/Chest/Chest.h
- /home/yan/C++/GitGame/Game/Data/Items/Equipment/Equipment.h
  /home/yan/C++/GitGame/Game/Data/Items/Helm/Helm.h
  /home/yan/C++/GitGame/Game/Data/Items/IItem/IItem.h
  /home/yan/C++/GitGame/Game/Data/Items/Item/Item.h
+ /home/yan/C++/GitGame/Game/Data/Items/Weapon/Weapon.h
  /home/yan/C++/GitGame/Game/Data/Utility/AllItemsDB/AllItemsDB.cpp
  /home/yan/C++/GitGame/Game/Data/Utility/AllItemsDB/AllItemsDB.h
 CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o
@@ -155,7 +145,6 @@ CMakeFiles/Game.dir/main.cpp.o
  /home/yan/C++/GitGame/Game/Data/GameInterface/LocationsMenu/LocationsMenu.h
  /home/yan/C++/GitGame/Game/Data/GameInterface/MainMenu/MainMenu.h
  /home/yan/C++/GitGame/Game/Data/Items/Armor/Armor.h
- /home/yan/C++/GitGame/Game/Data/Items/Equipment/Equipment.h
  /home/yan/C++/GitGame/Game/Data/Items/Helm/Helm.h
  /home/yan/C++/GitGame/Game/Data/Items/IItem/IItem.h
  /home/yan/C++/GitGame/Game/Data/Items/Item/Item.h

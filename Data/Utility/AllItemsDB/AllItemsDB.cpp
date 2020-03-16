@@ -2,7 +2,7 @@
 #include "vector"
 #include "../../Items/Helm/Helm.h"
 #include "../../Items/Chest/Chest.h"
-
+#include "../../Items/Weapon/Weapon.h"
 
 std::vector<Item *> AllItemsDB::m_allItemsDB {  
     // Helm (int id, string name, int armor, float avoidChanse, int hp, int prise, string description)
@@ -47,6 +47,9 @@ std::vector<Item *> AllItemsDB::m_allItemsDB {
         "Эффективная защита от колюще-режущих повреждений (каким образом - неизвестно)."),
     new Chest(38, "Вязаный свитер", 1, 1, 1, 1,
         "Любовь и забота, вложенные при создании бабушкой этого свитера, надёжно защитят владельца от всех бед."),
+
+    //Weapon (int id, string name, int damage, float criticalChance, int prise, string description)
+    new Weapon(61, "Test", 10, 0.1, 100, "Test")
         
         
                 
@@ -61,4 +64,5 @@ Item * AllItemsDB::getItemByID(int s_id) {
         if(m_allItemsDB.at(i)->getId() == s_id)
             return m_allItemsDB.at(i);
     }
+    return nullptr;
 }

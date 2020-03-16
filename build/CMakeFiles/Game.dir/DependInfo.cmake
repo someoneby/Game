@@ -14,7 +14,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/yan/C++/GitGame/Game/Data/GameInterface/MainMenu/MainMenu.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/GameInterface/MainMenu/MainMenu.cpp.o"
   "/home/yan/C++/GitGame/Game/Data/Items/Armor/Armor.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o"
   "/home/yan/C++/GitGame/Game/Data/Items/Chest/Chest.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Items/Chest/Chest.cpp.o"
-  "/home/yan/C++/GitGame/Game/Data/Items/Equipment/Equipment.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Items/Equipment/Equipment.cpp.o"
   "/home/yan/C++/GitGame/Game/Data/Items/Helm/Helm.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Items/Helm/Helm.cpp.o"
   "/home/yan/C++/GitGame/Game/Data/Items/IItem/IItem.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Items/IItem/IItem.cpp.o"
   "/home/yan/C++/GitGame/Game/Data/Items/Item/Item.cpp" "/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir/Data/Items/Item/Item.cpp.o"

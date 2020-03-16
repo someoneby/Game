@@ -9,7 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Game.dir/Data/GameInterface/MainMenu/MainMenu.cpp.o"
   "CMakeFiles/Game.dir/Data/Items/Armor/Armor.cpp.o"
   "CMakeFiles/Game.dir/Data/Items/Chest/Chest.cpp.o"
-  "CMakeFiles/Game.dir/Data/Items/Equipment/Equipment.cpp.o"
   "CMakeFiles/Game.dir/Data/Items/Helm/Helm.cpp.o"
   "CMakeFiles/Game.dir/Data/Items/IItem/IItem.cpp.o"
   "CMakeFiles/Game.dir/Data/Items/Item/Item.cpp.o"

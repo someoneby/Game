@@ -19,7 +19,6 @@ add_executable(Game main.cpp
         Data/GameInterface/LocationsMenu/LocationsMenu.cpp
         Data/Items/Armor/Armor.cpp
         Data/Items/Chest/Chest.cpp 
-        Data/Items/Equipment/Equipment.cpp
         Data/Items/Helm/Helm.cpp
         Data/Items/IItem/IItem.cpp
         Data/Items/Item/Item.cpp
