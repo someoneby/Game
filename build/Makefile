@@ -339,6 +339,33 @@ Data/GameInterface/MainMenu/MainMenu.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/GameInterface/MainMenu/MainMenu.cpp.s
 .PHONY : Data/GameInterface/MainMenu/MainMenu.cpp.s
 
+Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.o: Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.o
+
+.PHONY : Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.o
+
+# target to build an object file
+Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.o
+.PHONY : Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.o
+
+Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.i: Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.i
+
+.PHONY : Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.i
+
+# target to preprocess a source file
+Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.i
+.PHONY : Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.i
+
+Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.s: Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.s
+
+.PHONY : Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.s
+
+# target to generate assembly for a file
+Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.s
+.PHONY : Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.s
+
 Data/Items/Armor/Armor.o: Data/Items/Armor/Armor.cpp.o
 
 .PHONY : Data/Items/Armor/Armor.o
@@ -474,33 +501,6 @@ Data/Items/Item/Item.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Items/Item/Item.cpp.s
 .PHONY : Data/Items/Item/Item.cpp.s
 
-Data/Items/ItemInTheBag/ItemInTheBag.o: Data/Items/ItemInTheBag/ItemInTheBag.cpp.o
-
-.PHONY : Data/Items/ItemInTheBag/ItemInTheBag.o
-
-# target to build an object file
-Data/Items/ItemInTheBag/ItemInTheBag.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.o
-.PHONY : Data/Items/ItemInTheBag/ItemInTheBag.cpp.o
-
-Data/Items/ItemInTheBag/ItemInTheBag.i: Data/Items/ItemInTheBag/ItemInTheBag.cpp.i
-
-.PHONY : Data/Items/ItemInTheBag/ItemInTheBag.i
-
-# target to preprocess a source file
-Data/Items/ItemInTheBag/ItemInTheBag.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.i
-.PHONY : Data/Items/ItemInTheBag/ItemInTheBag.cpp.i
-
-Data/Items/ItemInTheBag/ItemInTheBag.s: Data/Items/ItemInTheBag/ItemInTheBag.cpp.s
-
-.PHONY : Data/Items/ItemInTheBag/ItemInTheBag.s
-
-# target to generate assembly for a file
-Data/Items/ItemInTheBag/ItemInTheBag.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.s
-.PHONY : Data/Items/ItemInTheBag/ItemInTheBag.cpp.s
-
 Data/Items/Reagent/Reagent.o: Data/Items/Reagent/Reagent.cpp.o
 
 .PHONY : Data/Items/Reagent/Reagent.o
@@ -555,6 +555,60 @@ Data/Items/Weapon/Weapon.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Items/Weapon/Weapon.cpp.s
 .PHONY : Data/Items/Weapon/Weapon.cpp.s
 
+Data/Locations/Utility/ReagentElement/ReagentElement.o: Data/Locations/Utility/ReagentElement/ReagentElement.cpp.o
+
+.PHONY : Data/Locations/Utility/ReagentElement/ReagentElement.o
+
+# target to build an object file
+Data/Locations/Utility/ReagentElement/ReagentElement.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.o
+.PHONY : Data/Locations/Utility/ReagentElement/ReagentElement.cpp.o
+
+Data/Locations/Utility/ReagentElement/ReagentElement.i: Data/Locations/Utility/ReagentElement/ReagentElement.cpp.i
+
+.PHONY : Data/Locations/Utility/ReagentElement/ReagentElement.i
+
+# target to preprocess a source file
+Data/Locations/Utility/ReagentElement/ReagentElement.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.i
+.PHONY : Data/Locations/Utility/ReagentElement/ReagentElement.cpp.i
+
+Data/Locations/Utility/ReagentElement/ReagentElement.s: Data/Locations/Utility/ReagentElement/ReagentElement.cpp.s
+
+.PHONY : Data/Locations/Utility/ReagentElement/ReagentElement.s
+
+# target to generate assembly for a file
+Data/Locations/Utility/ReagentElement/ReagentElement.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.s
+.PHONY : Data/Locations/Utility/ReagentElement/ReagentElement.cpp.s
+
+Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.o: Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o
+
+.PHONY : Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.o
+
+# target to build an object file
+Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o
+.PHONY : Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o
+
+Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.i: Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.i
+
+.PHONY : Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.i
+
+# target to preprocess a source file
+Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.i
+.PHONY : Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.i
+
+Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.s: Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.s
+
+.PHONY : Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.s
+
+# target to generate assembly for a file
+Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.s
+.PHONY : Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.s
+
 Data/Locations/Vendor/Vendor.o: Data/Locations/Vendor/Vendor.cpp.o
 
 .PHONY : Data/Locations/Vendor/Vendor.o
@@ -581,6 +635,33 @@ Data/Locations/Vendor/Vendor.s: Data/Locations/Vendor/Vendor.cpp.s
 Data/Locations/Vendor/Vendor.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.s
 .PHONY : Data/Locations/Vendor/Vendor.cpp.s
+
+Data/Locations/Workshop/Workshop.o: Data/Locations/Workshop/Workshop.cpp.o
+
+.PHONY : Data/Locations/Workshop/Workshop.o
+
+# target to build an object file
+Data/Locations/Workshop/Workshop.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o
+.PHONY : Data/Locations/Workshop/Workshop.cpp.o
+
+Data/Locations/Workshop/Workshop.i: Data/Locations/Workshop/Workshop.cpp.i
+
+.PHONY : Data/Locations/Workshop/Workshop.i
+
+# target to preprocess a source file
+Data/Locations/Workshop/Workshop.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.i
+.PHONY : Data/Locations/Workshop/Workshop.cpp.i
+
+Data/Locations/Workshop/Workshop.s: Data/Locations/Workshop/Workshop.cpp.s
+
+.PHONY : Data/Locations/Workshop/Workshop.s
+
+# target to generate assembly for a file
+Data/Locations/Workshop/Workshop.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.s
+.PHONY : Data/Locations/Workshop/Workshop.cpp.s
 
 Data/Utility/AllItemsDB/AllItemsDB.o: Data/Utility/AllItemsDB/AllItemsDB.cpp.o
 
@@ -804,6 +885,9 @@ help:
 	@echo "... Data/GameInterface/MainMenu/MainMenu.o"
 	@echo "... Data/GameInterface/MainMenu/MainMenu.i"
 	@echo "... Data/GameInterface/MainMenu/MainMenu.s"
+	@echo "... Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.o"
+	@echo "... Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.i"
+	@echo "... Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.s"
 	@echo "... Data/Items/Armor/Armor.o"
 	@echo "... Data/Items/Armor/Armor.i"
 	@echo "... Data/Items/Armor/Armor.s"
@@ -819,18 +903,24 @@ help:
 	@echo "... Data/Items/Item/Item.o"
 	@echo "... Data/Items/Item/Item.i"
 	@echo "... Data/Items/Item/Item.s"
-	@echo "... Data/Items/ItemInTheBag/ItemInTheBag.o"
-	@echo "... Data/Items/ItemInTheBag/ItemInTheBag.i"
-	@echo "... Data/Items/ItemInTheBag/ItemInTheBag.s"
 	@echo "... Data/Items/Reagent/Reagent.o"
 	@echo "... Data/Items/Reagent/Reagent.i"
 	@echo "... Data/Items/Reagent/Reagent.s"
 	@echo "... Data/Items/Weapon/Weapon.o"
 	@echo "... Data/Items/Weapon/Weapon.i"
 	@echo "... Data/Items/Weapon/Weapon.s"
+	@echo "... Data/Locations/Utility/ReagentElement/ReagentElement.o"
+	@echo "... Data/Locations/Utility/ReagentElement/ReagentElement.i"
+	@echo "... Data/Locations/Utility/ReagentElement/ReagentElement.s"
+	@echo "... Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.o"
+	@echo "... Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.i"
+	@echo "... Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.s"
 	@echo "... Data/Locations/Vendor/Vendor.o"
 	@echo "... Data/Locations/Vendor/Vendor.i"
 	@echo "... Data/Locations/Vendor/Vendor.s"
+	@echo "... Data/Locations/Workshop/Workshop.o"
+	@echo "... Data/Locations/Workshop/Workshop.i"
+	@echo "... Data/Locations/Workshop/Workshop.s"
 	@echo "... Data/Utility/AllItemsDB/AllItemsDB.o"
 	@echo "... Data/Utility/AllItemsDB/AllItemsDB.i"
 	@echo "... Data/Utility/AllItemsDB/AllItemsDB.s"

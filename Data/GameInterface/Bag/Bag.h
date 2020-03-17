@@ -2,7 +2,7 @@
 #define GAME_BAH_H
 
 #include "../../Items/Item/Item.h"
-#include "../../Items/ItemInTheBag/ItemInTheBag.h"
+#include "../Utility/ItemInTheBag/ItemInTheBag.h"
 #include "../../Locations/Vendor/Vendor.h"
 #include <vector>
 

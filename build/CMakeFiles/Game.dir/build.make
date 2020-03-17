@@ -239,18 +239,18 @@ CMakeFiles/Game.dir/Data/Items/Item/Item.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Items/Item/Item.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Items/Item/Item.cpp -o CMakeFiles/Game.dir/Data/Items/Item/Item.cpp.s
 
-CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.o: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.o: ../Data/Items/ItemInTheBag/ItemInTheBag.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.o -c /home/yan/C++/GitGame/Game/Data/Items/ItemInTheBag/ItemInTheBag.cpp
+CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.o: ../Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.o -c /home/yan/C++/GitGame/Game/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp
 
-CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/C++/GitGame/Game/Data/Items/ItemInTheBag/ItemInTheBag.cpp > CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.i
+CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/C++/GitGame/Game/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp > CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.i
 
-CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Items/ItemInTheBag/ItemInTheBag.cpp -o CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.s
+CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp -o CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.s
 
 CMakeFiles/Game.dir/Data/Items/Reagent/Reagent.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Data/Items/Reagent/Reagent.cpp.o: ../Data/Items/Reagent/Reagent.cpp
@@ -369,6 +369,45 @@ CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Locations/Vendor/Vendor.cpp -o CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.s
 
+CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o: ../Data/Locations/Workshop/Workshop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o -c /home/yan/C++/GitGame/Game/Data/Locations/Workshop/Workshop.cpp
+
+CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/C++/GitGame/Game/Data/Locations/Workshop/Workshop.cpp > CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.i
+
+CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Locations/Workshop/Workshop.cpp -o CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.s
+
+CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.o: ../Data/Locations/Utility/ReagentElement/ReagentElement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.o -c /home/yan/C++/GitGame/Game/Data/Locations/Utility/ReagentElement/ReagentElement.cpp
+
+CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/C++/GitGame/Game/Data/Locations/Utility/ReagentElement/ReagentElement.cpp > CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.i
+
+CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Locations/Utility/ReagentElement/ReagentElement.cpp -o CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.s
+
+CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o: ../Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o -c /home/yan/C++/GitGame/Game/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp
+
+CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yan/C++/GitGame/Game/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp > CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.i
+
+CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yan/C++/GitGame/Game/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp -o CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.s
+
 # Object files for target Game
 Game_OBJECTS = \
 "CMakeFiles/Game.dir/main.cpp.o" \
@@ -385,7 +424,7 @@ Game_OBJECTS = \
 "CMakeFiles/Game.dir/Data/Items/Helm/Helm.cpp.o" \
 "CMakeFiles/Game.dir/Data/Items/IItem/IItem.cpp.o" \
 "CMakeFiles/Game.dir/Data/Items/Item/Item.cpp.o" \
-"CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.o" \
+"CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.o" \
 "CMakeFiles/Game.dir/Data/Items/Reagent/Reagent.cpp.o" \
 "CMakeFiles/Game.dir/Data/Items/Weapon/Weapon.cpp.o" \
 "CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o" \
@@ -394,7 +433,10 @@ Game_OBJECTS = \
 "CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.o" \
 "CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o" \
 "CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o" \
-"CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o"
+"CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o" \
+"CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o" \
+"CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.o" \
+"CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o"
 
 # External object files for target Game
 Game_EXTERNAL_OBJECTS =
@@ -413,7 +455,7 @@ Game: CMakeFiles/Game.dir/Data/Items/Chest/Chest.cpp.o
 Game: CMakeFiles/Game.dir/Data/Items/Helm/Helm.cpp.o
 Game: CMakeFiles/Game.dir/Data/Items/IItem/IItem.cpp.o
 Game: CMakeFiles/Game.dir/Data/Items/Item/Item.cpp.o
-Game: CMakeFiles/Game.dir/Data/Items/ItemInTheBag/ItemInTheBag.cpp.o
+Game: CMakeFiles/Game.dir/Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp.o
 Game: CMakeFiles/Game.dir/Data/Items/Reagent/Reagent.cpp.o
 Game: CMakeFiles/Game.dir/Data/Items/Weapon/Weapon.cpp.o
 Game: CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o
@@ -423,9 +465,12 @@ Game: CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/GetChoise/GetChoise.cpp.
 Game: CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp.o
 Game: CMakeFiles/Game.dir/Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp.o
 Game: CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o
+Game: CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o
+Game: CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.o
+Game: CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o
 Game: CMakeFiles/Game.dir/build.make
 Game: CMakeFiles/Game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable Game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yan/C++/GitGame/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable Game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

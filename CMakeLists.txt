@@ -22,7 +22,7 @@ add_executable(Game main.cpp
         Data/Items/Helm/Helm.cpp
         Data/Items/IItem/IItem.cpp
         Data/Items/Item/Item.cpp
-        Data/Items/ItemInTheBag/ItemInTheBag.cpp
+        Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp
         Data/Items/Reagent/Reagent.cpp
         Data/Items/Weapon/Weapon.cpp
         Data/Utility/AllItemsDB/AllItemsDB.cpp
@@ -32,4 +32,7 @@ add_executable(Game main.cpp
         Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.cpp
         Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp
         Data/Locations/Vendor/Vendor.cpp
+        Data/Locations/Workshop/Workshop.cpp
+        Data/Locations/Utility/ReagentElement/ReagentElement.cpp
+        Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp
         )
