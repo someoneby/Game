@@ -100,7 +100,7 @@ CMakeFiles/Game.dir/Data/Items/Weapon/Weapon.cpp.o: ../Data/Items/Weapon/Weapon.
 CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.o: ../Data/Locations/Utility/ReagentElement/ReagentElement.cpp
 CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.o: ../Data/Locations/Utility/ReagentElement/ReagentElement.h
 
-CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o: ../Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp
+CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp.o: ../Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp
 
 CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/GameInterface/Bag/Bag.h
 CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.h
@@ -114,7 +114,16 @@ CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Utility/UtilityF
 CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h
 CMakeFiles/Game.dir/Data/Locations/Vendor/Vendor.cpp.o: ../Data/Utility/UtilityFunctions/GetChoise/GetChoise.h
 
+CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o: ../Data/Items/IItem/IItem.h
+CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o: ../Data/Items/Item/Item.h
+CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o: ../Data/Locations/Utility/ReagentElement/ReagentElement.h
+CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o: ../Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.h
 CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o: ../Data/Locations/Workshop/Workshop.cpp
+CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o: ../Data/Locations/Workshop/Workshop.h
+CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o: ../Data/Utility/AllItemsDB/AllItemsDB.h
+CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o: ../Data/Utility/UtilityFunctions/BadInputState/BadInputState.h
+CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o: ../Data/Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h
+CMakeFiles/Game.dir/Data/Locations/Workshop/Workshop.cpp.o: ../Data/Utility/UtilityFunctions/GetChoise/GetChoise.h
 
 CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Data/Items/Armor/Armor.h
 CMakeFiles/Game.dir/Data/Utility/AllItemsDB/AllItemsDB.cpp.o: ../Data/Items/Chest/Chest.h

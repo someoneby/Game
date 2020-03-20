@@ -1,3 +1,3 @@
-/home/yan/C++/GitGame/Game/build/CMakeFiles/rebuild_cache.dir
-/home/yan/C++/GitGame/Game/build/CMakeFiles/Game.dir
-/home/yan/C++/GitGame/Game/build/CMakeFiles/edit_cache.dir
+/home/yan/CLionProjects/gitGame/Game/build/CMakeFiles/rebuild_cache.dir
+/home/yan/CLionProjects/gitGame/Game/build/CMakeFiles/Game.dir
+/home/yan/CLionProjects/gitGame/Game/build/CMakeFiles/edit_cache.dir

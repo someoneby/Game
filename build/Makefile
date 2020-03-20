@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yan/C++/GitGame/Game
+CMAKE_SOURCE_DIR = /home/yan/CLionProjects/gitGame/Game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yan/C++/GitGame/Game/build
+CMAKE_BINARY_DIR = /home/yan/CLionProjects/gitGame/Game/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yan/C++/GitGame/Game/build/CMakeFiles /home/yan/C++/GitGame/Game/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yan/CLionProjects/gitGame/Game/build/CMakeFiles /home/yan/CLionProjects/gitGame/Game/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yan/C++/GitGame/Game/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yan/CLionProjects/gitGame/Game/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -582,32 +582,32 @@ Data/Locations/Utility/ReagentElement/ReagentElement.cpp.s:
 	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Utility/ReagentElement/ReagentElement.cpp.s
 .PHONY : Data/Locations/Utility/ReagentElement/ReagentElement.cpp.s
 
-Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.o: Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o
+Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.o: Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp.o
 
-.PHONY : Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.o
+.PHONY : Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.o
 
 # target to build an object file
-Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o
-.PHONY : Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.o
+Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp.o
+.PHONY : Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp.o
 
-Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.i: Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.i
+Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.i: Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp.i
 
-.PHONY : Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.i
+.PHONY : Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.i
 
 # target to preprocess a source file
-Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.i:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.i
-.PHONY : Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.i
+Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp.i
+.PHONY : Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp.i
 
-Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.s: Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.s
+Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.s: Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp.s
 
-.PHONY : Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.s
+.PHONY : Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.s
 
 # target to generate assembly for a file
-Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.s:
-	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.s
-.PHONY : Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.cpp.s
+Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp.s
+.PHONY : Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp.s
 
 Data/Locations/Vendor/Vendor.o: Data/Locations/Vendor/Vendor.cpp.o
 
@@ -912,9 +912,9 @@ help:
 	@echo "... Data/Locations/Utility/ReagentElement/ReagentElement.o"
 	@echo "... Data/Locations/Utility/ReagentElement/ReagentElement.i"
 	@echo "... Data/Locations/Utility/ReagentElement/ReagentElement.s"
-	@echo "... Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.o"
-	@echo "... Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.i"
-	@echo "... Data/Locations/Utility/ReagentsToProduce/ReagentsToProduce.s"
+	@echo "... Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.o"
+	@echo "... Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.i"
+	@echo "... Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.s"
 	@echo "... Data/Locations/Vendor/Vendor.o"
 	@echo "... Data/Locations/Vendor/Vendor.i"
 	@echo "... Data/Locations/Vendor/Vendor.s"
