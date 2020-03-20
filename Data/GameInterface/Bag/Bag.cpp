@@ -53,3 +53,11 @@ void Bag::spendGold(int s_gold) {
 int Bag::getHowMuchGold() {
     return m_gold;
 }
+
+int Bag::getCounterById(int s_id) {
+    for(int i{0}; i < m_bag.size(); ++i){
+        if(m_bag.at(i)->m_id == s_id)
+            return m_bag.at(i)->m_count;
+    }
+    return 0;
+}

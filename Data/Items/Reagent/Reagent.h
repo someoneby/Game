@@ -3,7 +3,9 @@
 
 #include "../Item/Item.h"
 class Reagent : public Item {
-
+    public:
+        Reagent(int, std::string, std::string, int);
+        void showDescription() override;
 };
 
 

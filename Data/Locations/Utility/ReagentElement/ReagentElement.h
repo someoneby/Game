@@ -8,6 +8,8 @@ class ReagentElement {
         int m_count;
     public:
         ReagentElement(int, int);
+        int getId();
+        int getCount();
 };
 
 

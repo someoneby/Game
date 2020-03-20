@@ -17,12 +17,12 @@ add_executable(Game main.cpp
         Data/GameInterface/EquipedItems/EquipedItems.cpp
         Data/GameInterface/MainMenu/MainMenu.cpp
         Data/GameInterface/LocationsMenu/LocationsMenu.cpp
+        Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp
         Data/Items/Armor/Armor.cpp
         Data/Items/Chest/Chest.cpp 
         Data/Items/Helm/Helm.cpp
         Data/Items/IItem/IItem.cpp
         Data/Items/Item/Item.cpp
-        Data/GameInterface/Utility/ItemInTheBag/ItemInTheBag.cpp
         Data/Items/Reagent/Reagent.cpp
         Data/Items/Weapon/Weapon.cpp
         Data/Utility/AllItemsDB/AllItemsDB.cpp

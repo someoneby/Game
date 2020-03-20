@@ -5,12 +5,13 @@
 #include "../Utility/ReagentsToCraft/ReagentsToCraft.h"
 
 class Workshop {
-        int getAvailableNumber();
-        void craftMenu(int);
+        static int getAvailableNumber(int);
+        static void showReagents(int);
+        static void craftMenu(int);
 
-        static std::vector<ReagentsToCraft> m_items;
+        static std::vector<ReagentsToCraft *> m_items;
     public:
-        void showItemsToCraft();
+        static void showItemsToCraft();
 
 };
 

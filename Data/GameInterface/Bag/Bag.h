@@ -18,6 +18,7 @@ class Bag {
         static void takeGold(int);
         static void spendGold(int);
         static int getHowMuchGold();
+        static int getCounterById(int);
 };
 
 #endif

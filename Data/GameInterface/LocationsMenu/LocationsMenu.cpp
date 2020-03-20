@@ -1,5 +1,6 @@
 #include "LocationsMenu.h"
 #include "../../Locations/Vendor/Vendor.h"
+#include "../../Locations/Workshop/Workshop.h"
 #include "../../Utility/UtilityFunctions/GetChoise/GetChoise.h"
 #include "../../Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h"
 #include "../../Utility/UtilityFunctions/BadInputState/BadInputState.h"
@@ -25,8 +26,8 @@ void LocationsMenu::showLocations() {
         
         switch (choise) {
             case 1 : {
-                cout << " Мастерская. \n";
-                return;
+                Workshop::showItemsToCraft();
+                break;
             }
             case 2 : {
                 Vendor::showMenuOfVendor();

@@ -3,6 +3,7 @@
 #include "../../Items/Helm/Helm.h"
 #include "../../Items/Chest/Chest.h"
 #include "../../Items/Weapon/Weapon.h"
+#include "../../Items/Reagent/Reagent.h"
 
 std::vector<Item *> AllItemsDB::m_allItemsDB {  
     // Helm (int id, string name, int armor, float avoidChanse, int hp, int prise, string description)
@@ -49,8 +50,13 @@ std::vector<Item *> AllItemsDB::m_allItemsDB {
         "Любовь и забота, вложенные при создании бабушкой этого свитера, надёжно защитят владельца от всех бед."),
 
     //Weapon (int id, string name, int damage, float criticalChance, int prise, string description)
-    new Weapon(61, "Test", 10, 0.1, 100, "Test")
-        
+    new Weapon(61, "Test", 10, 0.1, 100, "Test"),
+
+
+
+    //Reagent(int id, std::string name, std::string description, int prise)
+    new Reagent(91, "Кожа", "Спасибо что не с жопы.", 5),
+    new Reagent(92, "Кожа с жопы", "Блять ...", 6)
         
                 
         

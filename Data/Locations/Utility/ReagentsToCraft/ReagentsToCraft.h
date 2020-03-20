@@ -6,10 +6,10 @@
 
 class ReagentsToCraft {
         friend class Workshop;
-        std::vector<ReagentElement> m_reagents;
+        std::vector<ReagentElement> * m_reagents;
         int m_itemId;
     public:
-        ReagentsToCraft()
+        ReagentsToCraft(int, std::vector<ReagentElement> *);
 };
 
 #endif //GAME_REAGENTSTOCRAFT_H
