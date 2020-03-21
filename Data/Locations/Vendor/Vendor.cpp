@@ -82,7 +82,7 @@ void Vendor::showMenuToBuy() {
 
 void Vendor::showDescriptionToBuy(int s_idToBuy) {
     int priseToBuy { AllItemsDB::getItemByID(s_idToBuy)->getPrise() * Constants::modifierCostToBuy };
-    int howMuchCanBuy { Bag::getHowMuchGold() / priseToBuy };
+    int howMuchCanBuy { Bag::getHowManyGold() / priseToBuy };
     int number {1};
 
     while(number != 0) {
@@ -125,7 +125,7 @@ void Vendor::showMenuToSell() {
         choise = getChoise();
 
         // Position within the borders of the bag
-        if(choise > 0 && choise <= Bag::m_bag.size()) 
+        if(choise > 0 && choise <= Bag::getBagSize()) 
             // -1 т.к. у нас отсчёт с нуля
             showDescriptionToSell(choise-1);
         // Exit
@@ -138,9 +138,9 @@ void Vendor::showMenuToSell() {
 }
 
 void Vendor::showDescriptionToSell(int s_positionToSell) {
-    int id {Bag::m_bag.at(s_positionToSell)->getId()};
+    int id {Bag::getItemFromBag(s_positionToSell)->getId()};
     int number {1};
-    int count {Bag::m_bag.at(s_positionToSell)->getCount()};
+    int count {Bag::getItemFromBag(s_positionToSell)->getCount()};
     int prise {AllItemsDB::getItemByID(id)->getPrise()};
 
     while(number != 0) {

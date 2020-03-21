@@ -5,14 +5,15 @@
 #include "../../Items/Armor/Armor.h"
 #include "../../Characters/Player/Player.h"
 
-int EquipedItems::m_helmId = 0;
-int EquipedItems::m_chestId = 0;
-int EquipedItems::m_weaponId = 0;
+EquipedItems* EquipedItems::m_instance = new EquipedItems();
+
+EquipedItems::EquipedItems() : m_weaponId{0}, m_chestId{0}, m_helmId{0} {};
 
 void EquipedItems::equip (int s_id, TypesOfEquip s_type) {
     switch (s_type) {
         case TypesOfEquip::weapon : {
-            if (m_weaponId != 0) {
+            // If the item is on
+            if (m_instance->m_weaponId != 0) {
                 unEquip(s_type);
             }
 
@@ -24,7 +25,7 @@ void EquipedItems::equip (int s_id, TypesOfEquip s_type) {
             Player::getInstance()->changeCriticalChance(static_cast<Weapon *>(AllItemsDB::getItemByID(s_id))->getCriticalChance());
 
             // Change id of equipted Weapon
-            m_weaponId = s_id;
+            m_instance->m_weaponId = s_id;
 
             break;
         }
@@ -32,10 +33,13 @@ void EquipedItems::equip (int s_id, TypesOfEquip s_type) {
         case TypesOfEquip::chest : {}
         case TypesOfEquip::helm : {
             //Select target_id by type
-            int target_id {m_helmId};
+            int target_id;
             if(s_type == TypesOfEquip::chest)
-                target_id = m_chestId;
+                target_id = m_instance->m_chestId;
+            else
+                target_id = m_instance->m_helmId;
 
+            // If the item is on
             if (target_id != 0) {
                 unEquip(s_type);
             }
@@ -50,9 +54,9 @@ void EquipedItems::equip (int s_id, TypesOfEquip s_type) {
 
             // Change id of equipted Armor
             if(s_type == TypesOfEquip::chest)
-                m_chestId = s_id;
+                m_instance->m_chestId = s_id;
             else 
-                m_helmId = s_id;
+                m_instance->m_helmId = s_id;
 
             break;          
         }
@@ -65,14 +69,14 @@ void EquipedItems::unEquip (TypesOfEquip s_type) {
     switch (s_type) {
             case TypesOfEquip::weapon : {
                 // Change count of items in the bag
-                Bag::putToBag(m_weaponId);
+                Bag::putToBag(m_instance->m_weaponId);
 
                 // Taking Item* from the database, cast to Weapon* and Change player's parameters
-                Player::getInstance()->changeDamage(- static_cast<Weapon *>(AllItemsDB::getItemByID(m_weaponId))->getDamage());
-                Player::getInstance()->changeCriticalChance(- static_cast<Weapon *>(AllItemsDB::getItemByID(m_weaponId))->getCriticalChance());
+                Player::getInstance()->changeDamage(- static_cast<Weapon *>(AllItemsDB::getItemByID(m_instance->m_weaponId))->getDamage());
+                Player::getInstance()->changeCriticalChance(- static_cast<Weapon *>(AllItemsDB::getItemByID(m_instance->m_weaponId))->getCriticalChance());
 
                 // Change id of equipted Weapon
-                m_weaponId = 0;
+                m_instance->m_weaponId = 0;
 
                 break;
             }
@@ -80,9 +84,11 @@ void EquipedItems::unEquip (TypesOfEquip s_type) {
             case TypesOfEquip::chest : {}
             case TypesOfEquip::helm : {
                 //Select target_id by type
-                int target_id {m_helmId};
+                int target_id;
                 if(s_type == TypesOfEquip::chest)
-                    target_id = m_chestId;
+                    target_id = m_instance->m_chestId;
+                else
+                    target_id = m_instance->m_helmId;
                 
                 // Change count of items in the bag
                 Bag::putToBag(target_id);
@@ -94,9 +100,9 @@ void EquipedItems::unEquip (TypesOfEquip s_type) {
 
                 // Change id of equipted Armor
                 if(s_type == TypesOfEquip::chest)
-                    m_chestId = 0;
+                    m_instance->m_chestId = 0;
                 else 
-                    m_helmId = 0;
+                    m_instance->m_helmId = 0;
 
                 break;          
             }

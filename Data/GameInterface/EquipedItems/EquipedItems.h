@@ -4,10 +4,11 @@
 #include "../../Utility/Constants/TypesOfEquip.h"
 
 class EquipedItems {
-    private:
-        static int m_helmId;
-        static int m_chestId;
-        static int m_weaponId;
+        int m_helmId;
+        int m_chestId;
+        int m_weaponId;
+        static EquipedItems* m_instance;
+        EquipedItems();
     public:
         static void equip (int, TypesOfEquip);
         static void unEquip (TypesOfEquip);

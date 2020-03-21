@@ -33,6 +33,7 @@ void LocationsMenu::showLocations() {
                 Vendor::showMenuOfVendor();
                 break;
             }
+            // coming soon
             case 3 : {
                 cout << " Приключения.\n";
                 break;

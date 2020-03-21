@@ -7,18 +7,22 @@
 #include <vector>
 
 class Bag {
-    private:
-        friend class Vendor;
-        static int m_gold;
-        static std::vector<ItemInTheBag *> m_bag;
+        Bag();
+        int m_gold;
+        std::vector<ItemInTheBag *> m_bag;
+        static Bag* m_instance;
     public:
         static void show();
         static void putToBag(int, int = 1);
         static void takeFromBag(int, int = 1);
         static void takeGold(int);
         static void spendGold(int);
-        static int getHowMuchGold();
+        // нужны ли ?
+        static int getHowManyGold();
         static int getCounterById(int);
+        static int getBagSize();
+        static ItemInTheBag* getItemFromBag(int);
+        //
 };
 
 #endif

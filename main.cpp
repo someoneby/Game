@@ -20,7 +20,7 @@ int main() {
 
     Bag::show();
 
-
+    cout << " SOSI";
 
     
 

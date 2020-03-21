@@ -6,16 +6,16 @@
 
 class Player : public Unit {
     private:
-        static Player * m_instance;
+        static Player* m_instance;
         Player();
         Player(const Player&);
         Player& operator = (Player&);
 
     public:
-        static Player * getInstance();
+        static Player* getInstance();
         void setName(string name);
 
-        void fight(IUnit *);
+        void fight(IUnit*);
         void changeDamage(int);
         void changeCriticalChance(float);
         void changeHp(int);

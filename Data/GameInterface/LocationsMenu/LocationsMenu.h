@@ -2,7 +2,6 @@
 #define GAME_LOCATIONSMENU_H
 
 class LocationsMenu {
-
     public:
         static void showLocations();
 };
