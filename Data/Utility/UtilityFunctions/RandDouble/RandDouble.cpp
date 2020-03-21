@@ -7,7 +7,7 @@ typedef boost::mt19937 BaseGenerator;
 typedef boost::uniform_real<double> Distribution;
 typedef boost::variate_generator<BaseGenerator, Distribution> Generator;
 
-
+//Ничего не понимаю, но работает
 double randDouble () {
     static BaseGenerator base;
     static Distribution dist;

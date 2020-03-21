@@ -2,7 +2,7 @@
 #include "iostream"
 using std::cin;
 
-    //Баг: исправить возможный ввод с пробелами
+//Баг: исправить возможный ввод с пробелами
 int getChoise() {
     int choise;
     cin >> choise;

@@ -7,8 +7,6 @@
 class Helm : public Armor {
     public:
         Helm(int, std::string, int, float, int, int, std::string);
-        int getHP();
-        // void equip(int) override; 
 };
 
 

@@ -138,9 +138,9 @@ void Vendor::showMenuToSell() {
 }
 
 void Vendor::showDescriptionToSell(int s_positionToSell) {
-    int id {Bag::m_bag.at(s_positionToSell)->m_id};
+    int id {Bag::m_bag.at(s_positionToSell)->getId()};
     int number {1};
-    int count {Bag::m_bag.at(s_positionToSell)->m_count};
+    int count {Bag::m_bag.at(s_positionToSell)->getCount()};
     int prise {AllItemsDB::getItemByID(id)->getPrise()};
 
     while(number != 0) {

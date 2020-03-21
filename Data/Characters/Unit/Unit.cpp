@@ -14,6 +14,7 @@ void Unit::hit(IUnit * target) {
     }
 
     int damage = damageCalculating(target->getArmor());
+    
     if(isCritical()){
         damage *= Constants::criticalMultiple;
         combatLog(CombatLogStages::critical, this, target, damage);

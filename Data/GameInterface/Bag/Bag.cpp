@@ -8,9 +8,9 @@ void Bag::show() {
     std::cout << " Gold: " << m_gold << "\n";
 
     for(int i {0}; i < m_bag.size(); ++i) {
-        std::cout << " " << i+1 << ". " << AllItemsDB::getItemByID(m_bag.at(i)->m_id)->getName();
-        if( m_bag.at(i)->m_count > 1 )
-            std::cout << ": " << m_bag.at(i)->m_count;
+        std::cout << " " << i+1 << ". " << AllItemsDB::getItemByID(m_bag.at(i)->getId())->getName();
+        if( m_bag.at(i)->getCount() > 1 )
+            std::cout << ": " << m_bag.at(i)->getCount();
         std::cout << "\n";
     }
 }
@@ -18,8 +18,8 @@ void Bag::show() {
 void Bag::putToBag(int  s_id, int s_number) {
     for(int i = 0; i < m_bag.size(); ++i) {
         //IF ITEM EXISTS
-        if(m_bag.at(i)->m_id == s_id) {
-            m_bag.at(i)->m_count += s_number;
+        if(m_bag.at(i)->getId() == s_id) {
+            m_bag.at(i)->changeCount(s_number);
             return;
         }
     }
@@ -30,11 +30,11 @@ void Bag::putToBag(int  s_id, int s_number) {
 void Bag::takeFromBag(int s_id, int s_number) {
     //Search item
     for(int i{0}; i < m_bag.size(); ++i) {
-        if(m_bag.at(i)->m_id == s_id) {
+        if(m_bag.at(i)->getId() == s_id) {
             //Change count of items
-            m_bag.at(i)->m_count -= s_number;
+            m_bag.at(i)->changeCount(-s_number);
             //If items is over
-            if(m_bag.at(i)->m_count == 0) {
+            if(m_bag.at(i)->getCount() == 0) {
                 delete m_bag.at(i);
                 m_bag.erase(m_bag.begin() + i, m_bag.begin() + i + 1);
             }
@@ -56,8 +56,8 @@ int Bag::getHowMuchGold() {
 
 int Bag::getCounterById(int s_id) {
     for(int i{0}; i < m_bag.size(); ++i){
-        if(m_bag.at(i)->m_id == s_id)
-            return m_bag.at(i)->m_count;
+        if(m_bag.at(i)->getId() == s_id)
+            return m_bag.at(i)->getCount();
     }
     return 0;
 }

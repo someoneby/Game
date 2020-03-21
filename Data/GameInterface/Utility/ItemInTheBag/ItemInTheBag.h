@@ -1,10 +1,14 @@
 #ifndef GAME_ITEMINTHEBAG_H
 #define GAME_ITEMINTHEBAG_H
 
-struct ItemInTheBag {
-    int m_id;
-    int m_count;
-    ItemInTheBag(int, int);
+class ItemInTheBag {
+        int m_id;
+        int m_count;
+    public:
+        ItemInTheBag(int, int);
+        int getId();
+        int getCount();
+        void changeCount(int);
 };
 
 
