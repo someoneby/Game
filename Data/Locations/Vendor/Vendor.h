@@ -5,12 +5,13 @@
 
 class Vendor {
     private:
-        static std::vector<int> m_itemsIdToBuy;
-        
+        std::vector<int> m_itemsIdToBuy;
+        static Vendor* m_instance;
+        Vendor();
         static void showMenuToBuy();
         static void showMenuToSell();
-        static void showDescriptionToBuy(int);
-        static void showDescriptionToSell(int);
+        static void showDescriptionToBuy(const int);
+        static void showDescriptionToSell(const int);
     public:
         static void showMenuOfVendor();
 

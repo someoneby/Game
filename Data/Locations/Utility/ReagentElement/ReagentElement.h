@@ -4,10 +4,10 @@
 #include <vector>
 
 class ReagentElement {
-        int m_id;
-        int m_count;
+        const int m_id;
+        const int m_count;
     public:
-        ReagentElement(int, int);
+        ReagentElement(const int, const int);
         int getId();
         int getCount();
 };

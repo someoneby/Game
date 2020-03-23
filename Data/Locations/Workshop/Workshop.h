@@ -2,17 +2,18 @@
 #define GAME_WORKSHOP_H
 
 #include <vector>
-#include "../Utility/ReagentsToCraft/ReagentsToCraft.h"
+#include "../Utility/ItemToCraft/ItemToCraft.h"
 
 class Workshop {
-        static int getAvailableNumber(int);
-        static void showReagents(int);
-        static void craftMenu(int);
+        static int getAvailableNumber(const int);
+        static void showReagents(const int);
+        static void craftMenu(const int);
 
-        static std::vector<ReagentsToCraft *> m_items;
+        std::vector<ItemToCraft> m_items;
+        static Workshop* m_instance;
+        Workshop();
     public:
         static void showItemsToCraft();
-
 };
 
 #endif //GAME_WORKSHOP_H

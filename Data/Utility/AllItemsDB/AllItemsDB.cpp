@@ -5,7 +5,9 @@
 #include "../../Items/Weapon/Weapon.h"
 #include "../../Items/Reagent/Reagent.h"
 
-std::vector<Item *> AllItemsDB::m_allItemsDB {  
+AllItemsDB* AllItemsDB::m_instance = new AllItemsDB();
+
+AllItemsDB::AllItemsDB() : m_allItemsDB {  
     // Helm (int id, string name, int armor, float avoidChanse, int hp, int prise, string description)
     new Helm(1, "Кастрюля дырявая", 5, 0, 10, 10, 
         "Дырявая кастрюля, которая послужила каской во время первой мировой твоему старшему брату ..\nСобсна теперь старший ты."),
@@ -56,19 +58,13 @@ std::vector<Item *> AllItemsDB::m_allItemsDB {
 
     //Reagent(int id, std::string name, std::string description, int prise)
     new Reagent(91, "Кожа", "Спасибо что не с жопы.", 5),
-    new Reagent(92, "Кожа с жопы", "Блять ...", 6)
-        
-                
-        
-                
-                        
-
-};
+    new Reagent(92, "Кожа с жопы", "Блять ...", 6) 
+} {};
 
 Item * AllItemsDB::getItemByID(int s_id) {
-    for(int i{0}; i < m_allItemsDB.size(); ++i){
-        if(m_allItemsDB.at(i)->getId() == s_id)
-            return m_allItemsDB.at(i);
+    for(int i{0}; i < m_instance->m_allItemsDB.size(); ++i){
+        if(m_instance->m_allItemsDB.at(i)->getId() == s_id)
+            return m_instance->m_allItemsDB.at(i);
     }
     return nullptr;
 }

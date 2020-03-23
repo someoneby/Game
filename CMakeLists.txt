@@ -34,5 +34,5 @@ add_executable(Game main.cpp
         Data/Locations/Vendor/Vendor.cpp
         Data/Locations/Workshop/Workshop.cpp
         Data/Locations/Utility/ReagentElement/ReagentElement.cpp
-        Data/Locations/Utility/ReagentsToCraft/ReagentsToCraft.cpp
+        Data/Locations/Utility/ItemToCraft/ItemToCraft.cpp
         )

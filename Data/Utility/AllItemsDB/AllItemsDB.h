@@ -9,11 +9,9 @@ class AllItemsDB {
         AllItemsDB(const AllItemsDB &) = delete;
         AllItemsDB & operator = (AllItemsDB &) = delete;
         static AllItemsDB * m_instance;
-        
-        static std::vector<Item *> m_allItemsDB;
+        std::vector<Item*> m_allItemsDB;
     public:
         static Item * getItemByID(int);
-        
 };
 
 
