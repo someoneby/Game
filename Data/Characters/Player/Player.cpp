@@ -1,5 +1,5 @@
 #include "Player.h"
-#include "../../Utility/Constants/Parameters.h"
+#include "../Utility/Parameters.h"
 #include "../../Utility/UtilityFunctions/CombatLog/CombatLog.h"
 
 Player * Player::m_instance = nullptr;
@@ -22,19 +22,19 @@ void Player::setName(string s_name) {
 
 void Player::fight(IUnit * mob) {
 
-    combatLog(CombatLogStages::start, this, mob);
+    combatLog(CombatLogStages::START, this, mob);
 
     while (m_hp != 0 && mob->getHP() != 0){
-        combatLog(CombatLogStages::nextRound, this, mob);
+        combatLog(CombatLogStages::NEXT_ROUND, this, mob);
 
         this->hit(mob);
         mob->hit(this);
     }
 
     if(m_hp == 0){
-        combatLog(CombatLogStages::lose);
+        combatLog(CombatLogStages::LOSE);
     } else {
-        combatLog(CombatLogStages::win);
+        combatLog(CombatLogStages::WIN);
     }
 }
 

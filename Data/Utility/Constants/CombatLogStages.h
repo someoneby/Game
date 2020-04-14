@@ -1,14 +1,16 @@
 #ifndef GAME_COMBATLOGSTAGES_H
 #define GAME_COMBATLOGSTAGES_H
 
+// Stages for function that prints combat log
+
 enum CombatLogStages {
-    start,
-    missing,
-    critical,
-    hit,
-    nextRound,
-    lose,
-    win
+    START,
+    MISS,
+    CRITICAL,
+    HIT,
+    NEXT_ROUND,
+    LOSE,
+    WIN
 };
 
 

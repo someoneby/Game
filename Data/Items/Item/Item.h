@@ -12,9 +12,9 @@ class Item : public IItem {
         std::string m_description;
     public:
         Item(int, std::string, std::string, int);
-        int getId() override;
-        std::string getName() override;
-        int getPrise() override;
+        int getId() const override;
+        std::string getName() const override;
+        int getPrise() const override;
 
 };
 

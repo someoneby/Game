@@ -5,7 +5,7 @@
 class Reagent : public Item {
     public:
         Reagent(int, std::string, std::string, int);
-        void showDescription() override;
+        void showDescription() const override;
 };
 
 

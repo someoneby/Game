@@ -5,10 +5,10 @@
 
 class IItem {
     public:
-        virtual void showDescription() = 0;
-        virtual int getId() = 0;
-        virtual std::string getName() = 0;
-        virtual int getPrise() = 0;
+        virtual void showDescription() const = 0;
+        virtual int getId() const = 0;
+        virtual std::string getName() const = 0;
+        virtual int getPrise() const = 0;
 };
 
 #endif

@@ -1,14 +1,17 @@
 #ifndef GAME_ITEMTOCRAFT_H
 #define GAME_ITEMTOCRAFT_H
 
+/*
+    This struct store data about item and which reagents it needs to 
+    be crafting
+*/
+
 #include "../ReagentElement/ReagentElement.h"
 #include <vector>
 
-class ItemToCraft {
-        friend class Workshop;
+struct ItemToCraft {
         std::vector<ReagentElement> m_reagents;
         const int m_itemId;
-    public:
         ItemToCraft(const int, std::vector<ReagentElement>);
 };
 

@@ -1,7 +1,7 @@
 #ifndef GAME_ALLITEMS_H
 #define GAME_ALLITEMS_H
 
-#include "../../Items/Item/Item.h"
+#include "../../Item/Item.h"
 #include "vector"
 class AllItemsDB {
     private:

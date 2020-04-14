@@ -1,15 +1,20 @@
 #include "EquipedItems.h"
 #include "../Bag/Bag.h"
-#include "../../Utility/AllItemsDB/AllItemsDB.h"
+#include "../../Items/Utility/AllItemsDB/AllItemsDB.h"
 #include "../../Items/Weapon/Weapon.h"
 #include "../../Items/Armor/Armor.h"
 #include "../../Characters/Player/Player.h"
+#include "../../Utility/UtilityFunctions/GetChoise/GetChoise.h"
+#include "../../Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h"
+#include "../../Utility/UtilityFunctions/BadInputState/BadInputState.h"
+#include "../Utility/InterfaceConst.h"
+using std::cout;
 
 EquipedItems* EquipedItems::m_instance = new EquipedItems();
 
 EquipedItems::EquipedItems() : m_weaponId{0}, m_chestId{0}, m_helmId{0} {};
 
-void EquipedItems::equip (int s_id, TypesOfEquip s_type) {
+void EquipedItems::equip (const int s_id, const TypesOfEquip s_type) {
     switch (s_type) {
         case TypesOfEquip::weapon : {
             // If the item is on
@@ -60,11 +65,10 @@ void EquipedItems::equip (int s_id, TypesOfEquip s_type) {
 
             break;          
         }
-        
     }
 }
 
-void EquipedItems::unEquip (TypesOfEquip s_type) {
+void EquipedItems::unEquip (const TypesOfEquip s_type) {
 
     switch (s_type) {
             case TypesOfEquip::weapon : {
@@ -106,9 +110,71 @@ void EquipedItems::unEquip (TypesOfEquip s_type) {
 
                 break;          
             }
-            
         }
-
-
 }
 
+void EquipedItems::showMenu() {
+        int choise {1};
+
+    while(choise != 0) {
+        checkInputWithMessage();
+
+        //Show all items
+        cout << "Меню персонажа:"
+            << "\n " << InterfaceConst::helm << ". Шлем: " << AllItemsDB::getItemByID(m_instance->m_helmId)->getName()
+            << "\n " << InterfaceConst::chest << ". Тело: " << AllItemsDB::getItemByID(m_instance->m_chestId)->getName()
+            << "\n " << InterfaceConst::weapon << ". Оружие: " << AllItemsDB::getItemByID(m_instance->m_weaponId)->getName()
+            << "\n\n " << InterfaceConst::exit << "-выход"
+            << "\n Ваш выбор: ";
+
+        choise = getChoise();
+
+        switch(choise) {
+            case InterfaceConst::helm : {
+                EquipedItems::showItemMenu(m_instance->m_helmId);
+                break;
+            }
+            case InterfaceConst::chest : {
+                EquipedItems::showItemMenu(m_instance->m_chestId);
+                break;
+            }
+            case InterfaceConst::weapon : {
+                EquipedItems::showItemMenu(m_instance->m_weaponId);
+                break;
+            }
+            case 0: {
+                return;
+            }
+            default:
+                badInputState();
+                break;
+        }
+    }
+}
+
+void EquipedItems::showItemMenu(const int s_id) {
+    int choise {1};
+
+    while(choise != 0) {
+        checkInputWithMessage();
+        if(s_id != 0)
+            AllItemsDB::getItemByID(s_id)->showDescription();
+        else 
+            cout << "Пусто";
+        
+        cout << "\n\n0. Выход"
+            << "\nВаш выбор: ";
+
+        choise = getChoise();
+
+        switch(choise) {
+            case InterfaceConst::exit : {
+                return;
+            }
+            default : {
+                badInputState();
+                break;
+            }
+        }
+    }
+}

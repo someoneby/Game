@@ -1,14 +1,14 @@
 #include "Item.h"
 
-int Item::getId() {
+int Item::getId() const {
     return m_id;
 }
 
-std::string Item::getName() {
+std::string Item::getName() const {
     return m_name;
 }
 
-int Item::getPrise() {
+int Item::getPrise() const {
     return m_prise;
 }
 

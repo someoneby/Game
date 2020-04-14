@@ -9,7 +9,7 @@ Unit::Unit(float s_armor, int s_hp, int s_damage, float s_avoidChance, float s_c
 
 void Unit::hit(IUnit * target) {
     if(target->isMissing()){
-        combatLog(CombatLogStages::missing, this, target);
+        combatLog(CombatLogStages::MISS, this, target);
         return;
     }
 
@@ -17,9 +17,9 @@ void Unit::hit(IUnit * target) {
     
     if(isCritical()){
         damage *= Constants::criticalMultiple;
-        combatLog(CombatLogStages::critical, this, target, damage);
+        combatLog(CombatLogStages::CRITICAL, this, target, damage);
     } else {
-        combatLog(CombatLogStages::hit, this, target, damage);
+        combatLog(CombatLogStages::HIT, this, target, damage);
     }
 
     target->takeDamage(damage);

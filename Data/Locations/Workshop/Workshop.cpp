@@ -1,10 +1,9 @@
 #include "Workshop.h"
-#include "../../Utility/AllItemsDB/AllItemsDB.h"
+#include "../../Items/Utility/AllItemsDB/AllItemsDB.h"
 #include "../../Utility/UtilityFunctions/GetChoise/GetChoise.h"
 #include "../../Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h"
 #include "../../Utility/UtilityFunctions/BadInputState/BadInputState.h"
 #include "../../GameInterface/Bag/Bag.h"
-#include "../Utility/MenuChoise.h"
 #include "../Utility/LocationConstants.h"
 #include <iostream>
 using std::cout;
@@ -28,15 +27,20 @@ Workshop::Workshop() : m_items{
 
     } {}
 
+/*
+    This is main menu for workshop. Show list of all items that are available
+    to craft
+*/
 void Workshop::showItemsToCraft() {
     int choise {1};
 
-    while(choise != MenuChoise::exit) {
+    while(choise != LocationConstants::exit) {
         checkInputWithMessage();
 
         //Show list of items to craft
         cout << "\nВы можете создать: \n\n";
         for(int i{0}; i < m_instance->m_items.size(); ++i){
+            //Show type of item for better navigation
             if(m_instance->m_items.at(i).m_itemId == LocationConstants::firstHelmIdToCraft)
                 cout << "Шлемы:\n";
             else if(m_instance->m_items.at(i).m_itemId == LocationConstants::firstChestIdToCraft)
@@ -47,7 +51,7 @@ void Workshop::showItemsToCraft() {
             cout << i+1 << ". " << AllItemsDB::getItemByID(m_instance->m_items.at(i).m_itemId)->getName()
                 << " - " << getAvailableNumber(i) << ".\n";
         }
-        cout <<"\n" << MenuChoise::exit << ". Выход" << "\nВаш выбор: ";
+        cout <<"\n" << LocationConstants::exit << ". Выход" << "\nВаш выбор: ";
 
         choise = getChoise();
 
@@ -56,7 +60,7 @@ void Workshop::showItemsToCraft() {
             //-1 because real position n-1
             craftMenu(choise-1);
         //Exit
-        else if(choise == MenuChoise::exit)
+        else if(choise == LocationConstants::exit)
             return;
         //Bad input
         else
@@ -67,7 +71,7 @@ void Workshop::showItemsToCraft() {
 void Workshop::craftMenu(const int s_position) {
     int choise {1};
 
-    while(choise != MenuChoise::exit) {
+    while(choise != LocationConstants::exit) {
         checkInputWithMessage();
 
         //Show information
@@ -77,7 +81,7 @@ void Workshop::craftMenu(const int s_position) {
 
         int availableNumber {getAvailableNumber(s_position)};
         cout << "\nВы можете создать: " << availableNumber
-            << "\nСколько создать (" << MenuChoise::exit << "-выход): ";
+            << "\nСколько создать (" << LocationConstants::exit << "-выход): ";
 
         choise = getChoise();
 
@@ -86,15 +90,15 @@ void Workshop::craftMenu(const int s_position) {
             Bag::putToBag(m_instance->m_items.at(s_position).m_itemId, choise);
 
             for(int i {0}; i < m_instance->m_items.at(s_position).m_reagents.size(); ++i) {
-                int id {m_instance->m_items.at(s_position).m_reagents.at(i).getId()};
-                int count {m_instance->m_items.at(s_position).m_reagents.at(i).getCount()};
+                int id {m_instance->m_items.at(s_position).m_reagents.at(i).m_id};
+                int count {m_instance->m_items.at(s_position).m_reagents.at(i).m_count};
 
                 Bag::takeFromBag(id, count * choise);
             }
             return;
         } 
         //Exit
-        else if (choise == MenuChoise::exit)
+        else if (choise == LocationConstants::exit)
             return;
         //Bad Input
         else
@@ -105,8 +109,8 @@ void Workshop::craftMenu(const int s_position) {
 int Workshop::getAvailableNumber(const int s_position) {
     int availableNumber;
     for(int i{0}; i < m_instance->m_items.at(s_position).m_reagents.size(); ++i) {
-        int nededCount {m_instance->m_items.at(s_position).m_reagents.at(i).getCount()};
-        int existCount {Bag::getCounterById(m_instance->m_items.at(s_position).m_reagents.at(i).getId())};
+        int nededCount {m_instance->m_items.at(s_position).m_reagents.at(i).m_count};
+        int existCount {Bag::getCounterById(m_instance->m_items.at(s_position).m_reagents.at(i).m_id)};
 
         int tempAvailableNumber = existCount / nededCount;
 
@@ -120,7 +124,7 @@ int Workshop::getAvailableNumber(const int s_position) {
 
 void Workshop::showReagents(const int s_position) {
     for(int i {0}; i < m_instance->m_items.at(s_position).m_reagents.size(); ++i){
-        cout << AllItemsDB::getItemByID(m_instance->m_items.at(s_position).m_reagents.at(i).getId())->getName()
-            << " " << m_instance->m_items.at(s_position).m_reagents.at(i).getCount() << ".\n";
+        cout << AllItemsDB::getItemByID(m_instance->m_items.at(s_position).m_reagents.at(i).m_id)->getName()
+            << " " << m_instance->m_items.at(s_position).m_reagents.at(i).m_count << ".\n";
     }
 }

@@ -12,16 +12,18 @@ class Bag {
         std::vector<ItemInTheBag *> m_bag;
         static Bag* m_instance;
     public:
+        static void showMenu();
+        static void itemMenu(const int);
         static void show();
-        static void putToBag(int, int = 1);
-        static void takeFromBag(int, int = 1);
-        static void takeGold(int);
-        static void spendGold(int);
+        static void putToBag(const int, const int = 1);
+        static void takeFromBag(const int, const int = 1);
+        static void takeGold(const int);
+        static void spendGold(const int);
         // нужны ли ?
         static int getHowManyGold();
-        static int getCounterById(int);
+        static int getCounterById(const int);
         static int getBagSize();
-        static ItemInTheBag* getItemFromBag(int);
+        static ItemInTheBag* getItemFromBag(const int);
         //
 };
 

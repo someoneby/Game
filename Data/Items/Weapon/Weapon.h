@@ -9,9 +9,9 @@ class Weapon : public Item {
         float m_criticalChance;
     public:
         Weapon(int, std::string, int, float, int, std::string);
-        void showDescription() override;
-        int getDamage();
-        float getCriticalChance();
+        void showDescription() const override;
+        int getDamage() const;
+        float getCriticalChance() const;
 };
 
 #endif //GAME_WEAPONS_H

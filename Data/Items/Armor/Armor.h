@@ -11,10 +11,10 @@ class Armor : public Item{
     public:
         Armor(int, std::string, std::string, int, float, int, int);
 
-        int getArmor();
-        float getAvoidChance();
-        int getHp();
-        void showDescription() override;
+        int getArmor() const;
+        float getAvoidChance() const;
+        int getHp() const;
+        void showDescription() const override;
 };
 
 

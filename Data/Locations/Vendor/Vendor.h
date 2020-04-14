@@ -1,6 +1,10 @@
 #ifndef GAME_VENDOR_H
 #define GAME_VENDOR_H
 
+/* 
+    This class is location where you can buy or sale goods
+*/
+
 #include "vector"
 
 class Vendor {

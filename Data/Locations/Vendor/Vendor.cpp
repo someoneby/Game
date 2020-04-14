@@ -1,15 +1,14 @@
 #include "Vendor.h"
 #include <iostream>
-#include "../../Utility/AllItemsDB/AllItemsDB.h"
+#include "../../Items/Utility/AllItemsDB/AllItemsDB.h"
 #include "../../Utility/UtilityFunctions/GetChoise/GetChoise.h"
-#include "../../Utility/Constants/Constants.h"
 #include "../../GameInterface/Bag/Bag.h"
 #include "../../Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h"
 #include "../../Utility/UtilityFunctions/BadInputState/BadInputState.h"
 #include "../Utility/LocationConstants.h"
-#include "../Utility/MenuChoise.h"
 using std::cout;
 using std::cin;
+
 
 Vendor* Vendor::m_instance {new Vendor()};
 
@@ -28,30 +27,33 @@ Vendor::Vendor() : m_itemsIdToBuy{
         61  //Test
     } {};
 
+/*
+    This is main menu of all location
+*/
 void Vendor::showMenuOfVendor() {
     int choise {1};
 
-    while(choise != MenuChoise::exit) {
+    while(choise != LocationConstants::exit) {
         checkInputWithMessage();
 
         cout << "\nМеню торговца: \n\n"
-            << MenuChoise::menuToBuy << ". Купить.\n"
-            << MenuChoise::menuToSell << ". Продать.\n"
-            << "\n" << MenuChoise::exit << ". Назад.\n"
+            << LocationConstants::menuToBuy << ". Купить.\n"
+            << LocationConstants::menuToSell << ". Продать.\n"
+            << "\n" << LocationConstants::exit << ". Назад.\n"
             << "Ваш выбор: ";
 
         choise = getChoise();
 
         switch (choise) {
-            case MenuChoise::menuToBuy : {
+            case LocationConstants::menuToBuy : {
                 showMenuToBuy();
                 break;
             }
-            case MenuChoise::menuToSell : {
+            case LocationConstants::menuToSell : {
                 showMenuToSell();
                 break;
             }
-            case MenuChoise::exit : {
+            case LocationConstants::exit : {
                 return;
             }
             default : {
@@ -65,13 +67,14 @@ void Vendor::showMenuOfVendor() {
 void Vendor::showMenuToBuy() {
     int choise {1};
 
-    while(choise != MenuChoise::exit) {
+    while(choise != LocationConstants::exit) {
         checkInputWithMessage();
 
         cout << "Товары для покупки: \n\n";
         
         // Show all items to buy
         for(int i{0}; i<m_instance->m_itemsIdToBuy.size(); ++i){
+            //Printing type of item for better navigation
             if(m_instance->m_itemsIdToBuy.at(i) == LocationConstants::firstHelmIdToBuy)
                 cout << "Шлемы:\n";
             else if(m_instance->m_itemsIdToBuy.at(i) == LocationConstants::firstChestIdToBuy)
@@ -81,10 +84,12 @@ void Vendor::showMenuToBuy() {
 
             int id {m_instance->m_itemsIdToBuy.at(i)};
 
+            //Printing position, name and cost tu buy
             cout << i+1 << ". " << AllItemsDB::getItemByID(id)->getName() << " - "
-                << AllItemsDB::getItemByID(id)->getPrise() * Constants::modifierCostToBuy << "з.\n";
+                //Prise of item to buy = prise of item to sale * 10
+                << AllItemsDB::getItemByID(id)->getPrise() * LocationConstants::modifierCostToBuy << "з.\n";
         }
-        cout << "\n" << MenuChoise::exit << ". Назад." << "\nВаш выбор: ";
+        cout << "\n" << LocationConstants::exit << ". Назад." << "\nВаш выбор: ";
 
         choise = getChoise();
 
@@ -93,7 +98,7 @@ void Vendor::showMenuToBuy() {
             // -1 because real position n-1
             showDescriptionToBuy(m_instance->m_itemsIdToBuy.at(choise-1));
         // Exit
-        else if (choise == MenuChoise::exit)
+        else if (choise == LocationConstants::exit)
             return;
         // Bad input
         else 
@@ -101,19 +106,22 @@ void Vendor::showMenuToBuy() {
     }
 }
 
+/*
+    Show description of the choosen item
+*/
 void Vendor::showDescriptionToBuy(const int s_idToBuy) {
-    const int priseToBuy { AllItemsDB::getItemByID(s_idToBuy)->getPrise() * Constants::modifierCostToBuy };
+    const int priseToBuy { AllItemsDB::getItemByID(s_idToBuy)->getPrise() * LocationConstants::modifierCostToBuy };
     const int howMuchCanBuy { Bag::getHowManyGold() / priseToBuy };
     int numberToBuy {1};
 
-    while(numberToBuy != MenuChoise::exit) {
+    while(numberToBuy != LocationConstants::exit) {
         checkInputWithMessage();
 
         // Show information about item
         AllItemsDB::getItemByID(s_idToBuy)->showDescription();
         cout << "\n\nСтоимость: " << priseToBuy << "\n"; 
         cout << "Можно купить: " << howMuchCanBuy;
-        cout << "\n\nСколько купить (" << MenuChoise::exit <<"-выход): ";
+        cout << "\n\nСколько купить (" << LocationConstants::exit <<"-выход): ";
 
         numberToBuy = getChoise();
 
@@ -124,7 +132,7 @@ void Vendor::showDescriptionToBuy(const int s_idToBuy) {
             return;
         } 
         //Exit
-        else if(numberToBuy == MenuChoise::exit)
+        else if(numberToBuy == LocationConstants::exit)
             return;
         // Bad input
         else 
@@ -135,13 +143,13 @@ void Vendor::showDescriptionToBuy(const int s_idToBuy) {
 void Vendor::showMenuToSell() {
     int choise {1};
 
-    while(choise != MenuChoise::exit) {
+    while(choise != LocationConstants::exit) {
         checkInputWithMessage();
 
         // Show all your's items
         cout << "Ваша сумка: \n\n";
         Bag::show();
-        cout << "\n" << MenuChoise::exit << ". Назад." << "\nНа продажу: ";
+        cout << "\n\n" << LocationConstants::exit << ". Назад." << "\nНа продажу: ";
         
         choise = getChoise();
 
@@ -150,7 +158,7 @@ void Vendor::showMenuToSell() {
             // -1 because real position n-1
             showDescriptionToSell(choise-1);
         // Exit
-        else if (choise == MenuChoise::exit)
+        else if (choise == LocationConstants::exit)
             return;
         // Bad input
         else
@@ -158,20 +166,23 @@ void Vendor::showMenuToSell() {
     }
 }
 
+/*
+    Show description of the choosen item
+*/
 void Vendor::showDescriptionToSell(const int s_positionToSell) {
     const int id {Bag::getItemFromBag(s_positionToSell)->getId()};
     const int count {Bag::getItemFromBag(s_positionToSell)->getCount()};
     const int prise {AllItemsDB::getItemByID(id)->getPrise()};
     int numberToSell {1};
 
-    while(numberToSell != MenuChoise::exit) {
+    while(numberToSell != LocationConstants::exit) {
         checkInputWithMessage();
 
         // Show info
         AllItemsDB::getItemByID(id)->showDescription();
         cout << "\n\nСтоимость: " << prise;
         cout << "\nКоличество: " << count;
-        cout << "\n\nСколько продать (" << MenuChoise::exit << "-выход): ";
+        cout << "\n\nСколько продать (" << LocationConstants::exit << "-выход): ";
 
         numberToSell = getChoise();
 
@@ -182,7 +193,7 @@ void Vendor::showDescriptionToSell(const int s_positionToSell) {
             return;
         } 
         //Exit
-        else if(numberToSell == MenuChoise::exit) {
+        else if(numberToSell == LocationConstants::exit) {
             return;
         }
         else {
@@ -190,22 +201,3 @@ void Vendor::showDescriptionToSell(const int s_positionToSell) {
         }
     } 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
