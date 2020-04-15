@@ -11,12 +11,11 @@
 using namespace std;
 
 int main() {
-    EquipedItems::equip(2, TypesOfEquip::helm);
+    EquipedItems::equip(2);
     Bag::putToBag(5,10);
     Bag::putToBag(1,10);
     Bag::putToBag(3,10);
-    LocationsMenu::showLocations();
-    
+    MainMenu::showMainMenu();    
     
 
 }

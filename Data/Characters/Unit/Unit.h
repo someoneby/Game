@@ -5,24 +5,25 @@
 
 class Unit : public IUnit {
     protected:
-        float m_armor;
+        double m_armor;
         int m_hp;
         int m_damage;
-        float m_avoidChance;
-        float m_criticalChance;
+        double m_avoidChance;
+        double m_criticalChance;
         string m_name = "";
     public:
         Unit(float, int, int, float, float);
-
-        int getHP() override;
-        string getName() override;
         void hit(IUnit *) override;
-        
         bool isMissing() override;
         bool isCritical() override;
         int damageCalculating(float) override;
         void takeDamage(int) override;
-        float getArmor() override;
+        int getHP() override;
+        string getName() override;
+        double getArmor() override;
+        int getDamage() override;
+        double getAvoidChance() override;
+        double getCritChance() override;
 };
 
 

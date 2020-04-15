@@ -4,8 +4,8 @@
 /* Global constants */
 
 namespace Constants {
-    const float criticalMultiple {1.75};
-    const int fromPercent {100};
+    const float CRITICAL_MULTIPLE {1.75};
+    const int FROM_PERCENT {100};
 }
 
 #endif //GAME_CONSTANS_H

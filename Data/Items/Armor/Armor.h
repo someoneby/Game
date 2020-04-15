@@ -10,7 +10,6 @@ class Armor : public Item{
         int m_hp;
     public:
         Armor(int, std::string, std::string, int, float, int, int);
-
         int getArmor() const;
         float getAvoidChance() const;
         int getHp() const;

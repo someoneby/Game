@@ -9,11 +9,11 @@ void checkInputWithMessage() {
 
     system("clear");
     if(badInput){
-        std::cout << "Неправильный ввод\n\n";
+        std::cout << "Неправильный ввод\n";
         badInput = false;
     }
     else{
-        std::cout << "\n\n";
+        std::cout << "\n";
     }
     
 }

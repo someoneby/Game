@@ -19,12 +19,10 @@ class Bag {
         static void takeFromBag(const int, const int = 1);
         static void takeGold(const int);
         static void spendGold(const int);
-        // нужны ли ?
-        static int getHowManyGold();
+        static int getGold();
         static int getCounterById(const int);
         static int getBagSize();
         static ItemInTheBag* getItemFromBag(const int);
-        //
 };
 
 #endif

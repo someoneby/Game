@@ -21,9 +21,6 @@ Workshop::Workshop() : m_items{
         ItemToCraft(35, std::vector<ReagentElement> {ReagentElement(91,2), ReagentElement(92,3)}),
         ItemToCraft(36, std::vector<ReagentElement> {ReagentElement(91,2), ReagentElement(92,3)}),
         ItemToCraft(38, std::vector<ReagentElement> {ReagentElement(91,2), ReagentElement(92,3)})
-        // ItemToCraft(33, std::vector<ReagentElement> {ReagentElement(91,2), ReagentElement(92,3)}),
-        // ItemToCraft(33, std::vector<ReagentElement> {ReagentElement(91,2), ReagentElement(92,3)}),
-        // ItemToCraft(33, std::vector<ReagentElement> {ReagentElement(91,2), ReagentElement(92,3)}),
 
     } {}
 
@@ -34,34 +31,36 @@ Workshop::Workshop() : m_items{
 void Workshop::showItemsToCraft() {
     int choise {1};
 
-    while(choise != LocationConstants::exit) {
+    while(choise != LocationConstants::EXIT) {
         checkInputWithMessage();
 
         //Show list of items to craft
         cout << "\nВы можете создать: \n\n";
         for(int i{0}; i < m_instance->m_items.size(); ++i){
             //Show type of item for better navigation
-            if(m_instance->m_items.at(i).m_itemId == LocationConstants::firstHelmIdToCraft)
+            if(m_instance->m_items.at(i).m_itemId == LocationConstants::FIRST_HELM_ID_TO_CRAFT)
                 cout << "Шлемы:\n";
-            else if(m_instance->m_items.at(i).m_itemId == LocationConstants::firstChestIdToCraft)
+            else if(m_instance->m_items.at(i).m_itemId == LocationConstants::FIRST_CHEST_ID_TO_CRAFT)
                 cout << "\nБроня на тело:\n";
-            else if(m_instance->m_items.at(i).m_itemId == LocationConstants::firstWeaponIdToCraft)
+            else if(m_instance->m_items.at(i).m_itemId == LocationConstants::FIRST_WEAPON_ID_TO_CRAFT)
                 cout << "\nОружия:\n";
 
             cout << i+1 << ". " << AllItemsDB::getItemByID(m_instance->m_items.at(i).m_itemId)->getName()
                 << " - " << getAvailableNumber(i) << ".\n";
         }
-        cout <<"\n" << LocationConstants::exit << ". Выход" << "\nВаш выбор: ";
+        
+        cout <<"\n" << LocationConstants::EXIT << ". Выход" << "\nВаш выбор: ";
 
         choise = getChoise();
 
         // number within range
-        if(choise > 0 && choise <= m_instance->m_items.size())
-            //-1 because real position n-1
+        if(choise > 0 && choise <= m_instance->m_items.size()) {
+            //-1 because real position "shoise-1"
             craftMenu(choise-1);
-        //Exit
-        else if(choise == LocationConstants::exit)
+        }
+        else if(choise == LocationConstants::EXIT) {
             return;
+        }
         //Bad input
         else
             badInputState();
@@ -71,7 +70,7 @@ void Workshop::showItemsToCraft() {
 void Workshop::craftMenu(const int s_position) {
     int choise {1};
 
-    while(choise != LocationConstants::exit) {
+    while(choise != LocationConstants::EXIT) {
         checkInputWithMessage();
 
         //Show information
@@ -81,7 +80,7 @@ void Workshop::craftMenu(const int s_position) {
 
         int availableNumber {getAvailableNumber(s_position)};
         cout << "\nВы можете создать: " << availableNumber
-            << "\nСколько создать (" << LocationConstants::exit << "-выход): ";
+            << "\nСколько создать (" << LocationConstants::EXIT << "-выход): ";
 
         choise = getChoise();
 
@@ -89,16 +88,18 @@ void Workshop::craftMenu(const int s_position) {
         if(choise > 0 && choise <= availableNumber){
             Bag::putToBag(m_instance->m_items.at(s_position).m_itemId, choise);
 
-            for(int i {0}; i < m_instance->m_items.at(s_position).m_reagents.size(); ++i) {
-                int id {m_instance->m_items.at(s_position).m_reagents.at(i).m_id};
-                int count {m_instance->m_items.at(s_position).m_reagents.at(i).m_count};
+            for(auto reagentPtr{m_instance->m_items.at(s_position).m_reagents.begin()};
+            reagentPtr != m_instance->m_items.at(s_position).m_reagents.end(); ++reagentPtr) {
+                int id{(*reagentPtr).m_id};
+                int count{(*reagentPtr).m_count};
 
+                // Take reagent from bag
                 Bag::takeFromBag(id, count * choise);
             }
             return;
         } 
         //Exit
-        else if (choise == LocationConstants::exit)
+        else if (choise == LocationConstants::EXIT)
             return;
         //Bad Input
         else
@@ -106,6 +107,9 @@ void Workshop::craftMenu(const int s_position) {
     }
 }
 
+/*
+    Return available number for crafting the items
+*/
 int Workshop::getAvailableNumber(const int s_position) {
     int availableNumber;
     for(int i{0}; i < m_instance->m_items.at(s_position).m_reagents.size(); ++i) {
@@ -126,5 +130,11 @@ void Workshop::showReagents(const int s_position) {
     for(int i {0}; i < m_instance->m_items.at(s_position).m_reagents.size(); ++i){
         cout << AllItemsDB::getItemByID(m_instance->m_items.at(s_position).m_reagents.at(i).m_id)->getName()
             << " " << m_instance->m_items.at(s_position).m_reagents.at(i).m_count << ".\n";
+    }
+
+    for(auto reagentPtr{m_instance->m_items.at(s_position).m_reagents.begin()};
+    reagentPtr != m_instance->m_items.at(s_position).m_reagents.end(); ++reagentPtr) {
+        cout << AllItemsDB::getItemByID((*reagentPtr).m_id)->getName()
+            << " " << (*reagentPtr).m_count << ".\n";
     }
 }

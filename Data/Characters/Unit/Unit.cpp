@@ -16,7 +16,7 @@ void Unit::hit(IUnit * target) {
     int damage = damageCalculating(target->getArmor());
     
     if(isCritical()){
-        damage *= Constants::criticalMultiple;
+        damage *= Constants::CRITICAL_MULTIPLE;
         combatLog(CombatLogStages::CRITICAL, this, target, damage);
     } else {
         combatLog(CombatLogStages::HIT, this, target, damage);
@@ -41,7 +41,7 @@ string Unit::getName() {
     return m_name;
 }
 
-float Unit::getArmor() {
+double Unit::getArmor() {
     return m_armor;
 }
 
@@ -53,4 +53,16 @@ void Unit::takeDamage(int damage) {
     m_hp -= damage;
     if(m_hp < 0)
         m_hp = 0;
+}
+
+double Unit::getCritChance() {
+    return m_criticalChance;
+}
+
+int Unit::getDamage() {
+    return m_damage;
+}
+
+double Unit::getAvoidChance() {
+    return m_avoidChance;
 }

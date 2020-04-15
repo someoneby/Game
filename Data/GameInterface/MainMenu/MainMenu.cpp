@@ -1,5 +1,6 @@
 #include "MainMenu.h"
 #include <iostream>
+#include "../LocationsMenu/LocationsMenu.h"
 using std::cout;
 using std::cin;
 
@@ -12,7 +13,7 @@ void MainMenu::showMainMenu() {
             << "1. Новая игра.\n"
             << "2. Загрузить персонажа.\n"
             << "\n0. Выход.\n"
-            << "\n\nВаш выбор: ";
+            << "Ваш выбор: ";
 
         cin >> choise;
         cin.clear();
@@ -20,7 +21,7 @@ void MainMenu::showMainMenu() {
 
         switch (choise) {
             case 1 : {
-                cout << " Новая игра \n";
+                LocationsMenu::showLocations();
                 return;
             }
             case 2 : {

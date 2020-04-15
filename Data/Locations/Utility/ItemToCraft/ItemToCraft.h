@@ -3,7 +3,7 @@
 
 /*
     This struct store data about item and which reagents it needs to 
-    be crafting
+    be crafted
 */
 
 #include "../ReagentElement/ReagentElement.h"

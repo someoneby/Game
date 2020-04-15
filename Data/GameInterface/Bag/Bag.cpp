@@ -43,7 +43,7 @@ void Bag::showMenu() {
             // -1 because real position has "choise-1"
             itemMenu(choise-1);
         }
-        else if(choise == InterfaceConst::exit) {
+        else if(choise == InterfaceConst::EXIT) {
             return;
         }
         else
@@ -57,13 +57,13 @@ void Bag::itemMenu(const int s_position) {
     while(choise != 0) {
         checkInputWithMessage();
 
-        //Show description of choosen item
-        AllItemsDB::getItemByID(m_instance->m_bag.at(s_position)->getId())->showDescription();
-
         int id = m_instance->m_bag.at(s_position)->getId();
 
+        //Show description of choosen item
+        AllItemsDB::getItemByID(id)->showDescription();
+
         // Check that choosen item isn't reagent
-        if(id < InterfaceConst::firstReagentId) {
+        if(id < InterfaceConst::FIRST_REAGENT_ID) {
             cout << "\n\n1. Надеть."
                 << "\n0. Назад.";
         } else
@@ -72,18 +72,22 @@ void Bag::itemMenu(const int s_position) {
 
         choise = getChoise();
 
-        if(id >= InterfaceConst::firstReagentId && choise == 1)
+        //Can`t put on reagent
+        if(id >= InterfaceConst::FIRST_REAGENT_ID && choise == 1) {
             badInputState();
+            continue;
+        }
         
         // Coming soon
         switch (choise) {
-        case InterfaceConst::putOn :{
-            // EquipedItems::equip(id, );
-            break;
-        }
-        
-        default:
-            break;
+            case InterfaceConst::PUT_ON :{
+                EquipedItems::equip(id);
+                choise = InterfaceConst::EXIT;
+            }
+            default: {
+                badInputState();
+                break;
+            }
         }
 
     }
@@ -135,7 +139,7 @@ void Bag::spendGold(const int s_gold) {
     m_instance->m_gold -= s_gold;
 }
 
-int Bag::getHowManyGold() {
+int Bag::getGold() {
     return m_instance->m_gold;
 }
 

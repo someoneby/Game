@@ -2,7 +2,7 @@
 #define GAME_REAGENTELEMENT_H
 
 /*
-    This struct uses to store data about material and it`s count 
+    This struct uses to store data about reagents and it's count 
     that needs to craft some item
 */
 

@@ -11,7 +11,6 @@ void Armor::showDescription() const {
          << m_avoidChance << "\n Хп: " << m_hp;
 }
 
-
 int Armor::getArmor() const {
         return m_armor;
 }

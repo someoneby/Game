@@ -15,7 +15,6 @@ class Item : public IItem {
         int getId() const override;
         std::string getName() const override;
         int getPrise() const override;
-
 };
 
 #endif 

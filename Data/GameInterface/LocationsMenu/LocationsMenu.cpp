@@ -7,7 +7,6 @@
 #include "../Utility/InterfaceConst.h"
 #include "../Bag/Bag.h"
 #include "../EquipedItems/EquipedItems.h"
-
 using std::cout;
 using std::cin;
 
@@ -18,40 +17,41 @@ void LocationsMenu::showLocations() {
     while(choise != 0) {
         checkInputWithMessage();
 
+        //Show all locations
         cout << "\nМеню локаций: \n\n"
-            << InterfaceConst::workshop << ". Мастерская.\n"
-            << InterfaceConst::shop <<". Лавка торговца.\n"
-            << InterfaceConst::adventures << ". Приключения.\n"
-            << InterfaceConst::bag << ". Сумка\n"
-            << InterfaceConst::personInfo << ". Меню персонажа\n"
-            << "\n" << InterfaceConst::exit << ". Выход в главное меню.\n"
+            << InterfaceConst::WORKSHOP << ". Мастерская.\n"
+            << InterfaceConst::SHOP <<". Лавка торговца.\n"
+            << InterfaceConst::ADVENTURES << ". Приключения.\n"
+            << InterfaceConst::BAG << ". Сумка\n"
+            << InterfaceConst::PERSON_INFO << ". Меню персонажа\n"
+            << "\n" << InterfaceConst::EXIT << ". Выход в главное меню.\n"
             << "Ваш выбор: ";
 
         choise = getChoise();
         
         switch (choise) {
-            case InterfaceConst::workshop : {
+            case InterfaceConst::WORKSHOP : {
                 Workshop::showItemsToCraft();
                 break;
             }
-            case InterfaceConst::shop : {
-                Vendor::showMenuOfVendor();
+            case InterfaceConst::SHOP : {
+                Vendor::showMenu();
                 break;
             }
             // coming soon
-            case InterfaceConst::adventures : {
+            case InterfaceConst::ADVENTURES : {
                 cout << " Приключения.\n";
                 break;
             }
-            case InterfaceConst::bag : {
+            case InterfaceConst::BAG : {
                 Bag::showMenu();
                 break;
             }
-            case InterfaceConst::personInfo : {
+            case InterfaceConst::PERSON_INFO : {
                 EquipedItems::showMenu();
                 break;
             }
-            case InterfaceConst::exit : {
+            case InterfaceConst::EXIT : {
                 cout << " Выход\n";
                 break;
             }

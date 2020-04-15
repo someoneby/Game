@@ -67,5 +67,4 @@ Item * AllItemsDB::getItemByID(int s_id) {
         if(m_instance->m_allItemsDB.at(i)->getId() == s_id)
             return m_instance->m_allItemsDB.at(i);
     }
-    return nullptr;
 }

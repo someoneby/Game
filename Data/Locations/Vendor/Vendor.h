@@ -17,7 +17,7 @@ class Vendor {
         static void showDescriptionToBuy(const int);
         static void showDescriptionToSell(const int);
     public:
-        static void showMenuOfVendor();
+        static void showMenu();
 
 };
 

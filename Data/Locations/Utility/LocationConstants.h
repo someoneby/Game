@@ -4,17 +4,17 @@
 #include <vector>
 
 namespace LocationConstants {
-    const int menuToBuy = 1;
-    const int menuToSell = 2;
-    const int exit = 0;
+    const int MENU_TO_BUY = 1;
+    const int MENU_TO_SELL = 2;
+    const int EXIT = 0;
     
-    const int firstHelmIdToBuy = 1;
-    const int firstChestIdToBuy = 31;
-    const int firstWeaponIdToBuy = 61;
+    const int FIRST_HELM_ID_TO_BUY = 1;
+    const int FIRST_CHEST_ID_TO_BUY = 31;
+    const int FIRST_WEAPON_ID_TO_BUY = 61;
 
-    const int firstHelmIdToCraft = 3;
-    const int firstChestIdToCraft = 33;
-    const int firstWeaponIdToCraft = 63;
+    const int FIRST_HELM_ID_TO_CRAFT = 3;
+    const int FIRST_CHEST_ID_TO_CRAFT = 33;
+    const int FIRST_WEAPON_ID_TO_CRAFT = 63;
 
     const int modifierCostToBuy {10};
 }
