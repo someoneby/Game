@@ -1,0 +1,75 @@
+#include "Depths.h"
+#include "../../Characters/Player/Player.h"
+#include "../../Characters/MobFactory/MobFactory.h"
+#include "../../GameInterface/Bag/Bag.h"
+#include "../../GameInterface/EquipedItems/EquipedItems.h"
+#include "../Utility/LocationConstants.h"
+#include "../../Utility/UtilityFunctions/GetChoise/GetChoise.h"
+#include "../../Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h"
+#include "../../Utility/UtilityFunctions/BadInputState/BadInputState.h"
+using std::cout;
+
+
+void Depths::mainMenu() {
+    int choise{1};
+    int level{0};
+
+    while(choise) {
+        checkInputWithMessage();
+
+        cout << "Шахта"
+            << "\n Глубина: " << level
+            << "\n Энергия: " << 100 //Coming soon
+            << "\n Хп: " << Player::getInstance()->getHP()
+            << "\n\n 1. Спускаться дальше (-5 энергии)"
+            << "\n 2. Сумка"
+            << "\n 3. Меню персонажа"
+            << "\n\n 0. Выйти из шахты"
+            << "\nВаш выбор: ";
+
+        choise = getChoise();
+
+        switch (choise) {
+            case LocationConstants::GO_DEEPER : {
+                goDeeper(level);
+                return;
+            }
+            case LocationConstants::BAG : {
+                Bag::showMenu();
+                break;
+            }
+            case LocationConstants::PERSON_MENU : {
+                EquipedItems::showMenu();
+                break;
+            }
+            case LocationConstants::EXIT : {
+                return;
+            }
+            default : {
+                badInputState();
+            }
+        }
+    }
+}
+
+void Depths::goDeeper(const int s_level) {
+    int choise{1};
+    Mob* mob {MobFactory::getMob(s_level)};
+
+    while(choise) {
+        checkInputWithMessage();
+        
+        cout << "Ваш путь преградил " << mob->getName()
+            << "\n Хп: " << mob->getHP()
+            << "\n Броня: " << mob->getArmor()
+            << "\n Урон: " << mob->getDamage()
+            << "\n\n 1. Напасть"
+            << "\n 2. Сумка"
+            << "\n 3. Меню персонажа"
+            << "\n\n 0. Выйти из шахты"
+            << "\nВаш выбор: ";
+
+        choise = getChoise();
+
+    }
+}

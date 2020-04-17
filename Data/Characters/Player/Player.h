@@ -1,27 +1,21 @@
 #ifndef GAME_PLAYER_H
 #define GAME_PLAYER_H
 
-#include "../Unit/Unit.h"
 #include "../IUnit/IUnit.h"
 
-class Player : public Unit {
+class Player : public IUnit {
     private:
         static Player* m_instance;
         Player();
-        Player(const Player&);
-        Player& operator = (Player&);
-
     public:
         static Player* getInstance();
-        void setName(string name);
-
-        void fight(IUnit*);
-        void changeDamage(int);
-        void changeCriticalChance(float);
-        void changeHp(int);
-        void changeAvoidChance(float);
-        void changeArmor(int);
-
+        static void setName(string name);
+        static void fight(IUnit*);
+        static void changeDamage(int);
+        static void changeCriticalChance(float);
+        static void changeHp(int);
+        static void changeAvoidChance(float);
+        static void changeArmor(int);
 };
 
 

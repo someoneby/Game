@@ -1,14 +1,11 @@
 #ifndef GAME_MOB_H
 #define GAME_MOB_H
 
-#include "../Unit/Unit.h"
+#include "../IUnit/IUnit.h"
 
-class Mob : public Unit {
-
-public:
-    Mob();
-
-
+class Mob : public IUnit {
+    public:
+        Mob(const int, const double, const double, const int, const double, const string);
 };
 
 

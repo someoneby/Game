@@ -7,6 +7,7 @@
 #include "../Utility/InterfaceConst.h"
 #include "../Bag/Bag.h"
 #include "../EquipedItems/EquipedItems.h"
+#include "../../Locations/Adventures/Adventures.h"
 using std::cout;
 using std::cin;
 
@@ -40,7 +41,7 @@ void LocationsMenu::showLocations() {
             }
             // coming soon
             case InterfaceConst::ADVENTURES : {
-                cout << " Приключения.\n";
+                Adventures::showMenu();
                 break;
             }
             case InterfaceConst::BAG : {

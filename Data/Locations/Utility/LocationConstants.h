@@ -6,6 +6,12 @@
 namespace LocationConstants {
     const int MENU_TO_BUY = 1;
     const int MENU_TO_SELL = 2;
+    const int FARM = 1;
+    const int PATROL = 2;
+    const int DEPTHS = 3;
+    const int GO_DEEPER = 1;
+    const int BAG = 2;
+    const int PERSON_MENU = 3;
     const int EXIT = 0;
     
     const int FIRST_HELM_ID_TO_BUY = 1;

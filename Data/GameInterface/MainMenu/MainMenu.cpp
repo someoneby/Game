@@ -29,8 +29,8 @@ void MainMenu::showMainMenu() {
                 return;
             }
             case 0 : {
-                cout << " Выход\n";
-                break;
+                // cout << " Выход\n";
+                return;
             }
             default : {
                 system("clear");

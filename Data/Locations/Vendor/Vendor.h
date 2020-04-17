@@ -18,7 +18,6 @@ class Vendor {
         static void showDescriptionToSell(const int);
     public:
         static void showMenu();
-
 };
 
 #endif //GAME_VENDOR_H

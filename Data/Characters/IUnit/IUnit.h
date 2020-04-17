@@ -5,20 +5,26 @@
 using std::string;
 
 class IUnit {
+    protected:
+        double m_armor;
+        int m_hp;
+        int m_damage;
+        double m_avoidChance;
+        double m_criticalChance;
+        string m_name;
     public:
-        IUnit() = default;
-        IUnit(const string &getName);
-        virtual void hit(IUnit *) = 0;
-        virtual bool isMissing() = 0;
-        virtual bool isCritical() = 0;
-        virtual void takeDamage(int) = 0;
-        virtual int damageCalculating(float) = 0;
-        virtual int getHP() = 0;
-        virtual string getName() = 0;
-        virtual double getArmor() = 0;
-        virtual int getDamage() = 0;
-        virtual double getAvoidChance() = 0;
-        virtual double getCritChance() = 0;
+        virtual void hit(IUnit *);
+        virtual bool isMissing();
+        virtual bool isCritical();
+        virtual void takeDamage(int);
+        virtual int damageCalculating(float);
+        virtual int getHP();
+        virtual string getName();
+        virtual double getArmor();
+        virtual int getDamage();
+        virtual double getAvoidChance();
+        virtual double getCritChance();
+        // virtual ~IUnit() = 0;
 };
 
 

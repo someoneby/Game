@@ -10,9 +10,11 @@ TARGET_LINK_LIBRARIES( ${Boost_LIBRARIES} )
 
 add_executable(Game main.cpp
         Data/Characters/IUnit/IUnit.cpp
-        Data/Characters/Unit/Unit.cpp
         Data/Characters/Player/Player.cpp
         Data/Characters/Mob/Mob.cpp
+        Data/Characters/MobFactory/MobFactory.cpp
+        Data/Characters/Utility/Parameters/Parameters.cpp
+        Data/Characters/Utility/ParametersDB/ParametersDB.cpp
         Data/GameInterface/Bag/Bag.cpp
         Data/GameInterface/EquipedItems/EquipedItems.cpp
         Data/GameInterface/MainMenu/MainMenu.cpp
@@ -33,6 +35,8 @@ add_executable(Game main.cpp
         Data/Utility/UtilityFunctions/BadInputState/BadInputState.cpp
         Data/Locations/Vendor/Vendor.cpp
         Data/Locations/Workshop/Workshop.cpp
+        Data/Locations/Adventures/Adventures.cpp
+        Data/Locations/Depths/Depths.cpp
         Data/Locations/Utility/ReagentElement/ReagentElement.cpp
         Data/Locations/Utility/ItemToCraft/ItemToCraft.cpp
         )
