@@ -13,16 +13,16 @@ class Bag {
         static Bag* m_instance;
     public:
         static void showMenu();
-        static void itemMenu(const int);
+        static void itemMenu(const int itemPosition);
         static void show();
-        static void putToBag(const int, const int = 1);
-        static void takeFromBag(const int, const int = 1);
-        static void takeGold(const int);
-        static void spendGold(const int);
+        static void putToBag(const int itemId, const int number = 1);
+        static void takeFromBag(const int itemId, const int number = 1);
+        static void takeGold(const int gold);
+        static void spendGold(const int gold);
         static int getGold();
-        static int getCounterById(const int);
+        static int getCounterById(const int itemId);
         static int getBagSize();
-        static ItemInTheBag* getItemFromBag(const int);
+        static ItemInTheBag* getItemFromBag(const int itemPosition);
 };
 
 #endif

@@ -13,11 +13,11 @@ class IUnit {
         double m_criticalChance;
         string m_name;
     public:
-        virtual void hit(IUnit *);
-        virtual bool isMissing();
-        virtual bool isCritical();
-        virtual void takeDamage(int);
-        virtual int damageCalculating(float);
+        virtual void hit(IUnit* target);
+        virtual bool isMissing() const;
+        virtual bool isCritical() const;
+        virtual void takeDamage(const int damage);
+        virtual int damageCalculating(IUnit* target);
         virtual int getHP();
         virtual string getName();
         virtual double getArmor();

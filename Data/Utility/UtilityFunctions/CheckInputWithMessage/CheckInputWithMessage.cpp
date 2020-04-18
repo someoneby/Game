@@ -1,9 +1,8 @@
 #include "CheckInputWithMessage.h"
 
 /*
-    Clear screen and show message if input was incorrect
+    Clears screen and shows error message if input was incorrect.
 */
-
 void checkInputWithMessage() {
     extern bool badInput;
 

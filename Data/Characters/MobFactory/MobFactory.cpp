@@ -3,15 +3,17 @@
 #include "../Utility/ParametersDB/ParametersDB.h"
 #include "../Utility/Parameters/Parameters.h"
 
-
-Mob* MobFactory::getMob(const int s_level) {
-    //Getting random index from 0 to 2
-    int randMob = (int)(randDouble() * 10) % 3;
+/*
+    Creating a mob with parameters based on a taken level of the depth.
+*/
+Mob* MobFactory::getMob(const int s_depthLevel) {
+    //Getting random index of mob
+    int randMob = (int)(randDouble() * 10) % ParametersDB::getMobsNumber();
 
     Parameters param {ParametersDB::getParam(randMob)};
 
-    //Get multiplier based on a level
-    double multiplier = 1 + s_level/10;
+    //Get multiplier based on a level of depth
+    double multiplier = 1 + s_depthLevel/10;
 
     return new Mob(param.m_hp * multiplier,
                    param.m_armor * multiplier, 

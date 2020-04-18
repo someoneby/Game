@@ -6,10 +6,11 @@
 using std::vector;
 
 class ParametersDB {
-        vector<Parameters> m_units;
+        vector<Parameters> m_mobs;
         static ParametersDB* m_instance;
     public:
-        static Parameters& getParam(const int);
+        static Parameters& getParam(const int mobId);
+        static int getMobsNumber();
         ParametersDB();
 };
 

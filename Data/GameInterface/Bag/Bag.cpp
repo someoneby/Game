@@ -8,11 +8,12 @@
 using std::cout;
 
 Bag* Bag::m_instance = new Bag();
-
 Bag::Bag() : m_gold{200} {}
 
+/*
+    Show all your gold and items in the bag.
+*/
 void Bag::show() {
-    system("clear");
     //Show gold
     cout << "Ваша сумка:\n\n"
         << " Золото: " << m_instance->m_gold;
@@ -20,20 +21,23 @@ void Bag::show() {
     //Show all items
     for(int i {0}; i < m_instance->m_bag.size(); ++i) {
         cout << "\n " << i+1 << ". " << AllItemsDB::getItemByID(m_instance->m_bag.at(i)->getId())->getName();
-        // if instances more then 1 show it number
+        // if instances more then 1 show it's number
         if( m_instance->m_bag.at(i)->getCount() > 1 )
             cout << ": " << m_instance->m_bag.at(i)->getCount();
     }
 }
 
+/*
+    Show menu of the bag.
+*/
 void Bag::showMenu() {
     int choise {1};
 
-    while(choise != 0) {
+    while(choise) {
         checkInputWithMessage();
 
         Bag::show();
-        cout << "\n\n 0 - выход"
+        cout << "\n\n0 - выход"
             << "\nВаш выбор: ";
         
         choise = getChoise();
@@ -43,31 +47,34 @@ void Bag::showMenu() {
             // -1 because real position has "choise-1"
             itemMenu(choise-1);
         }
-        else if(choise == InterfaceConst::EXIT) {
+        else if(choise == InterfaceConst::EXIT)
             return;
-        }
         else
             badInputState();
     }
 }
 
-void Bag::itemMenu(const int s_position) {
+/*
+    Shows description of the item and if it's equipment apply you to put on it.
+*/
+void Bag::itemMenu(const int s_itemPosition) {
     int choise {1};
 
-    while(choise != 0) {
+    while(choise) {
         checkInputWithMessage();
 
-        int id = m_instance->m_bag.at(s_position)->getId();
+        int id = m_instance->m_bag.at(s_itemPosition)->getId();
 
-        //Show description of choosen item
         AllItemsDB::getItemByID(id)->showDescription();
 
         // Check that choosen item isn't reagent
         if(id < InterfaceConst::FIRST_REAGENT_ID) {
             cout << "\n\n1. Надеть."
                 << "\n0. Назад.";
-        } else
+        } 
+        else
             cout << "\n\n0 - Назад.";
+
         cout << "\nВаш выбор: ";
 
         choise = getChoise();
@@ -78,47 +85,49 @@ void Bag::itemMenu(const int s_position) {
             continue;
         }
         
-        // Coming soon
         switch (choise) {
+            // Put on item and exit
             case InterfaceConst::PUT_ON :{
                 EquipedItems::equip(id);
-                choise = InterfaceConst::EXIT;
+            }
+            case InterfaceConst::EXIT : {
+                return;
             }
             default: {
                 badInputState();
                 break;
             }
         }
-
     }
 }
 
-void Bag::putToBag(const int  s_id, const int s_number) {
-    //If item exists
+/*
+    Put item in the bag.
+*/
+void Bag::putToBag(const int  s_itemId, const int s_number) {
     for(auto itemPtr{m_instance->m_bag.begin()}; itemPtr != m_instance->m_bag.end(); ++itemPtr) {
-        
-        if( (*itemPtr)->getId() == s_id) {
+        //If item exists
+        if( (*itemPtr)->getId() == s_itemId) {
             (*itemPtr)->changeCount(s_number);
             return;
         }
-    }
-
-    // If item doesn't exists
-    for(auto it{m_instance->m_bag.begin()}; it != m_instance->m_bag.end(); it++) {
-        // Search position in sorted vector for item
-        if((*it)->getId() > s_id) {
-            m_instance->m_bag.insert(it, new ItemInTheBag(s_id, s_number));
+        // If item doesn't exists
+        if((*itemPtr)->getId() > s_itemId) {
+            m_instance->m_bag.insert(itemPtr, new ItemInTheBag(s_itemId, s_number));
             return;
         }
     }
     // If position is last element
-    m_instance->m_bag.push_back(new ItemInTheBag(s_id, s_number));
+    m_instance->m_bag.push_back(new ItemInTheBag(s_itemId, s_number));
 }
 
-void Bag::takeFromBag(const int s_id, const int s_number) {
+/*
+    Take item from the bag.
+*/
+void Bag::takeFromBag(const int s_itemId, const int s_number) {
     // Search item
     for(auto itemPtr{m_instance->m_bag.begin()}; itemPtr != m_instance->m_bag.end(); ++itemPtr) {
-        if( (*itemPtr)->getId() == s_id) {
+        if( (*itemPtr)->getId() == s_itemId) {
             // Change count of items
             (*itemPtr)->changeCount(-s_number);
 
@@ -131,22 +140,34 @@ void Bag::takeFromBag(const int s_id, const int s_number) {
     }
 }
 
+/*
+    Take gold into the bag.
+*/
 void Bag::takeGold(const int s_gold) {
     m_instance->m_gold += s_gold;
 }
 
+/*
+    Spend gold from the bag.
+*/
 void Bag::spendGold(const int s_gold) {
     m_instance->m_gold -= s_gold;
 }
 
+/*
+    Return how much gold in the bag.
+*/
 int Bag::getGold() {
     return m_instance->m_gold;
 }
 
-int Bag::getCounterById(const int s_id) {
+/*
+    Return number of the item.
+*/
+int Bag::getCounterById(const int s_itemId) {
     // Search for item
     for(auto itemPtr{m_instance->m_bag.begin()}; itemPtr != m_instance->m_bag.end(); ++itemPtr) {
-        if((*itemPtr)->getId() == s_id) {
+        if((*itemPtr)->getId() == s_itemId) {
             return (*itemPtr)->getCount();
         }
     }
@@ -154,10 +175,16 @@ int Bag::getCounterById(const int s_id) {
     return 0;
 }
 
+/*
+    Return number of diffrent items from your bag.
+*/
 int Bag::getBagSize() {
     return m_instance->m_bag.size();
 }
 
-ItemInTheBag* Bag::getItemFromBag(const int s_position) {
-    return m_instance->m_bag.at(s_position);
+/*
+    Return item from the bag.
+*/
+ItemInTheBag* Bag::getItemFromBag(const int s_itemPosition) {
+    return m_instance->m_bag.at(s_itemPosition);
 }

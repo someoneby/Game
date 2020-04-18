@@ -5,7 +5,7 @@
 
 class MobFactory {
     public:
-        static Mob* getMob(const int);
+        static Mob* getMob(const int depthLevel);
 };
 
 #endif //GAME_MOBFACTORT_H
