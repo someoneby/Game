@@ -17,96 +17,109 @@ EquipedItems* EquipedItems::m_instance = new EquipedItems();
 
 EquipedItems::EquipedItems() : m_weaponId{0}, m_chestId{0}, m_helmId{0} {};
 
-void EquipedItems::equip (const int s_id) {
+/*
+    Equip item.
+*/
+void EquipedItems::equip (const int s_itemId) {
     // If id belongs to helms or chests
-    if(s_id < ItemsConsts::FIRST_WEAPON_ID) {
-        //Select target_id by type
+    if(s_itemId < ItemsConsts::FIRST_WEAPON_ID) {
+        //Select type by id
         int target_id;
-        if(s_id < ItemsConsts::FIRST_CHEST_ID)
+        if(s_itemId < ItemsConsts::FIRST_CHEST_ID)
             target_id = m_instance->m_helmId;
         else
             target_id = m_instance->m_chestId;
 
         // If the item is on
         if (target_id != 0) {
-            unEquip(s_id);
+            unEquip(s_itemId);
         }
      
-        // Change count of items in the bag
-        Bag::takeFromBag(s_id);
+        // Take item from the bag
+        Bag::takeFromBag(s_itemId);
 
         // Change player's parameters
-        Player::getInstance()->changeHp(static_cast<Armor *>(AllItemsDB::getItemByID(s_id))->getHp());
-        Player::getInstance()->changeArmor(static_cast<Armor *>(AllItemsDB::getItemByID(s_id))->getArmor());
-        Player::getInstance()->changeAvoidChance(static_cast<Armor *>(AllItemsDB::getItemByID(s_id))->getAvoidChance());  
+        Armor* item {static_cast<Armor *>(AllItemsDB::getItemByID(s_itemId))};
+        Player::getInstance()->changeHp(item->getHp());
+        Player::getInstance()->changeArmor(item->getArmor());
+        Player::getInstance()->changeAvoidChance(item->getAvoidChance());  
 
         // Change id of equipted Armor
-        if(s_id < ItemsConsts::FIRST_CHEST_ID)
-            m_instance->m_helmId = s_id;
+        if(s_itemId < ItemsConsts::FIRST_CHEST_ID)
+            m_instance->m_helmId = s_itemId;
         else 
-            m_instance->m_chestId = s_id;
+            m_instance->m_chestId = s_itemId;
     }
     else {
-        // If the item is on
+        // If the weapon is on
         if (m_instance->m_weaponId != 0) {
-            unEquip(s_id);
+            unEquip(s_itemId);
         }
 
-        // Change count of items in the bag
-        Bag::takeFromBag(s_id);
+        // Take item from the bag
+        Bag::takeFromBag(s_itemId);
 
         // Change player's parameters
-        Player::getInstance()->changeDamage(static_cast<Weapon *>(AllItemsDB::getItemByID(s_id))->getDamage());
-        Player::getInstance()->changeCriticalChance(static_cast<Weapon *>(AllItemsDB::getItemByID(s_id))->getCriticalChance());
+        Weapon* weapon {static_cast<Weapon *>(AllItemsDB::getItemByID(s_itemId))};
+        Player::getInstance()->changeDamage(weapon->getDamage());
+        Player::getInstance()->changeCriticalChance(weapon->getCriticalChance());
 
         // Change id of equipted Weapon
-        m_instance->m_weaponId = s_id;
+        m_instance->m_weaponId = s_itemId;
     }
 }
 
-void EquipedItems::unEquip (const int s_id) {
-    if(s_id < ItemsConsts::FIRST_WEAPON_ID) {
-        //Select target_id by type
+/*
+    Unequip item.
+*/
+void EquipedItems::unEquip (const int s_itemId) {
+    if(s_itemId < ItemsConsts::FIRST_WEAPON_ID) {
+        // Select type by id
         int target_id;
-        if(s_id < ItemsConsts::FIRST_CHEST_ID)
+        if(s_itemId < ItemsConsts::FIRST_CHEST_ID)
             target_id = m_instance->m_helmId;
         else
             target_id = m_instance->m_chestId;
                 
-        // Change count of items in the bag
+        // Put item in the bag
         Bag::putToBag(target_id);
 
-        // Taking Item* from the database, cast to Armor* and Change player's parameters
-        Player::getInstance()->changeHp(- static_cast<Armor *>(AllItemsDB::getItemByID(target_id))->getHp());
-        Player::getInstance()->changeArmor(- static_cast<Armor *>(AllItemsDB::getItemByID(target_id))->getArmor());
-        Player::getInstance()->changeAvoidChance(- static_cast<Armor *>(AllItemsDB::getItemByID(target_id))->getAvoidChance());  
+        // Change player's parameters
+        Armor* armor {static_cast<Armor *>(AllItemsDB::getItemByID(target_id))};
+        Player::getInstance()->changeHp(- armor->getHp());
+        Player::getInstance()->changeArmor(- armor->getArmor());
+        Player::getInstance()->changeAvoidChance(- armor->getAvoidChance());  
 
         // Change id of equipted Armor
-        if(s_id < ItemsConsts::FIRST_CHEST_ID)
+        if(s_itemId < ItemsConsts::FIRST_CHEST_ID)
             m_instance->m_helmId = 0;         
         else 
             m_instance->m_chestId = 0;
     }
     else { 
-        // Change count of items in the bag
+        // Put weapon in the bag
         Bag::putToBag(m_instance->m_weaponId);
 
-        // Taking Item* from the database, cast to Weapon* and Change player's parameters
-        Player::getInstance()->changeDamage(- static_cast<Weapon *>(AllItemsDB::getItemByID(m_instance->m_weaponId))->getDamage());
-        Player::getInstance()->changeCriticalChance(- static_cast<Weapon *>(AllItemsDB::getItemByID(m_instance->m_weaponId))->getCriticalChance());
+        // Change player's parameters
+        Weapon* weapon {static_cast<Weapon *>(AllItemsDB::getItemByID(m_instance->m_weaponId))};
+        Player::getInstance()->changeDamage(- weapon->getDamage());
+        Player::getInstance()->changeCriticalChance(- weapon->getCriticalChance());
 
         // Change id of equipted Weapon
         m_instance->m_weaponId = 0;       
     }
 }
 
+/*
+    Show equipment of the player
+*/
 void EquipedItems::showMenu() {
     int choise {1};
 
     while(choise != 0) {
         checkInputWithMessage();
 
-        //Show all equiped items
+        //Show all equiped items and player's parameters
         cout << "Меню персонажа:" << "\n\nОснащение:"
             << "\n " << InterfaceConst::HELM << ". Шлем: " << AllItemsDB::getItemByID(m_instance->m_helmId)->getName()
             << "\n " << InterfaceConst::CHEST << ". Тело: " << AllItemsDB::getItemByID(m_instance->m_chestId)->getName()
@@ -145,15 +158,18 @@ void EquipedItems::showMenu() {
     }
 }
 
-void EquipedItems::showItemMenu(const int s_id) {
+/*
+    Show description of the item if it is.
+*/
+void EquipedItems::showItemMenu(const int s_itemId) {
     int choise {1};
 
     while(choise != 0) {
         checkInputWithMessage();
 
         // If you have item in choosen slot
-        if(s_id != 0)
-            AllItemsDB::getItemByID(s_id)->showDescription();
+        if(s_itemId != 0)
+            AllItemsDB::getItemByID(s_itemId)->showDescription();
         // If you haven't
         else 
             cout << "Пусто";

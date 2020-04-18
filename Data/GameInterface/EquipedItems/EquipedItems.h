@@ -10,8 +10,8 @@ class EquipedItems {
         static void showItemMenu(const int);
     public:
         static void showMenu ();
-        static void equip (const int);
-        static void unEquip (const int);
+        static void equip (const int itemId);
+        static void unEquip (const int itemId);
 };
 
 #endif

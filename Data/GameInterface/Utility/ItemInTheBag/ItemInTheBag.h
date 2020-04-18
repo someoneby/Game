@@ -5,10 +5,10 @@ class ItemInTheBag {
         int m_id;
         int m_count;
     public:
-        ItemInTheBag(int, int);
+        ItemInTheBag(int itemId, int number);
         int getId();
         int getCount();
-        void changeCount(int);
+        void changeCount(int number);
 };
 
 

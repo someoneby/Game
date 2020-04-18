@@ -1,40 +1,46 @@
 #include "MainMenu.h"
 #include <iostream>
 #include "../LocationsMenu/LocationsMenu.h"
+#include "../Utility/InterfaceConst.h"
+#include "../../Utility/UtilityFunctions/GetChoise/GetChoise.h"
+#include "../../Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h"
+#include "../../Utility/UtilityFunctions/BadInputState/BadInputState.h"
 using std::cout;
 using std::cin;
 
+/*
+    Main menu of the game.
+*/
 void MainMenu::showMainMenu() {
-    system("clear");
-    int choise;
+    int choise{1};
 
-    while(choise != 3) {
+    while(choise) {
+        checkInputWithMessage();
+        
         cout << "\nГлавное меню: \n"
-            << "1. Новая игра.\n"
-            << "2. Загрузить персонажа.\n"
+            << " 1. Новая игра.\n"
+            << " 2. Загрузить персонажа. (в разработке)\n"
+            << " 3. Настройки. (в разработке)\n"
             << "\n0. Выход.\n"
             << "Ваш выбор: ";
 
-        cin >> choise;
-        cin.clear();
-        cin.ignore();
+        choise = getChoise();
 
         switch (choise) {
-            case 1 : {
+            case InterfaceConst::NEW_GAME : {
                 LocationsMenu::showLocations();
-                return;
+                break;
             }
-            case 2 : {
+            case InterfaceConst::LOAD_GAME : {
                 cout << " Загрузить\n";
-                return;
+                break;
             }
-            case 0 : {
+            case InterfaceConst::EXIT : {
                 // cout << " Выход\n";
                 return;
             }
             default : {
-                system("clear");
-                cout << " Неправильный ввод\n";
+                badInputState();
                 break;
             }
         }

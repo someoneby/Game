@@ -11,11 +11,13 @@
 using std::cout;
 using std::cin;
 
-
+/*
+    Menu of all locations in the game (workshop, shop, adventures, bag, person info).
+*/
 void LocationsMenu::showLocations() {
     int choise {1};
 
-    while(choise != 0) {
+    while(choise) {
         checkInputWithMessage();
 
         //Show all locations
@@ -39,7 +41,6 @@ void LocationsMenu::showLocations() {
                 Vendor::showMenu();
                 break;
             }
-            // coming soon
             case InterfaceConst::ADVENTURES : {
                 Adventures::showMenu();
                 break;
@@ -53,8 +54,7 @@ void LocationsMenu::showLocations() {
                 break;
             }
             case InterfaceConst::EXIT : {
-                cout << " Выход\n";
-                break;
+                return;
             }
             default : {
                 badInputState();
