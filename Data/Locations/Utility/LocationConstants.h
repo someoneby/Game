@@ -10,6 +10,7 @@ namespace LocationConstants {
     const int PATROL = 2;
     const int DEPTHS = 3;
     const int GO_DEEPER = 1;
+    const int FIGHT = 1;
     const int BAG = 2;
     const int PERSON_MENU = 3;
     const int EXIT = 0;

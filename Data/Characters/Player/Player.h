@@ -5,12 +5,15 @@
 
 class Player : public IUnit {
     private:
+        static int m_energy;
         static Player* m_instance;
         Player();
     public:
         static Player* getInstance();
+        static int getEnergy();
+        static void spendEnergy(const int);
         static void setName(string name);
-        static void fight(IUnit*);
+        static bool fight(IUnit*);
         static void changeDamage(int);
         static void changeCriticalChance(float);
         static void changeHp(int);

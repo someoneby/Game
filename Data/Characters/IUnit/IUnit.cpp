@@ -64,4 +64,4 @@ double IUnit::getAvoidChance() {
     return m_avoidChance;
 }
 
-// IUnit::~IUnit() {}
+IUnit::~IUnit() {}

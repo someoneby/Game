@@ -24,7 +24,7 @@ class IUnit {
         virtual int getDamage();
         virtual double getAvoidChance();
         virtual double getCritChance();
-        // virtual ~IUnit() = 0;
+        virtual ~IUnit() = 0;
 };
 
 

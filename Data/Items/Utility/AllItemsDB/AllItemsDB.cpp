@@ -59,7 +59,7 @@ AllItemsDB::AllItemsDB() : m_allItemsDB {
 
     //Reagent(int id, std::string name, std::string description, int prise)
     new Reagent(91, "Кожа", "Спасибо что не с жопы.", 5),
-    new Reagent(92, "Кожа с жопы", "Блять ...", 6) 
+    new Reagent(92, "Кожа с жопы", "Бля...", 6) 
 } {};
 
 Item * AllItemsDB::getItemByID(int s_id) {        

@@ -5,10 +5,11 @@
 #include "../Utility/CharConstants.h"
 
 Player* Player::m_instance = new Player();
+int Player::m_energy = CharConstants::MAX_ENERGY;
 
 Player::Player() {
-    Parameters param {CharConstants::player};
-    m_hp = param.m_hp;
+    Parameters param {CharConstants::PLAYER};
+    m_hp = param.m_hp * 100000;
     m_armor = param.m_armor;
     m_avoidChance = param.m_avoidChance;
     m_damage = param.m_damage;
@@ -20,7 +21,8 @@ void Player::setName(string s_name) {
     m_instance->m_name = s_name;
 }
 
-void Player::fight(IUnit* mob) {
+bool Player::fight(IUnit* mob) {
+    system("clear");
 
     combatLog(CombatLogStages::START, m_instance, mob);
 
@@ -33,8 +35,10 @@ void Player::fight(IUnit* mob) {
 
     if(m_instance->m_hp == 0){
         combatLog(CombatLogStages::LOSE);
+        return false;
     } else {
         combatLog(CombatLogStages::WIN);
+        return true;
     }
 }
 
@@ -60,4 +64,15 @@ void Player::changeArmor(int s_armorChange) {
 
 Player* Player::getInstance() {
     return m_instance;
+}
+
+int Player::getEnergy() {
+
+
+
+    return m_energy;
+}
+
+void Player::spendEnergy(const int s_energy) {
+    m_energy -= s_energy;
 }

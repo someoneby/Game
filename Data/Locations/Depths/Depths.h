@@ -3,7 +3,7 @@
 
 
 class Depths {
-        static void goDeeper(const int);
+        static bool goDeeper(const int);
     public:
         static void mainMenu();
 };
