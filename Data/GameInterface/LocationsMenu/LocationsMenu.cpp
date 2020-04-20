@@ -21,11 +21,11 @@ void LocationsMenu::showLocations() {
         checkInputWithMessage();
 
         //Show all locations
-        cout << "\nМеню локаций: \n\n"
-            << InterfaceConst::WORKSHOP << ". Мастерская.\n"
-            << InterfaceConst::SHOP <<". Лавка торговца.\n"
-            << InterfaceConst::ADVENTURES << ". Приключения.\n"
-            << InterfaceConst::BAG << ". Сумка\n"
+        cout << "\nМеню локаций: \n\n "
+            << InterfaceConst::WORKSHOP << ". Мастерская.\n "
+            << InterfaceConst::SHOP <<". Лавка торговца.\n "
+            << InterfaceConst::ADVENTURES << ". Приключения.\n "
+            << InterfaceConst::BAG << ". Сумка\n "
             << InterfaceConst::PERSON_INFO << ". Меню персонажа\n"
             << "\n" << InterfaceConst::EXIT << ". Выход в главное меню.\n"
             << "Ваш выбор: ";

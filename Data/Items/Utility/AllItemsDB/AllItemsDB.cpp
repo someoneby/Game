@@ -62,9 +62,12 @@ AllItemsDB::AllItemsDB() : m_allItemsDB {
     new Reagent(92, "Кожа с жопы", "Бля...", 6) 
 } {};
 
-Item * AllItemsDB::getItemByID(int s_id) {        
-    for(int i{0}; i < m_instance->m_allItemsDB.size(); ++i){
-        if(m_instance->m_allItemsDB.at(i)->getId() == s_id)
-            return m_instance->m_allItemsDB.at(i);
+/*
+    Return item from DB by id.
+*/
+IItem * AllItemsDB::getItemByID(int s_id) {
+    for(auto itemPtr {m_instance->m_allItemsDB.begin()}; itemPtr != m_instance->m_allItemsDB.end(); ++itemPtr) {
+        if( (*itemPtr)->getId() == s_id)
+            return *itemPtr;
     }
 }

@@ -9,7 +9,9 @@
 #include "../../Utility/UtilityFunctions/BadInputState/BadInputState.h"
 using std::cout;
 
-
+/*
+    Main menu of depths, it shows level and energy. 
+*/
 void Depths::mainMenu() {
     int choise{1};
     int level{0};
@@ -24,7 +26,7 @@ void Depths::mainMenu() {
             << "\n\n 1. Спускаться дальше (-5 энергии)"
             << "\n 2. Сумка"
             << "\n 3. Меню персонажа"
-            << "\n\n 0. Выйти из шахты"
+            << "\n\n0. Выйти из шахты"
             << "\nВаш выбор: ";
 
         choise = getChoise();
@@ -34,9 +36,11 @@ void Depths::mainMenu() {
                 Player::spendEnergy(5);
                 int result = goDeeper(level);
                 
+                // Win
                 if(result) {
                     level++;
                 }
+                // Lose or exit
                 else {
                     return;
                 }
@@ -60,6 +64,9 @@ void Depths::mainMenu() {
     }
 }
 
+/*
+    Go next level of depth and meet the mob.
+*/
 bool Depths::goDeeper(const int s_level) {
     int choise{1};
     Mob* mob {MobFactory::getMob(s_level)};
@@ -67,10 +74,10 @@ bool Depths::goDeeper(const int s_level) {
     while(choise) {
         checkInputWithMessage();
         
-        cout << "Ваш путь преградил " << mob->getName()
-            << "\n Хп: " << mob->getHP()
-            << "\n Броня: " << mob->getArmor()
-            << "\n Урон: " << mob->getDamage()
+        cout << "Ваш путь преградил " << mob->getName() << ":"
+            << "\nХп: " << mob->getHP()
+            << "\nБроня: " << mob->getArmor()
+            << "\nУрон: " << mob->getDamage()
             << "\n\n 1. Напасть"
             << "\n 2. Сумка"
             << "\n 3. Меню персонажа"
@@ -79,38 +86,37 @@ bool Depths::goDeeper(const int s_level) {
 
         choise = getChoise();
 
-        switch (choise)
-        {
-        case LocationConstants::FIGHT : {
-            bool win {Player::fight(mob)};
+        switch (choise) {
+            case LocationConstants::FIGHT : {
+                bool win {Player::fight(mob)};
 
-            // Will change to shared_ptr
-            delete mob; 
+                // Will change to shared_ptr
+                delete mob; 
 
-            cout << "\n\nЛюбой ввод для продолжения: ";
-            getChoise();
+                cout << "\n\nЛюбой ввод для продолжения: ";
+                getChoise();
 
-            if(win){
-                return true;
+                if(win){
+                    return LocationConstants::WIN;
+                }
+                else {
+                    return LocationConstants::DIED;
+                }
             }
-            else {
-                return false;
+            case LocationConstants::BAG : {
+                Bag::showMenu();
+                break;
             }
-        }
-        case LocationConstants::BAG : {
-            Bag::showMenu();
-            break;
-        }
-        case LocationConstants::PERSON_MENU : {
-            EquipedItems::showMenu();
-            break;
-        }
-        case LocationConstants::EXIT : {
-            return LocationConstants::EXIT;
-        }
-        default:
-            badInputState();
-            break;
+            case LocationConstants::PERSON_MENU : {
+                EquipedItems::showMenu();
+                break;
+            }
+            case LocationConstants::EXIT : {
+                return LocationConstants::EXIT;
+            }
+            default:
+                badInputState();
+                break;
         }
     }
 }

@@ -1,17 +1,16 @@
 #ifndef GAME_ALLITEMS_H
 #define GAME_ALLITEMS_H
 
-#include "../../Item/Item.h"
+#include "../../IItem/IItem.h"
 #include "vector"
+
 class AllItemsDB {
     private:
         AllItemsDB();
-        AllItemsDB(const AllItemsDB &) = delete;
-        AllItemsDB & operator = (AllItemsDB &) = delete;
         static AllItemsDB * m_instance;
-        std::vector<Item*> m_allItemsDB;
+        std::vector<IItem*> m_allItemsDB;
     public:
-        static Item * getItemByID(int);
+        static IItem * getItemByID(int);
 };
 
 

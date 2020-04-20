@@ -1,13 +1,12 @@
 #ifndef GAME_WORKSHOP_H
 #define GAME_WORKSHOP_H
 
-/*
-    This is location where you can craft items
-*/
-
 #include <vector>
 #include "../Utility/ItemToCraft/ItemToCraft.h"
 
+/*
+    This is location where you can craft items.
+*/
 class Workshop {
         static int getAvailableNumber(const int);
         static void showReagents(const int);

@@ -1,10 +1,10 @@
 #ifndef GAME_WEAPONS_H
 #define GAME_WEAPON_H
 
-#include "../Item/Item.h"
+#include "../IItem/IItem.h"
 
-class Weapon : public Item {
-    protected:
+class Weapon : public IItem {
+    private:
         int m_damage;
         float m_criticalChance;
     public:

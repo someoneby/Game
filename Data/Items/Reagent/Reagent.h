@@ -1,8 +1,9 @@
 #ifndef GAME_REAGENT_H
 #define GAME_REAGENT_H
 
-#include "../Item/Item.h"
-class Reagent : public Item {
+#include "../IItem/IItem.h"
+
+class Reagent : public IItem {
     public:
         Reagent(int, std::string, std::string, int);
         void showDescription() const override;

@@ -1,12 +1,11 @@
 #ifndef GAME_VENDOR_H
 #define GAME_VENDOR_H
 
+#include "vector"
+
 /* 
     This class is location where you can buy or sale goods
 */
-
-#include "vector"
-
 class Vendor {
     private:
         std::vector<int> m_itemsIdToBuy;
@@ -14,8 +13,8 @@ class Vendor {
         Vendor();
         static void showMenuToBuy();
         static void showMenuToSell();
-        static void showDescriptionToBuy(const int);
-        static void showDescriptionToSell(const int);
+        static void showDescriptionToBuy(const int id);
+        static void showDescriptionToSell(const int position);
     public:
         static void showMenu();
 };

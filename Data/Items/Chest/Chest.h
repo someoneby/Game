@@ -5,9 +5,8 @@
 #include "../Armor/Armor.h"
 
 class Chest : public Armor {
-
-public:
-    Chest(int, std::string, int, float, int, int, std::string);
+    public:
+        Chest(int id, std::string name, int armor, float avoidChance, int hp, int prise, std::string description);
 };
 
 

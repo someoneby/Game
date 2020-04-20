@@ -6,11 +6,13 @@
 #include "../../Utility/UtilityFunctions/BadInputState/BadInputState.h"
 using std::cout;
 
-
+/*
+    Show list of all adventures.
+*/
 void Adventures::showMenu() {
     int choise {1};
 
-    while(choise != LocationConstants::EXIT) {
+    while(choise) {
         checkInputWithMessage();
 
         //Show menu

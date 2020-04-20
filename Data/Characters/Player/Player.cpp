@@ -91,7 +91,7 @@ Player* Player::getInstance() {
     Calculating current energy and return it.
 */
 int Player::getEnergy() {
-
+    
 
 
     return m_energy;
