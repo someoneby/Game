@@ -11,7 +11,8 @@ struct Parameters {
     const int m_damage;
     const float m_critChance; 
     const string m_name;
-    Parameters(int hp, float armor, float avoidChance, int damage, float critChance, string name);
+    Parameters(const int hp, const float armor, const float avoidChance, const int damage,
+        const float critChance, const string& name);
 };
 
 #endif //GAME_PARAMETERS_H

@@ -5,8 +5,8 @@
 
 class Mob : public IUnit {
     public:
-        Mob(const int hp, const double armor, const double avoidChance, const int damage,
-            const double critChance, const string name);
+        Mob(const int hp, const float armor, const float avoidChance, const int damage,
+            const float critChance, const string& name);
 };
 
 

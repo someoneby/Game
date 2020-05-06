@@ -12,13 +12,13 @@ class Player : public IUnit {
         static Player* getInstance();
         static int getEnergy();
         static void spendEnergy(const int energy);
-        static void setName(string name);
-        static bool fight(IUnit* mob);
-        static void changeDamage(int damage);
-        static void changeCriticalChance(float critChance);
-        static void changeHp(int hp);
-        static void changeAvoidChance(float avoidChance);
-        static void changeArmor(int armor);
+        static void setName(const string name);
+        static bool fight(IUnit* const mob);
+        static void changeDamage(const int damage);
+        static void changeCriticalChance(const float critChance);
+        static void changeHp(const int hp);
+        static void changeAvoidChance(const float avoidChance);
+        static void changeArmor(const int armor);
 };
 
 

@@ -1,27 +1,19 @@
 #include "Player.h"
 #include "../Utility/ParametersDB/ParametersDB.h"
-#include "../Utility/Parameters/Parameters.h"
 #include "../../Utility/UtilityFunctions/CombatLog/CombatLog.h"
 #include "../Utility/CharConstants.h"
 
 Player* Player::m_instance = new Player();
 int Player::m_energy = CharConstants::MAX_ENERGY;
 
-Player::Player() {
-    Parameters param {CharConstants::PLAYER};
 
-    m_hp = param.m_hp * 100000; //for testing
-    m_armor = param.m_armor;
-    m_avoidChance = param.m_avoidChance;
-    m_damage = param.m_damage;
-    m_criticalChance = param.m_critChance;
-    m_name = param.m_name;
-}
+Player::Player() : IUnit(CharConstants::PLAYER) {}
+
 
 /*
     Battle starting. Player and mob hit each other until someone dies.
 */
-bool Player::fight(IUnit* s_mob) {
+bool Player::fight(IUnit* const s_mob) {
     system("clear");
 
     // Battle start log
@@ -48,35 +40,35 @@ bool Player::fight(IUnit* s_mob) {
 /*
     Change damage of the player when something changes in equipment.
 */
-void Player::changeDamage(int s_damageChange){
+void Player::changeDamage(const int s_damageChange){
     m_instance->m_damage += s_damageChange;
 }
 
 /*
     Change critical chance of the player when something changes in equipment.
 */
-void Player::changeCriticalChance(float s_criticalCnahceChange){
+void Player::changeCriticalChance(const float s_criticalCnahceChange){
     m_instance->m_criticalChance += s_criticalCnahceChange;
 }
 
 /*
     Change hp of the player when something changes in equipment.
 */
-void Player::changeHp(int s_hpChange) {
+void Player::changeHp(const int s_hpChange) {
     m_instance->m_hp += s_hpChange;
 }
 
 /*
     Change avoid chance of the player when something changes in equipment.
 */
-void Player::changeAvoidChance(float s_avoidChanceChange) {
+void Player::changeAvoidChance(const float s_avoidChanceChange) {
     m_instance->m_avoidChance += s_avoidChanceChange;
 }
 
 /*
     Change armor of the player when something changes in equipment.
 */
-void Player::changeArmor(int s_armorChange) {
+void Player::changeArmor(const int s_armorChange) {
     m_instance->m_armor += s_armorChange;
 }
 
@@ -107,6 +99,6 @@ void Player::spendEnergy(const int s_energy) {
 /*
     Set name of the player in new game.
 */
-void Player::setName(string s_name) {
+void Player::setName(const string s_name) {
     m_instance->m_name = s_name;
 }
