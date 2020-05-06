@@ -17,7 +17,6 @@ namespace InterfaceConst {
     
     const int FIRST_REAGENT_ID {91};
     const int PUT_ON {1};
-    // const int takeOff = 2;
 }
 
 #endif //GAME_INTERFACECONST_H

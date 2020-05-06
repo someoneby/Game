@@ -1,24 +1,8 @@
 #include "IItem.h"
 
-/*
-    Return id of the item.
-*/
-int IItem::getId() const {
-    return m_id;
+IItem::IItem(const int s_id, const std::string s_name, const int s_prise, const std::string s_description) :
+    m_id{s_id}, m_name{s_name}, m_prise{s_prise}, m_description{s_description} {
 }
 
-/*
-    Return name of the item.
-*/
-std::string IItem::getName() const {
-    return m_name;
-}
-
-/*
-    Return prise of the item.
-*/
-int IItem::getPrise() const {
-    return m_prise;
-}
 
 IItem::~IItem() {}

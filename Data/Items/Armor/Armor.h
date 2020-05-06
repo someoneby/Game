@@ -5,15 +5,17 @@
 
 class Armor : public IItem {
     private:
+        int m_hp;
         int m_armor;
         float m_avoidChance;
-        int m_hp;
     public:
-        Armor(int itemId, std::string name, std::string description, int armor, float avoidChance, int hp, int prise);
-        int getArmor() const;
-        float getAvoidChance() const;
-        int getHp() const;
+        Armor(const int itemId, const std::string name, const int prise, const std::string description, const int hp,
+            const int armor, const float avoidChance);
         void showDescription() const override;
+        
+        float getAvoidChance() const { return m_avoidChance; };
+        int getHp() const { return m_hp; };
+        int getArmor() const { return m_armor; };
 };
 
 

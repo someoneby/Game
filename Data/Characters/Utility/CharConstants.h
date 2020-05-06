@@ -9,4 +9,4 @@ namespace CharConstants {
 };
 
 
-#endif /GAME_CHAR_CONSTANTS_H
+#endif //GAME_CHAR_CONSTANTS_H

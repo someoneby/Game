@@ -5,8 +5,8 @@
 
 class Reagent : public IItem {
     public:
-        Reagent(int, std::string, std::string, int);
-        void showDescription() const override;
+        Reagent(const int, const std::string, const std::string, const int);
+        void showDescription() const override { std::cout << m_name << "\n\n" << m_description;};
 };
 
 

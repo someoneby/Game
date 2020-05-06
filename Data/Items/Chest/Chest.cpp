@@ -1,4 +1,6 @@
 #include "Chest.h"
 
-Chest::Chest (int s_id, std::string s_name, int s_armor, float s_avoidChanse, int s_hp, int s_prise, std::string s_description) :
-         Armor(s_id, s_name, s_description, s_armor, s_avoidChanse, s_hp, s_prise) {};
+Chest::Chest (const int s_id, const std::string s_name, const int s_armor, const float s_avoidChanse,
+    const int s_hp, const int s_prise, const std::string s_description) :
+    Armor(s_id, s_name, s_prise, s_description, s_hp, s_armor, s_avoidChanse) {
+};

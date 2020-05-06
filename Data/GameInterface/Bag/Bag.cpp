@@ -10,6 +10,7 @@ using std::cout;
 Bag* Bag::m_instance = new Bag();
 Bag::Bag() : m_gold{200} {}
 
+
 /*
     Show all your gold and items in the bag.
 */
@@ -26,6 +27,7 @@ void Bag::show() {
             cout << ": " << m_instance->m_bag.at(i)->getCount();
     }
 }
+
 
 /*
     Show menu of the bag.
@@ -53,6 +55,7 @@ void Bag::showMenu() {
             badInputState();
     }
 }
+
 
 /*
     Shows description of the item and if it's equipment apply you to put on it.
@@ -101,6 +104,7 @@ void Bag::itemMenu(const int s_itemPosition) {
     }
 }
 
+
 /*
     Put item in the bag.
 */
@@ -121,6 +125,7 @@ void Bag::putToBag(const int  s_itemId, const int s_number) {
     m_instance->m_bag.push_back(new ItemInTheBag(s_itemId, s_number));
 }
 
+
 /*
     Take item from the bag.
 */
@@ -140,26 +145,6 @@ void Bag::takeFromBag(const int s_itemId, const int s_number) {
     }
 }
 
-/*
-    Take gold into the bag.
-*/
-void Bag::takeGold(const int s_gold) {
-    m_instance->m_gold += s_gold;
-}
-
-/*
-    Spend gold from the bag.
-*/
-void Bag::spendGold(const int s_gold) {
-    m_instance->m_gold -= s_gold;
-}
-
-/*
-    Return how much gold in the bag.
-*/
-int Bag::getGold() {
-    return m_instance->m_gold;
-}
 
 /*
     Return number of the item.
@@ -173,18 +158,4 @@ int Bag::getCounterById(const int s_itemId) {
     }
     // If item doesn`t exist
     return 0;
-}
-
-/*
-    Return number of diffrent items from your bag.
-*/
-int Bag::getBagSize() {
-    return m_instance->m_bag.size();
-}
-
-/*
-    Return item from the bag.
-*/
-ItemInTheBag* Bag::getItemFromBag(const int s_itemPosition) {
-    return m_instance->m_bag.at(s_itemPosition);
 }

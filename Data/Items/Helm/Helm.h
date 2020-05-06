@@ -6,7 +6,8 @@
 
 class Helm : public Armor {
     public:
-        Helm(int id, std::string name, int armor, float avoidChance, int hp, int prise, std::string description);
+        Helm(const int id, const std::string name, const int armor, const float avoidChance, const int hp,
+            const int prise, const std::string description);
 };
 
 

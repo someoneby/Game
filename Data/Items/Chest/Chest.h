@@ -6,7 +6,8 @@
 
 class Chest : public Armor {
     public:
-        Chest(int id, std::string name, int armor, float avoidChance, int hp, int prise, std::string description);
+        Chest(const int id, const std::string name, const int armor, const float avoidChance, const int hp,
+            const int prise, const std::string description);
 };
 
 

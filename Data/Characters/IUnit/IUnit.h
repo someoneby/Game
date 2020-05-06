@@ -2,6 +2,7 @@
 #define GAME_IUNIT_H
 
 #include "../Utility/Parameters/Parameters.h"
+#include "../../Utility/UtilityFunctions/RandDouble/RandDouble.h"
 #include <iostream>
 using std::string;
 
@@ -17,18 +18,19 @@ class IUnit {
         IUnit(const int hp, const float armor, const float avoidChance, const int damage,
             const float critChance, const string& name);
         IUnit(const Parameters& params);
-        virtual void hit(IUnit* const target) const;
-        virtual inline bool isMissing() const;
-        virtual inline bool isCritical() const;
-        virtual void takeDamage(const int damage);
-        virtual inline int damageCalculating(const IUnit* const target) const;
-        virtual inline int getHP() const;
-        virtual inline string getName() const;
-        virtual inline float getArmor() const;
-        virtual inline int getDamage() const;
-        virtual inline float getAvoidChance() const;
-        virtual inline float getCritChance() const { return m_criticalChance; };
+        void hit(IUnit* const target) const;
+        void takeDamage(const int damage);
         virtual ~IUnit() = 0;
+        
+        int damageCalculating(const IUnit* const target) const { return m_damage * (100 - target->getArmor())/100; };
+        bool isMissing() const { return randDouble() <= m_avoidChance; };
+        bool isCritical() const { return randDouble() <= m_criticalChance; };
+        int getHP() const { return m_hp; };
+        string getName() const { return m_name; };
+        float getArmor() const { return m_armor; };
+        int getDamage() const { return m_damage; };
+        float getAvoidChance() const { return m_avoidChance; };
+        float getCritChance() const { return m_criticalChance; };
 };
 
 

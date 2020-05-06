@@ -6,9 +6,9 @@ class ItemInTheBag {
         int m_count;
     public:
         ItemInTheBag(int itemId, int number);
-        int getId();
-        int getCount();
-        void changeCount(int number);
+        int getId() { return m_id; };
+        int getCount() { return m_count; };
+        void changeCount(int number) { m_count += number; };
 };
 
 

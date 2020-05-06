@@ -11,11 +11,3 @@ ParametersDB::ParametersDB() :
         Parameters(250, 2.0, 0.2, 60, 0.2, "Киркоров"),
     }
 {}
-
-Parameters& ParametersDB::getParam(const int s_mobId) {
-    return m_instance->m_mobs.at(s_mobId);
-}
-
-int ParametersDB::getMobsNumber() {
-    return m_instance->m_mobs.size();
-}

@@ -1,15 +1,5 @@
 #include "Reagent.h"
 
-Reagent::Reagent(int s_id, std::string s_name, std::string s_description, int s_prise) {
-            m_id = s_id;
-            m_name = s_name;
-            m_description = s_description;
-            m_prise = s_prise;
-}
-
-/*
-    Show description of the item.
-*/
-void Reagent::showDescription() const {
-    std::cout <<m_name << "\n\n" << m_description;
+Reagent::Reagent(const int s_id, const std::string s_name, const std::string s_description, const int s_prise) :
+    IItem(s_id, s_name, s_prise, s_description) {
 }

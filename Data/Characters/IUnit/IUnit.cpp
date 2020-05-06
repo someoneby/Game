@@ -1,7 +1,6 @@
 #include "IUnit.h"
 #include "../../Utility/Constants/Constants.h"
 #include "../../Utility/UtilityFunctions/CombatLog/CombatLog.h"
-#include "../../Utility/UtilityFunctions/RandDouble/RandDouble.h"
 
 
 IUnit::IUnit(const int s_hp, const float s_armor, const float s_avoidChance, const int s_damage,
@@ -43,48 +42,6 @@ void IUnit::hit(IUnit* const s_target) const {
     s_target->takeDamage(damage);
 }
 
-/*
-    Return hp of the unit.
-*/
-inline int IUnit::getHP() const {
-    return m_hp;
-}
-
-
-/*
-    Return whether there was a hit(false) or miss(true).
-*/
-inline bool IUnit::isMissing() const {
-    return randDouble() <= m_avoidChance;
-}
-
-/*
-    Return whether there was a crit(true) or not(false).
-*/
-inline bool IUnit::isCritical() const {
-    return randDouble() <= m_criticalChance;
-}
-
-/*
-    Return name of the unit.
-*/
-inline string IUnit::getName() const {
-    return m_name;
-}
-
-/*
-    Return armor of the unit.
-*/
-inline float IUnit::getArmor() const {
-    return m_armor;
-}
-
-/*
-    Calculate the damage that the target will take.
-*/
-inline int IUnit::damageCalculating(const IUnit* const s_target) const {
-    return m_damage * (100 - s_target->getArmor())/100;
-}
 
 /*
     Changing hp of a target, if hp < 0 it will die.
@@ -95,25 +52,5 @@ void IUnit::takeDamage(int s_damage) {
         m_hp = 0;
 }
 
-/*
-    Return critical chance of the unit.
-*/
-// float IUnit::getCritChance() const {
-//     return m_criticalChance;
-// }
-
-/*
-    Return damage of the unit.
-*/
-inline int IUnit::getDamage() const {
-    return m_damage;
-}
-
-/*
-    Return avoid chance of the unit.
-*/
-inline float IUnit::getAvoidChance() const {
-    return m_avoidChance;
-}
 
 IUnit::~IUnit() {}
