@@ -1,8 +1,6 @@
 #include "CheckInputWithMessage.h"
 
-/*
-    Clears screen and shows error message if input was incorrect.
-*/
+
 void checkInputWithMessage() {
     extern bool badInput;
 
@@ -13,6 +11,5 @@ void checkInputWithMessage() {
     }
     else{
         std::cout << "\n";
-    }
-    
+    }   
 }

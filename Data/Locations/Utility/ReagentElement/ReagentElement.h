@@ -9,9 +9,9 @@
     that needs to craft some item.
 */
 struct ReagentElement {
-        const int m_id;
-        const int m_count;
-        ReagentElement(const int id, const int number);
+    const int m_id;
+    const int m_count;
+    ReagentElement(const int id, const int number);
 };
 
 

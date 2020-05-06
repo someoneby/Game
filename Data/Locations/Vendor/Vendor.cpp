@@ -94,7 +94,7 @@ void Vendor::showMenuToBuy() {
             //Printing position, name and cost tu buy
             cout << " " << i+1 << ". " << AllItemsDB::getItemByID(id)->getName() << " - "
                 //Prise of item to buy = prise of item to sale * 10
-                << AllItemsDB::getItemByID(id)->getPrise() * LocationConstants::modifierCostToBuy << "з.\n";
+                << AllItemsDB::getItemByID(id)->getPrise() * LocationConstants::MODIFIER_COST_TO_BUY << "з.\n";
         }
         cout << "\n0. Назад." << "\nВаш выбор: ";
 
@@ -119,7 +119,7 @@ void Vendor::showMenuToBuy() {
     Show description of the choosen item.
 */
 void Vendor::showDescriptionToBuy(const int s_idToBuy) {
-    const int priseToBuy { AllItemsDB::getItemByID(s_idToBuy)->getPrise() * LocationConstants::modifierCostToBuy };
+    const int priseToBuy { AllItemsDB::getItemByID(s_idToBuy)->getPrise() * LocationConstants::MODIFIER_COST_TO_BUY };
     const int howMuchCanBuy { Bag::getGold() / priseToBuy };
     int numberToBuy {1};
 

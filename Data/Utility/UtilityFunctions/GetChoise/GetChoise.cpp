@@ -5,9 +5,6 @@ using std::cin;
 
 //Баг: исправить возможный ввод с пробелами
 
-/*
-    Take menu point from player and mark if input was incorrect.
-*/
 int getChoise() {
     int choise;
     cin >> choise;

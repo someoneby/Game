@@ -28,7 +28,7 @@ namespace LocationConstants {
     const int FIRST_CHEST_ID_TO_CRAFT {33};
     const int FIRST_WEAPON_ID_TO_CRAFT {63};
 
-    const int modifierCostToBuy {10};
+    const int MODIFIER_COST_TO_BUY {10};
 }
 
 #endif //GAME_LOCATIONCONSTANTS_H
