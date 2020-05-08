@@ -7,10 +7,11 @@
 class AllItemsDB {
     private:
         AllItemsDB();
-        static AllItemsDB * m_instance;
+        static AllItemsDB* m_instance;
         std::vector<IItem*> m_allItemsDB;
     public:
-        static IItem * getItemByID(int);
+        static IItem* getItemByID(const int);
+        static int getReagentsNumber();
 };
 
 

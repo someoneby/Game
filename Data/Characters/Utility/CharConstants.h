@@ -4,8 +4,9 @@
 #include "Parameters/Parameters.h"
 
 namespace CharConstants {
-    const Parameters PLAYER(500, 1.0, 0.1, 50, 0.2, "Player");
+    const Parameters PLAYER(500000, 1.0, 0.1, 50, 0.2, "Player");
     const int MAX_ENERGY {200};
+    const int ENERGY_REGEN_TIME {3600};
 };
 
 

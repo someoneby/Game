@@ -8,7 +8,7 @@
 #include "../../Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h"
 #include "../../Utility/UtilityFunctions/BadInputState/BadInputState.h"
 #include "../Utility/InterfaceConst.h"
-#include "../../Items/Utility/ItemsConsts.h"
+#include "../../Items/Utility/ItemsConstants.h"
 #include "../../Characters/Player/Player.h"
 #include "../../Utility/Constants/Constants.h"
 using std::cout;
@@ -22,10 +22,10 @@ EquipedItems::EquipedItems() : m_weaponId{0}, m_chestId{0}, m_helmId{0} {};
 */
 void EquipedItems::equip (const int s_itemId) {
     // If id belongs to helms or chests
-    if(s_itemId < ItemsConsts::FIRST_WEAPON_ID) {
+    if(s_itemId < ItemsConstants::FIRST_WEAPON_ID) {
         //Select type by id
         int target_id;
-        if(s_itemId < ItemsConsts::FIRST_CHEST_ID)
+        if(s_itemId < ItemsConstants::FIRST_CHEST_ID)
             target_id = m_instance->m_helmId;
         else
             target_id = m_instance->m_chestId;
@@ -45,7 +45,7 @@ void EquipedItems::equip (const int s_itemId) {
         Player::getInstance()->changeAvoidChance(item->getAvoidChance());  
 
         // Change id of equipted Armor
-        if(s_itemId < ItemsConsts::FIRST_CHEST_ID)
+        if(s_itemId < ItemsConstants::FIRST_CHEST_ID)
             m_instance->m_helmId = s_itemId;
         else 
             m_instance->m_chestId = s_itemId;
@@ -73,10 +73,10 @@ void EquipedItems::equip (const int s_itemId) {
     Unequip item.
 */
 void EquipedItems::unEquip (const int s_itemId) {
-    if(s_itemId < ItemsConsts::FIRST_WEAPON_ID) {
+    if(s_itemId < ItemsConstants::FIRST_WEAPON_ID) {
         // Select type by id
         int target_id;
-        if(s_itemId < ItemsConsts::FIRST_CHEST_ID)
+        if(s_itemId < ItemsConstants::FIRST_CHEST_ID)
             target_id = m_instance->m_helmId;
         else
             target_id = m_instance->m_chestId;
@@ -91,7 +91,7 @@ void EquipedItems::unEquip (const int s_itemId) {
         Player::getInstance()->changeAvoidChance(- armor->getAvoidChance());  
 
         // Change id of equipted Armor
-        if(s_itemId < ItemsConsts::FIRST_CHEST_ID)
+        if(s_itemId < ItemsConstants::FIRST_CHEST_ID)
             m_instance->m_helmId = 0;         
         else 
             m_instance->m_chestId = 0;

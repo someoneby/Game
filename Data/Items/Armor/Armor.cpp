@@ -12,6 +12,6 @@ Armor::Armor(const int s_id, const std::string s_name, const int s_prise, const 
     Show description of the item.
 */
 void Armor::showDescription() const {
-        std::cout <<m_name << "\n\n" << m_description << "\n\n Броня: " << m_armor << "\n Шанс промаха: "
-         << m_avoidChance << "\n Хп: " << m_hp;
+    std::cout << m_name << "\n\n" << m_description << "\n\n Броня: " << m_armor << "\n Шанс промаха: "
+    << m_avoidChance << "\n Хп: " << m_hp;
 }

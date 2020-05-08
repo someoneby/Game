@@ -4,13 +4,13 @@
 // Stages for function that prints combat log
 
 enum CombatLogStages {
+    LOSE = 0,
+    WIN,
     START,
     MISS,
     CRITICAL,
     HIT,
-    NEXT_ROUND,
-    LOSE,
-    WIN
+    NEXT_ROUND
 };
 
 

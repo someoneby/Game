@@ -29,6 +29,9 @@ namespace LocationConstants {
     const int FIRST_WEAPON_ID_TO_CRAFT {63};
 
     const int MODIFIER_COST_TO_BUY {10};
+
+    const int FIRST_REAGENT_ID {91};
+    const float DROP_CHANCE {0.2};
 }
 
 #endif //GAME_LOCATIONCONSTANTS_H

@@ -7,6 +7,7 @@
 #include "../../Utility/UtilityFunctions/GetChoise/GetChoise.h"
 #include "../../Utility/UtilityFunctions/CheckInputWithMessage/CheckInputWithMessage.h"
 #include "../../Utility/UtilityFunctions/BadInputState/BadInputState.h"
+#include "../Utility/TakeLoot/TakeLoot.h"
 using std::cout;
 
 /*
@@ -35,6 +36,9 @@ void Depths::mainMenu() {
             case LocationConstants::GO_DEEPER : {
                 Player::spendEnergy(5);
                 int result = goDeeper(level);
+                
+                cout << "\n\nЛюбой ввод для продолжения: ";
+                getChoise();
                 
                 // Win
                 if(result) {
@@ -90,13 +94,14 @@ bool Depths::goDeeper(const int s_level) {
             case LocationConstants::FIGHT : {
                 bool win {Player::fight(mob)};
 
-                // Will change to shared_ptr
+                // Will change to unique_ptr
                 delete mob; 
 
-                cout << "\n\nЛюбой ввод для продолжения: ";
-                getChoise();
+                // cout << "\n\nЛюбой ввод для продолжения: ";
+                // getChoise();
 
                 if(win){
+                    takeLoot(s_level);
                     return LocationConstants::WIN;
                 }
                 else {
