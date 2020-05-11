@@ -79,11 +79,15 @@ IItem* AllItemsDB::getItemByID(const int s_id) noexcept {
     Returns number of reagents.
 */
 int AllItemsDB::getReagentsNumber() noexcept {
-    int result {0};
+    static int result {0};
 
-    for(auto itemPtr{m_instance->m_allItemsDB.begin()}; itemPtr != m_instance->m_allItemsDB.end(); ++itemPtr) {
-        if( (*itemPtr)->getId() >= ItemsConstants::FIRST_REAGENT_ID) 
-            result++;
+    //If it wasn't count.
+    if(!result) {
+        for(auto itemPtr{m_instance->m_allItemsDB.begin()}; itemPtr != m_instance->m_allItemsDB.end(); ++itemPtr) {
+            if( (*itemPtr)->getId() >= ItemsConstants::FIRST_REAGENT_ID) 
+                result++;
+        }
     }
+
     return result;
 }

@@ -5,10 +5,7 @@
 
 
 int main() {
-    // EquipedItems::equip(2);
-    // Bag::putToBag(5,10);
-    // Bag::putToBag(1,10);
-    // Bag::putToBag(3,10);
+
     MainMenu::showMainMenu();    
 
 }
