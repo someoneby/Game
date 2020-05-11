@@ -5,6 +5,6 @@
     This function uses to set bad input variable in true if something
     goes wrong with input
 */
-void badInputState();
+void badInputState() noexcept;
 
 #endif //GAME_BADINPUTSTATE_H

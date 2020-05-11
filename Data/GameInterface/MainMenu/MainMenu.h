@@ -4,7 +4,7 @@
 // coming soon
 class MainMenu {
     public:
-        static void showMainMenu();
+        static void showMainMenu() noexcept;
 };
 
 

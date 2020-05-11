@@ -3,7 +3,7 @@
 
 class LocationsMenu {
     public:
-        static void showLocations();
+        static void showLocations() noexcept;
 };
 
 

@@ -9,10 +9,10 @@ class Weapon : public IItem {
         float m_criticalChance;
     public:
         Weapon(const int id, const std::string name, const int damage, const float criticalChance,
-            const int prise, const std::string description);
-        void showDescription() const override;
-        int getDamage() const { return m_damage; };
-        float getCriticalChance() const { return m_criticalChance; };
+            const int prise, const std::string description) noexcept;
+        void showDescription() const noexcept override;
+        int getDamage() const noexcept { return m_damage; };
+        float getCriticalChance() const noexcept { return m_criticalChance; };
 };
 
 #endif //GAME_WEAPONS_H

@@ -9,9 +9,9 @@ class ParametersDB {
         vector<Parameters> m_mobs;
         static ParametersDB* m_instance;
     public:
-        static Parameters& getParam(const int mobId) { return m_instance->m_mobs.at(mobId); };
-        static int getMobsNumber() { return m_instance->m_mobs.size(); };
-        ParametersDB();
+        static Parameters& getParam(const int mobId) noexcept { return m_instance->m_mobs.at(mobId); };
+        static int getMobsNumber() noexcept { return m_instance->m_mobs.size(); };
+        ParametersDB() noexcept;
 };
 
 #endif //GAME_PARAMETERSDB_H

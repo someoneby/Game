@@ -9,7 +9,7 @@ typedef boost::variate_generator<BaseGenerator, Distribution> Generator;
 
 // Ничего не понимаю, но работает
 // Когда-нибудь я разберусь
-double randDouble () {
+double randDouble () noexcept {
     static BaseGenerator base;
     static Distribution dist;
     static Generator rng(base, dist);

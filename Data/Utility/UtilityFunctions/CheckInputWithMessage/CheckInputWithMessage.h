@@ -8,6 +8,6 @@
     This function uses to check that input was good and if it isn't
     print appropriate message
 */
-void checkInputWithMessage();
+void checkInputWithMessage() noexcept;
 
 #endif //GAME_CHECKINPUTWITHMESSAGE_H

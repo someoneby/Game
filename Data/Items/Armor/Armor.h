@@ -10,12 +10,12 @@ class Armor : public IItem {
         float m_avoidChance;
     public:
         Armor(const int itemId, const std::string name, const int prise, const std::string description, const int hp,
-            const int armor, const float avoidChance);
-        void showDescription() const override;
+            const int armor, const float avoidChance) noexcept;
+        void showDescription() const noexcept override;
         
-        float getAvoidChance() const { return m_avoidChance; };
-        int getHp() const { return m_hp; };
-        int getArmor() const { return m_armor; };
+        float getAvoidChance() const noexcept { return m_avoidChance; };
+        int getHp() const noexcept { return m_hp; };
+        int getArmor() const noexcept { return m_armor; };
 };
 
 

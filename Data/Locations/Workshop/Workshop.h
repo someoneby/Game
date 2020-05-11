@@ -8,15 +8,15 @@
     This is location where you can craft items.
 */
 class Workshop {
-        static int getAvailableNumber(const int);
-        static void showReagents(const int);
-        static void craftMenu(const int);
+        static int getAvailableNumber(const int) noexcept;
+        static void showReagents(const int) noexcept;
+        static void craftMenu(const int) noexcept;
+        Workshop() noexcept;
 
         std::vector<ItemToCraft> m_items;
         static Workshop* m_instance;
-        Workshop();
     public:
-        static void showItemsToCraft();
+        static void showItemsToCraft() noexcept;
 };
 
 #endif //GAME_WORKSHOP_H

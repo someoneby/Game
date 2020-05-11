@@ -6,12 +6,12 @@ class EquipedItems {
         int m_chestId;
         int m_weaponId;
         static EquipedItems* m_instance;
-        EquipedItems();
-        static void showItemMenu(const int);
+        EquipedItems() noexcept;
+        static void showItemMenu(const int) noexcept;
     public:
-        static void showMenu ();
-        static void equip (const int itemId);
-        static void unEquip (const int itemId);
+        static void showMenu() noexcept;
+        static void equip(const int itemId) noexcept;
+        static void unEquip(const int itemId) noexcept;
 };
 
 #endif

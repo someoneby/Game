@@ -8,7 +8,7 @@
 
 AllItemsDB* AllItemsDB::m_instance = new AllItemsDB();
 
-AllItemsDB::AllItemsDB() : m_allItemsDB { 
+AllItemsDB::AllItemsDB() noexcept : m_allItemsDB { 
     new Helm(0, "", 0, 0, 0, 0, ""),
     // Helm (int id, string name, int armor, float avoidChanse, int hp, int prise, string description)
     new Helm(1, "Кастрюля дырявая", 5, 0, 10, 10, 
@@ -67,7 +67,7 @@ AllItemsDB::AllItemsDB() : m_allItemsDB {
 /*
     Returns item from DB by id.
 */
-IItem* AllItemsDB::getItemByID(const int s_id) {
+IItem* AllItemsDB::getItemByID(const int s_id) noexcept {
     for(auto itemPtr {m_instance->m_allItemsDB.begin()}; itemPtr != m_instance->m_allItemsDB.end(); ++itemPtr) {
         if( (*itemPtr)->getId() == s_id)
             return *itemPtr;
@@ -78,7 +78,7 @@ IItem* AllItemsDB::getItemByID(const int s_id) {
 /*
     Returns number of reagents.
 */
-int AllItemsDB::getReagentsNumber() {
+int AllItemsDB::getReagentsNumber() noexcept {
     int result {0};
 
     for(auto itemPtr{m_instance->m_allItemsDB.begin()}; itemPtr != m_instance->m_allItemsDB.end(); ++itemPtr) {

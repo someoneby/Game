@@ -3,6 +3,6 @@
 bool badInput;
 
 
-void badInputState(){
+void badInputState() noexcept {
     badInput = true;
 }

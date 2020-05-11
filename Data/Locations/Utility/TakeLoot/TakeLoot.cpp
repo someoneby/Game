@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std;
 
-void takeLoot(const int s_level) { 
+void takeLoot(const int s_level) noexcept { 
     cout << "\n Ваша добыча:\n  ";
 
     bool reagentDrop { randDouble() < LocationConstants::DROP_CHANCE};

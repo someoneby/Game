@@ -6,11 +6,11 @@ class Energy {
         friend class Player;
         float m_energy;
         
-        void recount();
+        void recount() noexcept;
     public:
-        Energy(const float energy);
-        void spendEnergy(const int energy) { m_energy -= energy; };
-        int getEnergy();
+        Energy(const float energy) noexcept;
+        void spendEnergy(const int energy) noexcept { m_energy -= energy; };
+        int getEnergy() noexcept;
 };
 
 #endif //GAME_ENERGY_H

@@ -6,12 +6,12 @@
 
 class AllItemsDB {
     private:
-        AllItemsDB();
+        AllItemsDB() noexcept;
         static AllItemsDB* m_instance;
         std::vector<IItem*> m_allItemsDB;
     public:
-        static IItem* getItemByID(const int);
-        static int getReagentsNumber();
+        static IItem* getItemByID(const int) noexcept;
+        static int getReagentsNumber() noexcept;
 };
 
 

@@ -4,7 +4,7 @@
 
 class Adventures {
     public:
-        static void showMenu();
+        static void showMenu() noexcept;
 };
 
 #endif //GAME_ADVENTURES_H

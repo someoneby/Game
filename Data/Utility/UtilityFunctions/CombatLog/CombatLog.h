@@ -8,7 +8,8 @@
 /*
     This function uses to print log for fighting
 */
-void combatLog (const CombatLogStages, const IUnit* const = nullptr, const IUnit* const = nullptr, const int = 0);
+void combatLog (const CombatLogStages, const IUnit* const = nullptr, const IUnit* const = nullptr,
+    const int = 0) noexcept;
 
 
 #endif //GAME_COMBATLOG_H

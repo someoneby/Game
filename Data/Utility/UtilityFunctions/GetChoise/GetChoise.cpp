@@ -5,7 +5,7 @@ using std::cin;
 
 //Баг: исправить возможный ввод с пробелами
 
-int getChoise() {
+int getChoise() noexcept {
     int choise;
     cin >> choise;
 

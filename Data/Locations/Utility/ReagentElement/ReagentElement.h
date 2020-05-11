@@ -11,7 +11,7 @@
 struct ReagentElement {
     const int m_id;
     const int m_count;
-    ReagentElement(const int id, const int number);
+    ReagentElement(const int id, const int number) noexcept;
 };
 
 

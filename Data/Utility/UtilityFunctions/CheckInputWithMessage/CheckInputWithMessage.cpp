@@ -1,7 +1,7 @@
 #include "CheckInputWithMessage.h"
 
 
-void checkInputWithMessage() {
+void checkInputWithMessage() noexcept {
     extern bool badInput;
 
     system("clear");

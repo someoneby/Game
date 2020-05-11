@@ -12,7 +12,7 @@
 struct ItemToCraft {
         std::vector<ReagentElement> m_reagents;
         const int m_itemId;
-        ItemToCraft(const int itemId, std::vector<ReagentElement> reagentList);
+        ItemToCraft(const int itemId, std::vector<ReagentElement> reagentList) noexcept;
 };
 
 #endif //GAME_ITEMTOCRAFT_H

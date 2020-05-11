@@ -14,7 +14,7 @@ using std::cin;
 /*
     Menu of all locations in the game (workshop, shop, adventures, bag, person info).
 */
-void LocationsMenu::showLocations() {
+void LocationsMenu::showLocations() noexcept {
     int choise {1};
 
     while(choise) {

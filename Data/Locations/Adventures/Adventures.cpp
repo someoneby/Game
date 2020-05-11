@@ -9,7 +9,7 @@ using std::cout;
 /*
     Show list of all adventures.
 */
-void Adventures::showMenu() {
+void Adventures::showMenu() noexcept {
     int choise {1};
 
     while(choise) {

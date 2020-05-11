@@ -10,13 +10,13 @@ class Vendor {
     private:
         std::vector<int> m_itemsIdToBuy;
         static Vendor* m_instance;
-        Vendor();
-        static void showMenuToBuy();
-        static void showMenuToSell();
-        static void showDescriptionToBuy(const int id);
-        static void showDescriptionToSell(const int position);
+        Vendor() noexcept;
+        static void showMenuToBuy() noexcept;
+        static void showMenuToSell() noexcept;
+        static void showDescriptionToBuy(const int id) noexcept;
+        static void showDescriptionToSell(const int position) noexcept;
     public:
-        static void showMenu();
+        static void showMenu() noexcept;
 };
 
 #endif //GAME_VENDOR_H

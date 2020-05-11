@@ -3,7 +3,7 @@
 using std::cout;
 using std::endl;
 
-void combatLog (CombatLogStages action, const IUnit* const unit, const IUnit * const target, const int damage) {
+void combatLog (CombatLogStages action, const IUnit* const unit, const IUnit * const target, const int damage) noexcept {
     cout << endl;
 
     switch (action) {

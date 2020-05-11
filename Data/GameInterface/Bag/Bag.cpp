@@ -14,7 +14,7 @@ Bag::Bag() : m_gold{200} {}
 /*
     Show all your gold and items in the bag.
 */
-void Bag::show() {
+void Bag::show() noexcept {
     //Show gold
     cout << "Ваша сумка:\n\n"
         << " Золото: " << m_instance->m_gold;
@@ -32,7 +32,7 @@ void Bag::show() {
 /*
     Show menu of the bag.
 */
-void Bag::showMenu() {
+void Bag::showMenu() noexcept {
     int choise {1};
 
     while(choise) {
@@ -60,7 +60,7 @@ void Bag::showMenu() {
 /*
     Shows description of the item and if it's equipment apply you to put on it.
 */
-void Bag::itemMenu(const int s_itemPosition) {
+void Bag::itemMenu(const int s_itemPosition) noexcept {
     int choise {1};
 
     while(choise) {
@@ -108,7 +108,7 @@ void Bag::itemMenu(const int s_itemPosition) {
 /*
     Put item in the bag.
 */
-void Bag::putToBag(const int  s_itemId, const int s_number) {
+void Bag::putToBag(const int  s_itemId, const int s_number) noexcept {
     for(auto itemPtr{m_instance->m_bag.begin()}; itemPtr != m_instance->m_bag.end(); ++itemPtr) {
         //If item exists
         if( (*itemPtr)->getId() == s_itemId) {
@@ -129,7 +129,7 @@ void Bag::putToBag(const int  s_itemId, const int s_number) {
 /*
     Take item from the bag.
 */
-void Bag::takeFromBag(const int s_itemId, const int s_number) {
+void Bag::takeFromBag(const int s_itemId, const int s_number) noexcept {
     // Search item
     for(auto itemPtr{m_instance->m_bag.begin()}; itemPtr != m_instance->m_bag.end(); ++itemPtr) {
         if( (*itemPtr)->getId() == s_itemId) {
@@ -149,7 +149,7 @@ void Bag::takeFromBag(const int s_itemId, const int s_number) {
 /*
     Return number of the item.
 */
-int Bag::getCounterById(const int s_itemId) {
+int Bag::getCounterById(const int s_itemId) noexcept {
     // Search for item
     for(auto itemPtr{m_instance->m_bag.begin()}; itemPtr != m_instance->m_bag.end(); ++itemPtr) {
         if((*itemPtr)->getId() == s_itemId) {

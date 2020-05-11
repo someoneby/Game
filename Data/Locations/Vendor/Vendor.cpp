@@ -15,7 +15,7 @@ Vendor* Vendor::m_instance {new Vendor()};
 /*
     Database for id of items that are available to buy.
 */
-Vendor::Vendor() : m_itemsIdToBuy{
+Vendor::Vendor() noexcept : m_itemsIdToBuy{
         1,  //Кастрюля дырявая
         2,  //Кастрюля картавая
         4,  //Каска деда-электрика
@@ -34,7 +34,7 @@ Vendor::Vendor() : m_itemsIdToBuy{
 /*
     This is main menu of all location.
 */
-void Vendor::showMenu() {
+void Vendor::showMenu() noexcept {
     int choise {1};
 
     while(choise) {
@@ -71,7 +71,7 @@ void Vendor::showMenu() {
 /*
     Show list of items that you can buy.
 */
-void Vendor::showMenuToBuy() {
+void Vendor::showMenuToBuy() noexcept {
     int choise {1};
 
     while(choise) {
@@ -118,7 +118,7 @@ void Vendor::showMenuToBuy() {
 /*
     Show description of the choosen item.
 */
-void Vendor::showDescriptionToBuy(const int s_idToBuy) {
+void Vendor::showDescriptionToBuy(const int s_idToBuy) noexcept {
     const int priseToBuy { AllItemsDB::getItemByID(s_idToBuy)->getPrise() * LocationConstants::MODIFIER_COST_TO_BUY };
     const int howMuchCanBuy { Bag::getGold() / priseToBuy };
     int numberToBuy {1};
@@ -152,7 +152,7 @@ void Vendor::showDescriptionToBuy(const int s_idToBuy) {
 /*
     Show all your items and let you sell it.
 */
-void Vendor::showMenuToSell() {
+void Vendor::showMenuToSell() noexcept {
     int choise {1};
 
     while(choise) {
@@ -182,7 +182,7 @@ void Vendor::showMenuToSell() {
 /*
     Show description of the choosen item.
 */
-void Vendor::showDescriptionToSell(const int s_positionToSell) {
+void Vendor::showDescriptionToSell(const int s_positionToSell) noexcept {
     const int id {Bag::getItemFromBag(s_positionToSell)->getId()};
     const int count {Bag::getItemFromBag(s_positionToSell)->getCount()};
     const int prise {AllItemsDB::getItemByID(id)->getPrise()};

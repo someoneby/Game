@@ -11,7 +11,7 @@ using std::cin;
 /*
     Main menu of the game.
 */
-void MainMenu::showMainMenu() {
+void MainMenu::showMainMenu() noexcept {
     int choise{1};
 
     while(choise) {

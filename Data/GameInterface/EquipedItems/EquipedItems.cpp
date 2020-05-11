@@ -15,12 +15,12 @@ using std::cout;
 
 EquipedItems* EquipedItems::m_instance = new EquipedItems();
 
-EquipedItems::EquipedItems() : m_weaponId{0}, m_chestId{0}, m_helmId{0} {};
+EquipedItems::EquipedItems() noexcept : m_weaponId{0}, m_chestId{0}, m_helmId{0} {};
 
 /*
     Equip item.
 */
-void EquipedItems::equip (const int s_itemId) {
+void EquipedItems::equip (const int s_itemId) noexcept {
     // If id belongs to helms or chests
     if(s_itemId < ItemsConstants::FIRST_WEAPON_ID) {
         //Select type by id
@@ -72,7 +72,7 @@ void EquipedItems::equip (const int s_itemId) {
 /*
     Unequip item.
 */
-void EquipedItems::unEquip (const int s_itemId) {
+void EquipedItems::unEquip (const int s_itemId) noexcept {
     if(s_itemId < ItemsConstants::FIRST_WEAPON_ID) {
         // Select type by id
         int target_id;
@@ -113,7 +113,7 @@ void EquipedItems::unEquip (const int s_itemId) {
 /*
     Show equipment of the player
 */
-void EquipedItems::showMenu() {
+void EquipedItems::showMenu() noexcept {
     int choise {1};
 
     while(choise != 0) {
@@ -161,7 +161,7 @@ void EquipedItems::showMenu() {
 /*
     Show description of the item if it is.
 */
-void EquipedItems::showItemMenu(const int s_itemId) {
+void EquipedItems::showItemMenu(const int s_itemId) noexcept {
     int choise {1};
 
     while(choise != 0) {

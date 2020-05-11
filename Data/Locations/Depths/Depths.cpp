@@ -13,7 +13,7 @@ using std::cout;
 /*
     Main menu of depths, it shows level and energy. 
 */
-void Depths::mainMenu() {
+void Depths::mainMenu() noexcept {
     int choise{1};
     int level{0};
 
@@ -71,7 +71,7 @@ void Depths::mainMenu() {
 /*
     Go next level of depth and meet the mob.
 */
-bool Depths::goDeeper(const int s_level) {
+bool Depths::goDeeper(const int s_level) noexcept {
     int choise{1};
     Mob* mob {MobFactory::getMob(s_level)};
 

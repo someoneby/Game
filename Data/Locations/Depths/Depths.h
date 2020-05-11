@@ -3,9 +3,9 @@
 
 
 class Depths {
-        static bool goDeeper(const int);
+        static bool goDeeper(const int) noexcept;
     public:
-        static void mainMenu();
+        static void mainMenu() noexcept;
 };
 
 #endif //GAME_DEPTHS_H

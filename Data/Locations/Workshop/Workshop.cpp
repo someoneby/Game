@@ -11,7 +11,7 @@ using std::cin;
 
 Workshop* Workshop::m_instance = new Workshop();
 
-Workshop::Workshop() : m_items{
+Workshop::Workshop() noexcept : m_items{
         ItemToCraft(3, std::vector<ReagentElement> {ReagentElement(91,2), ReagentElement(92,3)}),
         ItemToCraft(5, std::vector<ReagentElement> {ReagentElement(91,2), ReagentElement(92,3)}),
         ItemToCraft(7, std::vector<ReagentElement> {ReagentElement(91,2), ReagentElement(92,3)}),
@@ -28,7 +28,7 @@ Workshop::Workshop() : m_items{
     This is main menu for workshop. Show list of all items that are available
     to craft.
 */
-void Workshop::showItemsToCraft() {
+void Workshop::showItemsToCraft() noexcept {
     int choise {1};
 
     while(choise) {
@@ -70,7 +70,7 @@ void Workshop::showItemsToCraft() {
 /*
     Show description of the item and possibility to craft it.
 */
-void Workshop::craftMenu(const int s_position) {
+void Workshop::craftMenu(const int s_position) noexcept {
     int choise {1};
 
     while(choise) {
@@ -112,7 +112,7 @@ void Workshop::craftMenu(const int s_position) {
 /*
     Return available number for crafting the item.
 */
-int Workshop::getAvailableNumber(const int s_position) {
+int Workshop::getAvailableNumber(const int s_position) noexcept {
     int availableNumber;
     for(int i{0}; i < m_instance->m_items.at(s_position).m_reagents.size(); ++i) {
         int nededCount {m_instance->m_items.at(s_position).m_reagents.at(i).m_count};
@@ -131,7 +131,7 @@ int Workshop::getAvailableNumber(const int s_position) {
 /*
     Show reagents that needed to craft the item.
 */
-void Workshop::showReagents(const int s_position) {
+void Workshop::showReagents(const int s_position) noexcept {
     for(auto reagentPtr{m_instance->m_items.at(s_position).m_reagents.begin()};
     reagentPtr != m_instance->m_items.at(s_position).m_reagents.end(); ++reagentPtr) {
         cout << " " << AllItemsDB::getItemByID((*reagentPtr).m_id)->getName()

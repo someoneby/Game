@@ -7,13 +7,13 @@ Player* Player::m_instance = new Player();
 Energy Player::m_energy = Energy(CharConstants::MAX_ENERGY);
 
 
-Player::Player() : IUnit(CharConstants::PLAYER) {}
+Player::Player() noexcept: IUnit(CharConstants::PLAYER) {}
 
 
 /*
     Battle starting. Player and mob hit each other until someone dies.
 */
-bool Player::fight(IUnit* const s_mob) {
+bool Player::fight(IUnit* const s_mob) noexcept {
     system("clear");
 
     // Battle start log

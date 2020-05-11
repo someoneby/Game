@@ -6,7 +6,7 @@
 /*
     Creating a mob with parameters based on a taken level of the depth.
 */
-Mob* MobFactory::getMob(const int s_depthLevel) {
+Mob* MobFactory::getMob(const int s_depthLevel) noexcept {
     //Getting random index of mob
     int randMob = (int)(randDouble() * 10) % ParametersDB::getMobsNumber();
 
