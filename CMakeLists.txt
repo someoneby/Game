@@ -3,13 +3,7 @@ project(Game)
 
 set(CMAKE_CXX_STANDARD 14)
 
-FIND_PACKAGE( Boost 1.40 COMPONENTS program_options REQUIRED )
-INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
-TARGET_LINK_LIBRARIES( ${Boost_LIBRARIES} )
-
-
-add_executable(Game main.cpp
-        Data/Characters/IUnit/IUnit.cpp
+set(SOURCE_LIB Data/Characters/IUnit/IUnit.cpp
         Data/Characters/Player/Player.cpp
         Data/Characters/Mob/Mob.cpp
         Data/Characters/MobFactory/MobFactory.cpp
@@ -38,4 +32,16 @@ add_executable(Game main.cpp
         Data/Locations/Depths/Depths.cpp
         Data/Locations/Utility/ReagentElement/ReagentElement.cpp
         Data/Locations/Utility/ItemToCraft/ItemToCraft.cpp
-        )
+)	
+
+
+FIND_PACKAGE( Boost 1.40 COMPONENTS program_options REQUIRED )
+INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
+TARGET_LINK_LIBRARIES( ${Boost_LIBRARIES} )
+
+
+add_library(game_lib STATIC ${SOURCE_LIB})
+
+add_executable(Game main.cpp)
+
+target_link_libraries(Game game_lib)
